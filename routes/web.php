@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('login');
 });
+
+Route::get('/dashboard-eksekutif', function () {
+    return view('dashboard-eksekutif');
+});
+
+Route::get('/dashboard-managerdev', function () {
+    return view('departmentdev.dashboard-managerdev');
+});
+
+
