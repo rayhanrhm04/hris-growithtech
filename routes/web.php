@@ -25,4 +25,8 @@ Route::get('/dashboard-managerdev', function () {
     return view('departmentdev.dashboard-managerdev');
 });
 
+Route::get('/dashboard-staffdev', function () {
+    return view('departmentdev.dashboard-staffdev');
+});
+
 
