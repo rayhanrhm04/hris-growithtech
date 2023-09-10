@@ -22,11 +22,11 @@ Route::get('/dashboard-eksekutif', function () {
 });
 
 Route::get('/dashboard-managerdev', function () {
-    return view('departmentdev.dashboard-managerdev');
+    return view('dep-dev.dashboard-managerdev');
 });
 
 Route::get('/dashboard-staffdev', function () {
-    return view('departmentdev.dashboard-staffdev');
+    return view('dep-dev.dashboard-staffdev');
 });
 
 
