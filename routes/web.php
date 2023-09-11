@@ -17,14 +17,25 @@ Route::get('/', function () {
     return view('login');
 });
 
+//Eksekutif
 Route::get('/dashboard-eksekutif', function () {
     return view('eksekutif.dashboard-eksekutif');
 });
 
+Route::view('/kehadiran','eksekutif.kehadiran');
+Route::view('/project','eksekutif.project');
+Route::view('/dataPegawai','eksekutif.dataPegawai');
+Route::view('/pengajuanCuti','eksekutif.dataPegawai');
+Route::view('/pengajuanReimbursement','eksekutif.dataPegawai');
+
+
+//Manager Development
 Route::get('/dashboard-managerdev', function () {
     return view('dep-dev.dashboard-managerdev');
 });
 
+
+//Staff Development
 Route::get('/dashboard-staffdev', function () {
     return view('dep-dev.dashboard-staffdev');
 });
