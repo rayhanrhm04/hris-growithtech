@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard-eksekutif', function () {
-    return view('dashboard-eksekutif');
+    return view('eksekutif.dashboard-eksekutif');
 });
 
 Route::get('/dashboard-managerdev', function () {
