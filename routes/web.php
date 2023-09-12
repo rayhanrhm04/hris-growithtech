@@ -21,6 +21,7 @@ Route::get('/dashboard-eksekutif', function () {
     return view('eksekutif.dashboard-eksekutif');
 });
 
+//dev
 Route::get('/dashboard-managerdev', function () {
     return view('dep-dev.dashboard-managerdev');
 });
@@ -29,4 +30,11 @@ Route::get('/dashboard-staffdev', function () {
     return view('dep-dev.dashboard-staffdev');
 });
 
+//hr
+Route::get('/dashboard-managerhr', function () {
+    return view('dep-hr.dashboard-managerhr');
+});
 
+Route::get('/dashboard-staffhr', function () {
+    return view('dep-hr.dashboard-staffhr');
+});
