@@ -63,14 +63,14 @@
                     <i class="fas fa-fw fa-check"></i>
                     <span>Project</span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
                     <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
                     <span>Data Pegawai</span></a>
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-file-alt"></i>
@@ -202,229 +202,199 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Data Pegawai</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Cuti</h1>
                     </div>
 
                         <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Pegawai</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Pengajuan</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>No</th>
                                             <th>NIP</th>
-                                            <th>Nama Lengkap</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>TTL</th>
+                                            <th>Nama Pegawai</th>
                                             <th>Departemen</th>
                                             <th>Posisi</th>
-                                            <th>Agama</th>
-                                            <th>Alamat</th>
-                                            <th>No Telp</th>
-                                            <th>Email</th>
-                                            <th>Password</th>
+                                            <th>Tanggal Izin</th>
+                                            <th>Jenis Pengajuan</th>
+                                            <th>Alasan</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <th>No</th>
                                             <th>NIP</th>
-                                            <th>Nama Lengkap</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>TTL</th>
+                                            <th>Nama Pegawai</th>
                                             <th>Departemen</th>
                                             <th>Posisi</th>
-                                            <th>Agama</th>
-                                            <th>Alamat</th>
-                                            <th>No Telp</th>
-                                            <th>Email</th>
-                                            <th>Password</th>
+                                            <th>Tanggal Izin</th>
+                                            <th>Jenis Pengajuan</th>
+                                            <th>Alasan</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td>Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td>
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td>Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td>
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td>Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td>
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>Fasya Mutiara</td>
-                                            <td>Wanita</td>
-                                            <td>2002/07/05</td>
-                                            <td>HR</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Soekarno Hatta</td>
-                                            <td>-</td>
-                                            <td>fasya..mutiara@gmail.com</td>
-                                            <td>fhasyaimhoetz123</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td>Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td>
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>Rayhan Miraj B</td>
-                                            <td>Pria</td>
-                                            <td>2002/10/04</td>
-                                            <td>Developer</td>
-                                            <td>Staff</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Moh. Toha</td>
-                                            <td>-</td>
-                                            <td>rayhan.miraj@gmail.com</td>
-                                            <td>rayhanganthengbgtz123</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td>Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td>
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>11</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>14</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>15</td>
-                                            <td>Dava Attabrani Akbar</td>
-                                            <td>Pria</td>
-                                            <td>2002/09/02</td>
-                                            <td>Developer</td>
-                                            <td>Manager</td>
-                                            <td>Islam</td>
-                                            <td>Jl. Kopo</td>
-                                            <td>08958992905</td>
-                                            <td>attabrani.dava@gmail.com</td>
-                                            <td>davaganteng123</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td>Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td>
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>

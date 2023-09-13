@@ -43,8 +43,8 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/dashboard-eksekutif') }}">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/dashboard') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -53,18 +53,18 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/kehadiran') }}">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
                     <i class="fas fa-fw fa-calendar"></i>
                     <span>Kehadiran</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/project') }}">
+                <a class="nav-link" href="{{ url('/eksekutif/project') }}">
                     <i class="fas fa-fw fa-check"></i>
                     <span>Project</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/dataPegawai') }}">
+                <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
                     <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
                     <span>Data Pegawai</span></a>
             </li>
@@ -78,14 +78,14 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{ url('/pengajuanCuti') }}">Cuti</a>
-                        <a class="collapse-item" href="{{ url('/pengajuanReimbursement') }}">Reimbursement Claim</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanCuti') }}">Cuti</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanReimbursement') }}">Reimbursement Claim</a>
                     </div>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/reporting') }}">
+                <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
                     <i class="fas fa-fw fa-folder-open"></i>
                     <span>Reporting</span></a>
             </li>

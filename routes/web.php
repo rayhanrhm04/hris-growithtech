@@ -18,15 +18,15 @@ Route::get('/', function () {
 });
 
 //Eksekutif
-Route::get('/dashboard-eksekutif', function () {
+Route::get('/eksekutif/dashboard', function () {
     return view('eksekutif.dashboard-eksekutif');
 });
 
-Route::view('/kehadiran','eksekutif.kehadiran');
-Route::view('/project','eksekutif.project');
-Route::view('/dataPegawai','eksekutif.dataPegawai');
-Route::view('/pengajuanCuti','eksekutif.pengajuanCuti');
-Route::view('/pengajuanReimbursement','eksekutif.dataPegawai');
+Route::view('/eksekutif/kehadiran','eksekutif.kehadiran');
+Route::view('/eksekutif/project','eksekutif.project');
+Route::view('/eksekutif/dataPegawai','eksekutif.dataPegawai');
+Route::view('/eksekutif/pengajuanCuti','eksekutif.pengajuanCuti');
+Route::view('/eksekutif/pengajuanReimbursement','eksekutif.dataPegawai');
 
 
 //Manager Development
