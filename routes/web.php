@@ -25,7 +25,7 @@ Route::get('/dashboard-eksekutif', function () {
 Route::view('/kehadiran','eksekutif.kehadiran');
 Route::view('/project','eksekutif.project');
 Route::view('/dataPegawai','eksekutif.dataPegawai');
-Route::view('/pengajuanCuti','eksekutif.dataPegawai');
+Route::view('/pengajuanCuti','eksekutif.pengajuanCuti');
 Route::view('/pengajuanReimbursement','eksekutif.dataPegawai');
 
 

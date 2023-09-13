@@ -205,153 +205,226 @@
                         <h1 class="h3 mb-0 text-gray-800">Data Pegawai</h1>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                jumlah pegawai</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">9</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-users fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
                         <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Project</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Pegawai</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
-                                            <th>Nama Project</th>
-                                            <th>Tanggal Mulai</th>
-                                            <th>Tanggal Selesai</th>
-                                            <th>Keterangan</th>
+                                            <th>NIP</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Jenis Kelamin</th>
+                                            <th>TTL</th>
+                                            <th>Departemen</th>
+                                            <th>Posisi</th>
+                                            <th>Agama</th>
+                                            <th>Alamat</th>
+                                            <th>No Telp</th>
+                                            <th>Email</th>
+                                            <th>Password</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>No</th>
-                                            <th>Nama Project</th>
-                                            <th>Tanggal Mulai</th>
-                                            <th>Tanggal Selesai</th>
-                                            <th>Keterangan</th>
+                                            <th>NIP</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Jenis Kelamin</th>
+                                            <th>TTL</th>
+                                            <th>Departemen</th>
+                                            <th>Posisi</th>
+                                            <th>Agama</th>
+                                            <th>Alamat</th>
+                                            <th>No Telp</th>
+                                            <th>Email</th>
+                                            <th>Password</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Fasya Mutiara</td>
+                                            <td>Wanita</td>
+                                            <td>2002/07/05</td>
+                                            <td>HR</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Soekarno Hatta</td>
+                                            <td>-</td>
+                                            <td>fasya..mutiara@gmail.com</td>
+                                            <td>fhasyaimhoetz123</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Rayhan Miraj B</td>
+                                            <td>Pria</td>
+                                            <td>2002/10/04</td>
+                                            <td>Developer</td>
+                                            <td>Staff</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Moh. Toha</td>
+                                            <td>-</td>
+                                            <td>rayhan.miraj@gmail.com</td>
+                                            <td>rayhanganthengbgtz123</td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>10</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>11</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>12</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>13</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>14</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                         <tr>
                                             <td>15</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
                                         </tr>
                                     </tbody>
                                 </table>
