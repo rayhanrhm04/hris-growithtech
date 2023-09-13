@@ -26,7 +26,8 @@ Route::view('/eksekutif/kehadiran','eksekutif.kehadiran');
 Route::view('/eksekutif/project','eksekutif.project');
 Route::view('/eksekutif/dataPegawai','eksekutif.dataPegawai');
 Route::view('/eksekutif/pengajuanCuti','eksekutif.pengajuanCuti');
-Route::view('/eksekutif/pengajuanReimbursement','eksekutif.dataPegawai');
+Route::view('/eksekutif/pengajuanReimbursement','eksekutif.pengajuanReimbursement');
+Route::view('/eksekutif/reporting','eksekutif.reporting');
 
 
 //Manager Development
