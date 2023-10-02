@@ -80,13 +80,13 @@
 
             <li class="nav-item">
                 <a class="nav-link" href="project.html">
-                    <i class="fas fa-fw fa-file-alt"></i>
+                    <i class="fas fa-fw fa-calculator"></i>
                     <span>Penggajian</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="project.html">
-                    <i class="fas fa-fw fa-check"></i>
+                    <i class="fas fa-fw fa-user-circle"></i>
                     <span>Profile</span></a>
             </li>
 
@@ -256,6 +256,9 @@
                             </div>
                         </div>
 
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Kehadiran</h1>
@@ -302,8 +305,7 @@
                         </div>
                     </div>
 
-                    
-
+                
                 </div>
                 <!-- /.container-fluid -->
 

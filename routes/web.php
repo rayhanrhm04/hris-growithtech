@@ -35,6 +35,10 @@ Route::get('/dashboard-managerhr', function () {
     return view('dep-hr.dashboard-managerhr');
 });
 
+Route::get('/profile-managerhr', function () {
+    return view('dep-hr.profile-managerhr');
+});
+
 Route::get('/dashboard-staffhr', function () {
     return view('dep-hr.dashboard-staffhr');
 });
