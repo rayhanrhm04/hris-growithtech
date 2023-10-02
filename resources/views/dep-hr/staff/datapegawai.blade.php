@@ -315,49 +315,7 @@
 
                     <!-- Content Row -->
                     <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl col-lg">
-                            <div class="card shadow mb-4">
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <span class="text">NIP</span>
-                                            <h1 class="h5 mb-2 text-gray-800">E001</h1>
-                                            <span class="text">Nama Pegawai</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
-                                            <span class="text">Department</span>
-                                            <h1 class="h5 mb-2 text-gray-800">HR</h1>
-                                            <span class="text">Jabatan</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Manager</h1>
-                                            <span class="text">Waktu Check In</span>
-                                            <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
-                                            <span class="text">Lokasi Check In</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                            <span class="text">Waktu Check out</span>
-                                            <h1 class="h5 mb-2 text-gray-800">16.00 WIB</h1>
-                                            <span class="text">Lokasi Check Out</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                        </div>
-                                        <div class=" justify-content-end">
-                                            <a href="#" class="btn btn-success btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-check"></i>
-                                                </span>
-                                                <span class="text">Check In</span>
-                                            </a>
-                                            <a href="#" class="btn btn-danger btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <span class="text">Check Out</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {{ $dataTable->table() }}
                     </div>
 
                     
@@ -427,5 +385,8 @@
     <script src="{{asset('sbadmin')}}/js/demo/chart-pie-demo.js"></script>
 
 </body>
+@push('scripts')
+    {{ $dataTable->scripts(attributes: ['type' => 'module']) }}
+@endpush
 
 </html>

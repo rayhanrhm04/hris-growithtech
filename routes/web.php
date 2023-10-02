@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,3 +43,5 @@ Route::get('/profile-managerhr', function () {
 Route::get('/dashboard-staffhr', function () {
     return view('dep-hr.dashboard-staffhr');
 });
+
+Route::get('/users', [UsersController::class, 'datapegawai'])->name('dep-hr.staff.datapegawai');
