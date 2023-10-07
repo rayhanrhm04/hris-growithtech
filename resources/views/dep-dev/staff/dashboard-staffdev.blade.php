@@ -64,7 +64,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="{{ url('/staffdev/project') }}">
                     <i class="fas fa-fw fa-tasks"></i>
                     <span>Project</span></a>
             </li>

@@ -39,8 +39,9 @@ Route::get('/dashboard-managerdev', function () {
 
 //Staff Development
 Route::get('/dashboard-staffdev', function () {
-    return view('dep-dev.dashboard-staffdev');
+    return view('dep-dev.staff.dashboard-staffdev');
 });
+Route::view('/staffdev/project','dep-dev.staff.project');
 
 Route::get('/datapegawai', function () {
     return view('dep-hr.staff.datapegawai');
