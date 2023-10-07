@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard | HRIS Growithtech</title>
+    <title>HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('sbadmin')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('sbadmin')}}/css/sb-admin-2.min.css" rel="stylesheet">
+      
 
 </head>
 
@@ -42,8 +43,8 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/dashboard') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -53,14 +54,19 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="dataPegawai.html">
-                    <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
-                    <span>Data Pegawai</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="kehadiran.html">
+                <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
                     <i class="fas fa-fw fa-calendar"></i>
                     <span>Kehadiran</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/project') }}">
+                    <i class="fas fa-fw fa-check"></i>
+                    <span>Project</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
+                    <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
+                    <span>Data Pegawai</span></a>
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -68,27 +74,22 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-file-alt"></i>
-                    <span>Pengajuan</span>
+                    <span>Pengajuan Izin</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="pengajuanCuti.html">Izin</a>
-                        <a class="collapse-item" href="pengajuanReimbursement.html">Reimbursement</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanCuti') }}">Cuti</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanReimbursement') }}">Reimbursement Claim</a>
                     </div>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="project.html">
-                    <i class="fas fa-fw fa-calculator"></i>
-                    <span>Penggajian</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="reporting.html">
+                <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
                     <i class="fas fa-fw fa-folder-open"></i>
                     <span>Reporting</span></a>
             </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -112,6 +113,8 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        
+                        </li>
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
@@ -199,123 +202,234 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Data Pegawai</h1>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Department</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">2</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Data Pegawai</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>NIP</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Jenis Kelamin</th>
+                                            <th>TTL</th>
+                                            <th>Departemen</th>
+                                            <th>Posisi</th>
+                                            <th>Agama</th>
+                                            <th>Alamat</th>
+                                            <th>No Telp</th>
+                                            <th>Email</th>
+                                            <th>Password</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>NIP</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Jenis Kelamin</th>
+                                            <th>TTL</th>
+                                            <th>Departemen</th>
+                                            <th>Posisi</th>
+                                            <th>Agama</th>
+                                            <th>Alamat</th>
+                                            <th>No Telp</th>
+                                            <th>Email</th>
+                                            <th>Password</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Fasya Mutiara</td>
+                                            <td>Wanita</td>
+                                            <td>2002/07/05</td>
+                                            <td>HR</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Soekarno Hatta</td>
+                                            <td>-</td>
+                                            <td>fasya..mutiara@gmail.com</td>
+                                            <td>fhasyaimhoetz123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Rayhan Miraj B</td>
+                                            <td>Pria</td>
+                                            <td>2002/10/04</td>
+                                            <td>Developer</td>
+                                            <td>Staff</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Moh. Toha</td>
+                                            <td>-</td>
+                                            <td>rayhan.miraj@gmail.com</td>
+                                            <td>rayhanganthengbgtz123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Dava Attabrani Akbar</td>
+                                            <td>Pria</td>
+                                            <td>2002/09/02</td>
+                                            <td>Developer</td>
+                                            <td>Manager</td>
+                                            <td>Islam</td>
+                                            <td>Jl. Kopo</td>
+                                            <td>08958992905</td>
+                                            <td>attabrani.dava@gmail.com</td>
+                                            <td>davaganteng123</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Total Pegawai</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">9</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-users fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Jumlah Pegawai Hadir</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-user-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Jumlah Pengajuan Izin</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-file-alt fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Izin yang Diterima</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Izin yang Ditolak</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-times fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Kehadiran</h1>
-                    </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-                        {{ $dataTable->table() }}
                     </div>
 
                     
@@ -327,13 +441,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
+            @include('layouts.footer')
             <!-- End of Footer -->
 
         </div>
@@ -378,15 +486,12 @@
     <script src="{{asset('sbadmin')}}/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="{{asset('sbadmin')}}/vendor/chart.js/Chart.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{asset('sbadmin')}}/js/demo/chart-area-demo.js"></script>
-    <script src="{{asset('sbadmin')}}/js/demo/chart-pie-demo.js"></script>
+    <script src="{{asset('sbadmin')}}/js/demo/datatables-demo.js"></script>
 
 </body>
-@push('scripts')
-    {{ $dataTable->scripts(attributes: ['type' => 'module']) }}
-@endpush
 
 </html>
