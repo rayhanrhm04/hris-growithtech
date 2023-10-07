@@ -30,6 +30,7 @@ Route::view('/eksekutif/pengajuanReimbursement','eksekutif.pengajuanReimbursemen
 Route::view('/eksekutif/reporting','eksekutif.reporting');
 
 
+
 //Manager Development
 Route::get('/dashboard-managerdev', function () {
     return view('dep-dev.dashboard-managerdev');
@@ -40,5 +41,10 @@ Route::get('/dashboard-managerdev', function () {
 Route::get('/dashboard-staffdev', function () {
     return view('dep-dev.dashboard-staffdev');
 });
+
+Route::get('/datapegawai', function () {
+    return view('dep-hr.staff.datapegawai');
+});
+
 
 
