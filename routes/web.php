@@ -52,6 +52,12 @@ Route::get('/datapegawai', function () {
 Route::get('/dashboard-managerhr', function () {
     return view('dep-hr.manager.dashboard-managerhr');
 });
+Route::get('/datapegawai', function () {
+    return view('dep-hr.manager.datapegawai');
+});
+Route::get('/tambahpegawai', function () {
+    return view('dep-hr.manager.tambahpegawai');
+});
 
 //Staff HR
 Route::get('/dashboard-staffhr', function () {

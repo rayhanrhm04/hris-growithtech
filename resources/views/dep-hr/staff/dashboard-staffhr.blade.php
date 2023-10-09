@@ -268,10 +268,14 @@
                                             <span class="text">Nama Pegawai</span>
                                             <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
                                             <span class="text">Jabatan</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Eksekutif</h1>
+                                            <h1 class="h5 mb-2 text-gray-800">Staff</h1>
                                             <span class="text">Waktu Check In</span>
                                             <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
                                             <span class="text">Lokasi Check In</span>
+                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
+                                            <span class="text">Waktu Check Out</span>
+                                            <h1 class="h5 mb-2 text-gray-800">17.00 WIB</h1>
+                                            <span class="text">Lokasi Check Out</span>
                                             <h1 class="h5 mb-2 text-gray-800">-</h1>
                                         </div>
                                         <div class=" justify-content-end">
