@@ -51,55 +51,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-<<<<<<< HEAD
-            <!-- Heading -->
-            {{-- <div class="sidebar-heading">
-                Interface
-            </div> --}}
-            
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-user"></i>
-                    <span>Kehadiran / Attendance</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <i class="fas fa-fw fa-tasks"></i>
-                    <span>Project</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pengajuan Izin</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-upload"></i>
-                    <span>Pengajuan Reimbursement</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-            <!-- Sidebar Message -->
-            
-=======
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
-                    <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
-                    <span>Data Pegawai</span></a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
                     <i class="fas fa-fw fa-calendar"></i>
@@ -125,15 +77,9 @@
                     <i class="fas fa-fw fa-calculator"></i>
                     <span>Penggajian</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
-                    <i class="fas fa-fw fa-folder-open"></i>
-                    <span>Reporting</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
->>>>>>> origin
 
         </ul>
         <!-- End of Sidebar -->
@@ -290,55 +236,6 @@
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-user-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Jumlah Pengajuan Izin</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-file-alt fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Izin yang Diterima</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Izin yang Ditolak</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-times fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
