@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 //Eksekutif
-Route::get('/eksekutif/dashboard', function () {
+Route::get('/dashboard-eksekutif', function () {
     return view('eksekutif.dashboard-eksekutif');
 });
 
@@ -50,5 +50,10 @@ Route::get('/datapegawai', function () {
 
 //Manager HR
 Route::get('/dashboard-managerhr', function () {
-    return view('dep-hr..manager.dashboard-managerhr');
+    return view('dep-hr.manager.dashboard-managerhr');
+});
+
+//Staff HR
+Route::get('/dashboard-staffhr', function () {
+    return view('dep-hr.staff.dashboard-staffhr');
 });
