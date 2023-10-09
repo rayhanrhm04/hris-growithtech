@@ -35,6 +35,9 @@ Route::view('/eksekutif/reporting','eksekutif.reporting');
 Route::get('/dashboard-managerdev', function () {
     return view('dep-dev.dashboard-managerdev');
 });
+Route::view('/managerdev/pengajuanCuti','dep-dev.manager.pengajuanCuti');
+Route::view('/managerdev/project','dep-dev.manager.project');
+Route::view('/managerdev/kehadiran','dep-dev.manager.kehadiran');
 
 
 //Staff Development
@@ -43,6 +46,7 @@ Route::get('/dashboard-staffdev', function () {
 });
 Route::view('/staffdev/project','dep-dev.staff.project');
 Route::view('/staffdev/kehadiran','dep-dev.staff.kehadiran');
+Route::view('/staffdev/pengajuanizin','dep-dev.staff.pengajuanCuti');
 
 Route::get('/datapegawai', function () {
     return view('dep-hr.staff.datapegawai');
