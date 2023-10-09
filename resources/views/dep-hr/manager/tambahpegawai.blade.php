@@ -210,8 +210,7 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">
-                                            <span class="text">NIP BAru</span>
-                                            <h1 class="h5 mb-2 text-gray-800">E001</h1>
+                                            <h4 class="h5 mb-2 text-gray-800">Nama Pegawai</h4>
                                             <span class="text">Nama Pegawai</span>
                                             <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
                                             <span class="text">Jabatan</span>
