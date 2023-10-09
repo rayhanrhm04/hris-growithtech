@@ -70,7 +70,7 @@
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-file-alt"></i>
@@ -84,7 +84,7 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
                     <i class="fas fa-fw fa-folder-open"></i>
                     <span>Reporting</span></a>
@@ -202,16 +202,14 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Reimbursement Claim</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Reporting</h1>
                     </div>
 
                         <!-- DataTales Example -->
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Pengajuan</h6>
-                        </div>
                         <div class="card-body">
                             <div class="table-responsive">
+                                <div class=""></div>
                                 <div class="justify-content-start">
                                     <a href="#" class="btn btn-primary btn-sm btn-icon-split">
                                         <span class="text">Excel</span>
