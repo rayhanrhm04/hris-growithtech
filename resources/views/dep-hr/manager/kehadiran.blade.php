@@ -214,7 +214,7 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col">sfdgsdfg
                                             <span class="text">NIP</span>
                                             <h1 class="h5 mb-2 text-gray-800">E001</h1>
                                             <span class="text">Nama Pegawai</span>
