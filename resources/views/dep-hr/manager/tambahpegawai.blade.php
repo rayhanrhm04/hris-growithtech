@@ -208,35 +208,92 @@
                             <div class="card shadow mb-4">
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="row">
+                                    <div class="row">   
                                         <div class="col">
-                                            <h4 class="h5 mb-2 text-gray-800">Nama Pegawai</h4>
-                                            <span class="text">Nama Pegawai</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
-                                            <span class="text">Jabatan</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Eksekutif</h1>
-                                            <span class="text">Waktu Check In</span>
-                                            <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
-                                            <span class="text">Lokasi Check In</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                            <span class="text">Waktu Check Out</span>
-                                            <h1 class="h5 mb-2 text-gray-800">17.00 WIB</h1>
-                                            <span class="text">Lokasi Check Out</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                        </div>
-                                        <div class=" justify-content-end">
-                                            <a href="#" class="btn btn-success btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-check"></i>
-                                                </span>
-                                                <span class="text">Check In</span>
-                                            </a>
-                                            <a href="#" class="btn btn-danger btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <span class="text">Check Out</span>
-                                            </a>
+                                            <form>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">NIP</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnip">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Nama Pegawai</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">TTL</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Departemen</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Jabatan</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Agama</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Alamat</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">No Telp</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Email</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Password</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3 ">
+                                                    <div class="col-sm-5 text-center">
+                                                        <button type="submit" class="btn btn-primary">Tambah</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
