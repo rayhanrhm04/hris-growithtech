@@ -209,17 +209,61 @@
                     <div class="card shadow mb-4">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <div class=""></div>
-                                <div class="justify-content-start">
-                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                        <span class="text">Excel</span>
-                                    </a>
-                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                        <span class="text">PDF</span>
-                                    </a>
-                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                        <span class="text">Print</span>
-                                    </a>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <h8>Bulan</h8>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="mb-3">
+                                                <select name="bulan" id="bulan">
+                                                    <option selected>-Pilih Bulan-</option>
+                                                    <option value="januari">Januari</option>
+                                                    <option value="februari">Februari</option>
+                                                    <option value="maret">Maret</option>
+                                                    <option value="april">April</option>
+                                                    <option value="mei">Mei</option>
+                                                    <option value="juni">Juni</option>
+                                                    <option value="juli">Juli</option>
+                                                    <option value="agustus">Agustus</option>
+                                                    <option value="september">September</option>
+                                                    <option value="oktober">Oktober</option>
+                                                    <option value="november">November</option>
+                                                    <option value="desember">Desember</option>
+                                                </select>
+                                            </div>   
+                                        </div>
+                                        <div class="col-1">
+                                            <h8>Tahun</h8>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="mb-3">
+                                                <select name="bulan" id="bulan">
+                                                    <option selected>-Pilih Tahun-</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                </select>
+                                            </div> 
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="#" class="btn btn-primary btn-sm btn-icon-split m-2">
+                                                <span class="text">Tampilkan Data</span>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex justify-content-end">
+                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-2">
+                                                    <span class="text">Excel</span>
+                                                </a>
+                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-2">
+                                                    <span class="text">PDF</span>
+                                                </a>
+                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-2">
+                                                    <span class="text">Print</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
@@ -229,10 +273,9 @@
                                             <th>Nama Pegawai</th>
                                             <th>Departemen</th>
                                             <th>Posisi</th>
-                                            <th>Tanggal Pengajuan</th>
-                                            <th>Nominal Pengajuan</th>
-                                            <th>Bukti</th>
-                                            <th>Aksi</th>
+                                            <th>Jumlah Izin</th>
+                                            <th>Gaji Pokok</th>
+                                            <th>Potongan</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -242,10 +285,9 @@
                                             <th>Nama Pegawai</th>
                                             <th>Departemen</th>
                                             <th>Posisi</th>
-                                            <th>Tanggal Pengajuan</th>
-                                            <th>Nominal Pengajuan</th>
-                                            <th>Bukti</th>
-                                            <th>Aksi</th>
+                                            <th>Jumlah Izin</th>
+                                            <th>Gaji Pokok</th>
+                                            <th>Potongan</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -255,155 +297,9 @@
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td>-</td>
-                                            <td>
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
                                             <td>2</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td>-</td>
-                                            <td>
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td>-</td>
-                                            <td>
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td>-</td>
-                                            <td>
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td>-</td>
-                                            <td>
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td>-</td>
-                                            <td>
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
+                                            <td>Rp.500.000.000</td>
+                                            <td>Rp.250.000</td>
                                         </tr>
                                     </tbody>
                                 </table>
