@@ -54,36 +54,35 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
-                    <i class="fas fa-fw fa-calendar"></i>
-                    <span>Kehadiran</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/eksekutif/project') }}">
-                    <i class="fas fa-fw fa-check"></i>
-                    <span>Project</span></a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
                     <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
                     <span>Data Pegawai</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
+                    <i class="fas fa-fw fa-calendar"></i>
+                    <span>Kehadiran</span></a>
+            </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-file-alt"></i>
-                    <span>Pengajuan Izin</span>
+                    <span>Pengajuan</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanCuti') }}">Cuti</a>
-                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanReimbursement') }}">Reimbursement Claim</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanCuti') }}">Izin</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanReimbursement') }}">Reimbursement</a>
                     </div>
                 </div>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/project') }}">
+                    <i class="fas fa-fw fa-calculator"></i>
+                    <span>Penggajian</span></a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
                     <i class="fas fa-fw fa-folder-open"></i>
@@ -202,7 +201,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Cuti</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Izin</h1>
                     </div>
 
                         <!-- DataTales Example -->
@@ -215,41 +214,28 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
-                                            <th>NIP</th>
-                                            <th>Nama Pegawai</th>
-                                            <th>Departemen</th>
-                                            <th>Posisi</th>
-                                            <th>Tanggal Izin</th>
-                                            <th>Jenis Pengajuan</th>
-                                            <th>Alasan</th>
-                                            <th>Aksi</th>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">NIP</th>
+                                            <th class="text-center">Nama Pegawai</th>
+                                            <th class="text-center">Departemen</th>
+                                            <th class="text-center">Jabatan</th>
+                                            <th class="text-center">Tanggal Izin</th>
+                                            <th class="text-center">Jenis Pengajuan</th>
+                                            <th class="text-center">Alasan</th>
+                                            <th class="text-center">Aksi</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>NIP</th>
-                                            <th>Nama Pegawai</th>
-                                            <th>Departemen</th>
-                                            <th>Posisi</th>
-                                            <th>Tanggal Izin</th>
-                                            <th>Jenis Pengajuan</th>
-                                            <th>Alasan</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
+                                            <td class="text-center">1</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td>Cuti</td>
+                                            <td class="text-center">Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -267,15 +253,15 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
+                                            <td class="text-center">2</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td>Cuti</td>
+                                            <td class="text-center">Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -293,15 +279,15 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
+                                            <td class="text-center">3</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td>Cuti</td>
+                                            <td class="text-center">Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -319,15 +305,15 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>4</td>
+                                            <td class="text-center">4</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td>Cuti</td>
+                                            <td class="text-center">Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -345,15 +331,15 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>5</td>
+                                            <td class="text-center">5</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td>Cuti</td>
+                                            <td class="text-center">Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -371,15 +357,15 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>6</td>
+                                            <td class="text-center">6</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td>Cuti</td>
+                                            <td class="text-center">Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
