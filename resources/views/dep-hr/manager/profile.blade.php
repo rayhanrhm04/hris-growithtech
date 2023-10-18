@@ -63,32 +63,7 @@
                     <span>Kehadiran</span></a>
             </li>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-file-alt"></i>
-                    <span>Pengajuan</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="pengajuanCuti.html">Izin</a>
-                        <a class="collapse-item" href="pengajuanReimbursement.html">Reimbursement</a>
-                    </div>
-                </div>
-            </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="project.html">
-                    <i class="fas fa-fw fa-calculator"></i>
-                    <span>Penggajian</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="reporting.html">
-                    <i class="fas fa-fw fa-folder-open"></i>
-                    <span>Reporting</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
