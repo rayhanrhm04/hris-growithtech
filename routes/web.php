@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,6 +43,7 @@ Route::get('/dashboard-staffdev', function () {
     return view('dep-dev.staff.dashboard-staffdev');
 });
 Route::view('/staffdev/project','dep-dev.staff.project');
+Route::get('/projectstaff', [ProjectController::class,'project'])->name('project');
 Route::view('/staffdev/kehadiran','dep-dev.staff.kehadiran');
 
 Route::get('/datapegawai', function () {
