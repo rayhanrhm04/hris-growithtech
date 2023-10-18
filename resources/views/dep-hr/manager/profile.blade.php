@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard | HRIS Growithtech</title>
+    <title>HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('sbadmin')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('sbadmin')}}/css/sb-admin-2.min.css" rel="stylesheet">
+      
 
 </head>
 
@@ -42,8 +43,8 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/dashboard') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -53,16 +54,40 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="dataPegawai.html">
+                <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
                     <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
                     <span>Data Pegawai</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="kehadiran.html">
+                <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
                     <i class="fas fa-fw fa-calendar"></i>
                     <span>Kehadiran</span></a>
             </li>
 
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-file-alt"></i>
+                    <span>Pengajuan</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanCuti') }}">Izin</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanReimbursement') }}">Reimbursement</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/project') }}">
+                    <i class="fas fa-fw fa-calculator"></i>
+                    <span>Penggajian</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
+                    <i class="fas fa-fw fa-folder-open"></i>
+                    <span>Reporting</span></a>
+            </li>
 
 
             <!-- Divider -->
@@ -87,6 +112,8 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        
+                        </li>
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
@@ -180,40 +207,98 @@
                     <!-- Content Row -->
                     <div class="row">
 
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
+                        <!-- Area Chart -->
+                        <div class="col-xl col-lg">
+                            <div class="card shadow mb-4">
+                                <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Jumlah Pengajuan Izin</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-file-alt fa-2x text-gray-300"></i>
+                                    <div class="row">   
+                                        <div class="col">
+                                            <form>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">NIP</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnip">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Nama Pegawai</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnip">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">TTL</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Department</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Jabatan</label>
+                                                    <div class="col-sm-4" class="col-lg-8">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Alamat</label>
+                                                    <div class="col-sm-4" class="col-lg-8">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">No Telp</label>
+                                                    <div class="col-sm-4" class="col-lg-8">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Email</label>
+                                                    <div class="col-sm-4" class="col-lg-8">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Password</label>
+                                                    <div class="col-sm-4" class="col-lg-8">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3 ">
+                                                    <div class="col-sm-5 text-center">
+                                                        <button type="submit" class="btn btn-primary">Update</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Sisa Izin</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    
 
                 </div>
                 <!-- /.container-fluid -->
@@ -273,11 +358,11 @@
     <script src="{{asset('sbadmin')}}/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="{{asset('sbadmin')}}/vendor/chart.js/Chart.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{asset('sbadmin')}}/js/demo/chart-area-demo.js"></script>
-    <script src="{{asset('sbadmin')}}/js/demo/chart-pie-demo.js"></script>
+    <script src="{{asset('sbadmin')}}/js/demo/datatables-demo.js"></script>
 
 </body>
 
