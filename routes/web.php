@@ -24,11 +24,15 @@ Route::get('/dashboard-eksekutif', function () {
 });
 
 Route::view('/eksekutif/kehadiran','eksekutif.kehadiran');
-Route::view('/eksekutif/project','eksekutif.project');
 Route::view('/eksekutif/dataPegawai','eksekutif.dataPegawai');
+Route::view('/eksekutif/tambahpegawai','eksekutif.tambahpegawai');
+Route::view('/eksekutif/project','eksekutif.project');
+Route::view('/eksekutif/tambahproject','eksekutif.tambahproject');
+Route::view('/eksekutif/tambahpegawaiproject','eksekutif.tambahpegawaiproject');
 Route::view('/eksekutif/pengajuanCuti','eksekutif.pengajuanCuti');
 Route::view('/eksekutif/pengajuanReimbursement','eksekutif.pengajuanReimbursement');
 Route::view('/eksekutif/reporting','eksekutif.reporting');
+Route::view('/eksekutif/profile','eksekutif.profile');
 
 
 

@@ -163,7 +163,7 @@
                     </div>
 
 
-                        <!-- DataTales Example -->
+                    <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Data Project</h6>
@@ -173,22 +173,14 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
-                                            <th>Nama Project</th>
-                                            <th>Tanggal Mulai</th>
-                                            <th>Tanggal Selesai</th>
-                                            <th>Keterangan</th>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">Nama Project</th>
+                                            <th class="text-center">Tanggal Mulai</th>
+                                            <th class="text-center">Tanggal Selesai</th>
+                                            <th class="text-center">Keterangan</th>
+                                            <th class="text-center">Aksi</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nama Project</th>
-                                            <th>Tanggal Mulai</th>
-                                            <th>Tanggal Selesai</th>
-                                            <th>Keterangan</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
@@ -196,6 +188,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -203,6 +205,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -210,6 +222,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
@@ -217,6 +239,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
@@ -224,6 +256,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
@@ -231,6 +273,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
@@ -238,6 +290,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
@@ -245,6 +307,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>10</td>
@@ -252,6 +324,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>11</td>
@@ -259,6 +341,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>12</td>
@@ -266,6 +358,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>13</td>
@@ -273,6 +375,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>14</td>
@@ -280,6 +392,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>15</td>
@@ -287,6 +409,16 @@
                                             <td>2011/04/25</td>
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -294,13 +426,13 @@
                         </div>
                     </div>
 
-                    
-
                 </div>
                 <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
+
+            
 
             <!-- Footer -->
             @include('layouts.footer')

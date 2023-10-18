@@ -137,7 +137,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Cuti</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Izin</h1>
                     </div>
 
                         <!-- DataTales Example -->
@@ -150,30 +150,17 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
-                                            <th>NIP</th>
-                                            <th>Nama Pegawai</th>
-                                            <th>Departemen</th>
-                                            <th>Posisi</th>
-                                            <th>Tanggal Izin</th>
-                                            <th>Jenis Pengajuan</th>
-                                            <th>Alasan</th>
-                                            <th>Aksi</th>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">NIP</th>
+                                            <th class="text-center">Nama Pegawai</th>
+                                            <th class="text-center">Departemen</th>
+                                            <th class="text-center">Jabatan</th>
+                                            <th class="text-center">Tanggal Izin</th>
+                                            <th class="text-center">Jenis Pengajuan</th>
+                                            <th class="text-center">Alasan</th>
+                                            <th class="text-center">Aksi</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>NIP</th>
-                                            <th>Nama Pegawai</th>
-                                            <th>Departemen</th>
-                                            <th>Posisi</th>
-                                            <th>Tanggal Izin</th>
-                                            <th>Jenis Pengajuan</th>
-                                            <th>Alasan</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
@@ -184,7 +171,7 @@
                                             <td>2023/12/28</td>
                                             <td>Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -210,7 +197,7 @@
                                             <td>2023/12/28</td>
                                             <td>Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -236,7 +223,7 @@
                                             <td>2023/12/28</td>
                                             <td>Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -262,7 +249,7 @@
                                             <td>2023/12/28</td>
                                             <td>Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -288,7 +275,7 @@
                                             <td>2023/12/28</td>
                                             <td>Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
@@ -314,7 +301,7 @@
                                             <td>2023/12/28</td>
                                             <td>Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
