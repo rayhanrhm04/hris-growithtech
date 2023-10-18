@@ -92,3 +92,24 @@ Route::get('/profile-managerhr', function () {
 Route::get('/dashboard-staffhr', function () {
     return view('dep-hr.staff.dashboard-staffhr');
 });
+Route::get('/datapegawai-staffhr', function () {
+    return view('dep-hr.staff.datapegawai');
+});
+Route::get('/kehadiran-staffhr', function () {
+    return view('dep-hr.staff.kehadiran');
+});
+Route::get('/tambahpegawai-staffhr', function () {
+    return view('dep-hr.staff.tambahpegawai');
+});
+Route::get('/pengajuanizin-staffhr', function () {
+    return view('dep-hr.staff.pengajuanizin');
+});
+Route::get('/pengajuanreimbursement-staffhr', function () {
+    return view('dep-hr.staff.pengajuanreimbursement');
+});
+Route::get('/penggajian-staffhr', function () {
+    return view('dep-hr.staff.penggajian');
+});
+Route::get('/profile-staffhr', function () {
+    return view('dep-hr.staff.profile');
+});

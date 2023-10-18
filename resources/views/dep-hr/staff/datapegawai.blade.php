@@ -54,19 +54,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
-                    <i class="fas fa-fw fa-calendar"></i>
-                    <span>Kehadiran</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/eksekutif/project') }}">
-                    <i class="fas fa-fw fa-check"></i>
-                    <span>Project</span></a>
-            </li>
-            <li class="nav-item active">
                 <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
                     <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
                     <span>Data Pegawai</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
+                    <i class="fas fa-fw fa-calendar"></i>
+                    <span>Kehadiran</span></a>
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -74,20 +69,19 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-file-alt"></i>
-                    <span>Pengajuan Izin</span>
+                    <span>Pengajuan</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanCuti') }}">Cuti</a>
-                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanReimbursement') }}">Reimbursement Claim</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanCuti') }}">Izin</a>
+                        <a class="collapse-item" href="{{ url('/eksekutif/pengajuanReimbursement') }}">Reimbursement</a>
                     </div>
                 </div>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
-                    <i class="fas fa-fw fa-folder-open"></i>
-                    <span>Reporting</span></a>
+                <a class="nav-link" href="{{ url('/eksekutif/project') }}">
+                    <i class="fas fa-fw fa-calculator"></i>
+                    <span>Penggajian</span></a>
             </li>
 
 
@@ -212,37 +206,34 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
+                                <div class="justify-content-start">
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">Excel</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">PDF</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">Print</span>
+                                    </a>
+                                </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>NIP</th>
-                                            <th>Nama Lengkap</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>TTL</th>
-                                            <th>Departemen</th>
-                                            <th>Posisi</th>
-                                            <th>Agama</th>
-                                            <th>Alamat</th>
-                                            <th>No Telp</th>
-                                            <th>Email</th>
-                                            <th>Password</th>
+                                            <th class="text-center">NIP</th>
+                                            <th class="text-center">Nama Lengkap</th>
+                                            <th class="text-center">Jenis Kelamin</th>
+                                            <th class="text-center">TTL</th>
+                                            <th class="text-center">Departemen</th>
+                                            <th class="text-center">Posisi</th>
+                                            <th class="text-center">Agama</th>
+                                            <th class="text-center">Alamat</th>
+                                            <th class="text-center">No Telp</th>
+                                            <th class="text-center">Email</th>
+                                            <th class="text-center">Password</th>
+                                            <th class="text-center">Aksi</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>NIP</th>
-                                            <th>Nama Lengkap</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>TTL</th>
-                                            <th>Departemen</th>
-                                            <th>Posisi</th>
-                                            <th>Agama</th>
-                                            <th>Alamat</th>
-                                            <th>No Telp</th>
-                                            <th>Email</th>
-                                            <th>Password</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
@@ -256,6 +247,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -269,6 +270,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -282,6 +293,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
@@ -295,6 +316,16 @@
                                             <td>-</td>
                                             <td>fasya..mutiara@gmail.com</td>
                                             <td>fhasyaimhoetz123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
@@ -308,6 +339,16 @@
                                             <td>-</td>
                                             <td>rayhan.miraj@gmail.com</td>
                                             <td>rayhanganthengbgtz123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
@@ -321,6 +362,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
@@ -334,6 +385,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
@@ -347,6 +408,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>10</td>
@@ -360,6 +431,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>11</td>
@@ -373,6 +454,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>12</td>
@@ -386,6 +477,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>13</td>
@@ -399,6 +500,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>14</td>
@@ -412,6 +523,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>15</td>
@@ -425,6 +546,16 @@
                                             <td>08958992905</td>
                                             <td>attabrani.dava@gmail.com</td>
                                             <td>davaganteng123</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="text">Hapus</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
