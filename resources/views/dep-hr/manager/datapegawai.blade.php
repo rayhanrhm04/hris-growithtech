@@ -212,6 +212,17 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
+                                <div class="justify-content-start">
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">Excel</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">PDF</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">Print</span>
+                                    </a>
+                                </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>

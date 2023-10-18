@@ -48,6 +48,9 @@ Route::get('/datapegawai', function () {
     return view('dep-hr.staff.datapegawai');
 });
 
+
+
+
 //Manager HR
 Route::get('/dashboard-managerhr', function () {
     return view('dep-hr.manager.dashboard-managerhr');
@@ -66,6 +69,12 @@ Route::get('/tabelpengajuanizin-managerhr', function () {
 });
 Route::get('/pengajuanizin-managerhr', function () {
     return view('dep-hr.manager.pengajuanizin');
+});
+Route::get('/tabelpengajuanreimbursement-managerhr', function () {
+    return view('dep-hr.manager.tabelpengajuanreimbursement');
+});
+Route::get('/pengajuanreimbursement-managerhr', function () {
+    return view('dep-hr.manager.pengajuanreimbursement');
 });
 
 //Staff HR
