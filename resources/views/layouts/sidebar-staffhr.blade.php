@@ -1,3 +1,4 @@
+<!-- Sidebar -->
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
@@ -23,19 +24,14 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
-            <i class="fas fa-fw fa-user"></i>
-            <span>Kehadiran / Attendance</span></a>
-    </li>
-    <li class="nav-item">
         <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
             <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
             <span>Data Pegawai</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/eksekutif/project') }}">
-            <i class="fas fa-fw fa-list"></i>
-            <span>Project</span></a>
+        <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
+            <i class="fas fa-fw fa-calendar"></i>
+            <span>Kehadiran</span></a>
     </li>
 
     <!-- Nav Item - Pages Collapse Menu -->
@@ -52,13 +48,8 @@
             </div>
         </div>
     </li>
-
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
-            <i class="fas fa-fw fa-folder-open"></i>
-            <span>Reporting</span></a>
+        <a class="nav-link" href="{{ url('/eksekutif/project') }}">
+            <i class="fas fa-fw fa-calculator"></i>
+            <span>Penggajian</span></a>
     </li>
-
-    <hr class="sidebar-divider">
-
-</ul>
