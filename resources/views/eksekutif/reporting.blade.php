@@ -84,7 +84,7 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
                     <i class="fas fa-fw fa-folder-open"></i>
                     <span>Reporting</span></a>
@@ -246,50 +246,37 @@
                                             </div> 
                                         </div>
                                         <div class="col-2">
-                                            <a href="#" class="btn btn-primary btn-sm btn-icon-split m-2">
+                                            <a href="#" class="btn btn-primary btn-sm btn-icon-split m-6">
                                                 <span class="text">Tampilkan Data</span>
                                             </a>
                                         </div>
-                                        <div class="col">
-                                            <div class="d-flex justify-content-end">
-                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-2">
-                                                    <span class="text">Excel</span>
-                                                </a>
-                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-2">
-                                                    <span class="text">PDF</span>
-                                                </a>
-                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-2">
-                                                    <span class="text">Print</span>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
+                                </div>
+                                <div class="justify-content-start">
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">Excel</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">PDF</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">Print</span>
+                                    </a>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
-                                            <th>NIP</th>
-                                            <th>Nama Pegawai</th>
-                                            <th>Departemen</th>
-                                            <th>Posisi</th>
-                                            <th>Jumlah Izin</th>
-                                            <th>Gaji Pokok</th>
-                                            <th>Potongan</th>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">NIP</th>
+                                            <th class="text-center">Nama Pegawai</th>
+                                            <th class="text-center">Department</th>
+                                            <th class="text-center">Jabatan</th>
+                                            <th class="text-center">Gaji Pokok</th>
+                                            <th class="text-center">Tambahan</th>
+                                            <th class="text-center">Potongan</th>
+                                            <th class="text-center">Total Gaji</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>NIP</th>
-                                            <th>Nama Pegawai</th>
-                                            <th>Departemen</th>
-                                            <th>Posisi</th>
-                                            <th>Jumlah Izin</th>
-                                            <th>Gaji Pokok</th>
-                                            <th>Potongan</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
@@ -297,9 +284,65 @@
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp300.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
                                             <td>2</td>
-                                            <td>Rp.500.000.000</td>
-                                            <td>Rp.250.000</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp300.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp300.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp300.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp300.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp300.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
                                         </tr>
                                     </tbody>
                                 </table>

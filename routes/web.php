@@ -76,6 +76,15 @@ Route::get('/tabelpengajuanreimbursement-managerhr', function () {
 Route::get('/pengajuanreimbursement-managerhr', function () {
     return view('dep-hr.manager.pengajuanreimbursement');
 });
+Route::get('/penggajian-managerhr', function () {
+    return view('dep-hr.manager.penggajian');
+});
+Route::get('/reporting-managerhr', function () {
+    return view('dep-hr.manager.reporting');
+});
+Route::get('/profile-managerhr', function () {
+    return view('dep-hr.manager.profile');
+});
 
 //Staff HR
 Route::get('/dashboard-staffhr', function () {
