@@ -53,6 +53,16 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url('/eksekutif/dashboard') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
                     <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
@@ -196,51 +206,165 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Kehadiran</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Penggajian</h1>
                     </div>
 
-                    <!-- Content Row -->
-
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl col-lg">
-                            <div class="card shadow mb-4">
-                                <!-- Card Body -->
-                                <div class="card-body">
+                        <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <div class="container">
                                     <div class="row">
-                                        <div class="col">
-                                            <span class="text">NIP</span>
-                                            <h1 class="h5 mb-2 text-gray-800">E001</h1>
-                                            <span class="text">Nama Pegawai</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
-                                            <span class="text">Jabatan</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Eksekutif</h1>
-                                            <span class="text">Waktu Check In</span>
-                                            <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
-                                            <span class="text">Lokasi Check In</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                            <span class="text">Waktu Check Out</span>
-                                            <h1 class="h5 mb-2 text-gray-800">17.00 WIB</h1>
-                                            <span class="text">Lokasi Check Out</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
+                                        <div class="col-1">
+                                            <h8>Bulan</h8>
                                         </div>
-                                        <div class=" justify-content-end">
-                                            <a href="#" class="btn btn-success btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-check"></i>
-                                                </span>
-                                                <span class="text">Check In</span>
-                                            </a>
-                                            <a href="#" class="btn btn-danger btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <span class="text">Check Out</span>
+                                        <div class="col-2">
+                                            <div class="mb-3">
+                                                <select name="bulan" id="bulan">
+                                                    <option selected>-Pilih Bulan-</option>
+                                                    <option value="januari">Januari</option>
+                                                    <option value="februari">Februari</option>
+                                                    <option value="maret">Maret</option>
+                                                    <option value="april">April</option>
+                                                    <option value="mei">Mei</option>
+                                                    <option value="juni">Juni</option>
+                                                    <option value="juli">Juli</option>
+                                                    <option value="agustus">Agustus</option>
+                                                    <option value="september">September</option>
+                                                    <option value="oktober">Oktober</option>
+                                                    <option value="november">November</option>
+                                                    <option value="desember">Desember</option>
+                                                </select>
+                                            </div>   
+                                        </div>
+                                        <div class="col-1">
+                                            <h8>Tahun</h8>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="mb-3">
+                                                <select name="bulan" id="bulan">
+                                                    <option selected>-Pilih Tahun-</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                </select>
+                                            </div> 
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="#" class="btn btn-primary btn-sm btn-icon-split m-6">
+                                                <span class="text">Tampilkan Data</span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="justify-content-start">
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">Excel</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">PDF</span>
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text">Print</span>
+                                    </a>
+                                </div>
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">NIP</th>
+                                            <th class="text-center">Nama Pegawai</th>
+                                            <th class="text-center">Department</th>
+                                            <th class="text-center">Jabatan</th>
+                                            <th class="text-center">Tunjangan Makan</th>
+                                            <th class="text-center">Bonus Proyek</th>
+                                            <th class="text-center">Reimbursement</th>
+                                            <th class="text-center">Gaji Pokok</th>
+                                            <th class="text-center">Potongan</th>
+                                            <th class="text-center">Total Gaji</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp100.000</td>
+                                            <td>Rp3.000.000</td>
+                                            <td>Rp0</td>
+                                            <td>Rp3.300.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -254,7 +378,13 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            @include('layouts.footer')
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
             <!-- End of Footer -->
 
         </div>
@@ -299,11 +429,11 @@
     <script src="{{asset('sbadmin')}}/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="{{asset('sbadmin')}}/vendor/chart.js/Chart.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{asset('sbadmin')}}/js/demo/chart-area-demo.js"></script>
-    <script src="{{asset('sbadmin')}}/js/demo/chart-pie-demo.js"></script>
+    <script src="{{asset('sbadmin')}}/js/demo/datatables-demo.js"></script>
 
 </body>
 

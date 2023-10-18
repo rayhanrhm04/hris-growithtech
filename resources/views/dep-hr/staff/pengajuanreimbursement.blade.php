@@ -53,6 +53,16 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url('/eksekutif/dashboard') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
                     <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
@@ -196,11 +206,10 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Kehadiran</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Reimbursement</h1>
                     </div>
 
                     <!-- Content Row -->
-
                     <div class="row">
 
                         <!-- Area Chart -->
@@ -208,39 +217,156 @@
                             <div class="card shadow mb-4">
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="row">
+                                    <div class="row">   
                                         <div class="col">
-                                            <span class="text">NIP</span>
-                                            <h1 class="h5 mb-2 text-gray-800">E001</h1>
-                                            <span class="text">Nama Pegawai</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
-                                            <span class="text">Jabatan</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Eksekutif</h1>
-                                            <span class="text">Waktu Check In</span>
-                                            <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
-                                            <span class="text">Lokasi Check In</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                            <span class="text">Waktu Check Out</span>
-                                            <h1 class="h5 mb-2 text-gray-800">17.00 WIB</h1>
-                                            <span class="text">Lokasi Check Out</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                        </div>
-                                        <div class=" justify-content-end">
-                                            <a href="#" class="btn btn-success btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-check"></i>
-                                                </span>
-                                                <span class="text">Check In</span>
-                                            </a>
-                                            <a href="#" class="btn btn-danger btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <span class="text">Check Out</span>
-                                            </a>
+                                            <form>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Nama</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnip">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Jabatan</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Tanggal Pengajuan</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Nominal</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Upload Bukti</label>
+                                                    <div class="col-sm-4" class="col-lg-8">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3 ">
+                                                    <div class="col-sm-5 text-center">
+                                                        <button type="submit" class="btn btn-primary">Ajukan</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Data Pengajuan</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">Tanggal Pengajuan</th>
+                                            <th class="text-center">Nominal</th>
+                                            <th class="text-center">Bukti</th>
+                                            <th class="text-center">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>7 Agustus 2023</td>
+                                            <td>Rp500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">Diterima</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>7 Agustus 2023</td>
+                                            <td>Rp500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">Diterima</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>7 Agustus 2023</td>
+                                            <td>Rp500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">Diterima</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>7 Agustus 2023</td>
+                                            <td>Rp500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">Diterima</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>7 Agustus 2023</td>
+                                            <td>Rp500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">Diterima</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>7 Agustus 2023</td>
+                                            <td>Rp500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">Diterima</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -254,7 +380,13 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            @include('layouts.footer')
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
             <!-- End of Footer -->
 
         </div>
@@ -299,11 +431,11 @@
     <script src="{{asset('sbadmin')}}/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="{{asset('sbadmin')}}/vendor/chart.js/Chart.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{asset('sbadmin')}}/js/demo/chart-area-demo.js"></script>
-    <script src="{{asset('sbadmin')}}/js/demo/chart-pie-demo.js"></script>
+    <script src="{{asset('sbadmin')}}/js/demo/datatables-demo.js"></script>
 
 </body>
 
