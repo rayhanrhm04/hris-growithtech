@@ -212,7 +212,10 @@
                             <div class="card shadow mb-4">
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="row">   
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class="rounded-circle shadow-4-strong" alt="avatar1" src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp" />
+                                        </div>
                                         <div class="col">
                                             <form>
                                                 <div class="mb-3 row">
@@ -286,7 +289,7 @@
                                                 </div>
 
                                                 <div class="row mb-3 ">
-                                                    <div class="col-sm-5 text-center">
+                                                    <div class="col-sm-11 text-center">
                                                         <button type="submit" class="btn btn-primary">Update</button>
                                                     </div>
                                                 </div>
