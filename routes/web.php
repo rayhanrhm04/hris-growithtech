@@ -70,28 +70,32 @@ Route::get('/profile-managerdev', function () {
 
 
 //Staff Development
-Route::get('/dashboard-staffdev', function () {
-    return view('dep-dev.staff.dashboard-staffdev');
+Route::get('/kehadiran-staffdev', function () {
+    return view('dep-dev.staff.kehadiran');
 });
+Route::get('/project-staffdev', function () {
+    return view('dep-dev.staff.project');
+});
+Route::get('/pengajuanizin-staffdev', function () {
+    return view('dep-dev.staff.pengajuanizin');
+});
+Route::get('/pengajuanreimbursement-staffdev', function () {
+    return view('dep-dev.staff.pengajuanreimbursement');
+});
+
+
 Route::view('/staffdev/project','dep-dev.staff.project');
 Route::get('/projectstaff', [ProjectController::class,'project'])->name('project');
-Route::view('/staffdev/kehadiran','dep-dev.staff.kehadiran');
-
-Route::get('/datapegawai', function () {
-    return view('dep-hr.staff.datapegawai');
-});
-
-
 
 
 //Manager HR
 Route::get('/dashboard-managerhr', function () {
     return view('dep-hr.manager.dashboard-managerhr');
 });
-Route::get('/datapegawai', function () {
+Route::get('/datapegawai-managerhr', function () {
     return view('dep-hr.manager.datapegawai');
 });
-Route::get('/tambahpegawai', function () {
+Route::get('/tambahpegawai-managerhr', function () {
     return view('dep-hr.manager.tambahpegawai');
 });
 Route::get('/kehadiran-managerhr', function () {

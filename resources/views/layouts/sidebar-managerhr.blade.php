@@ -14,7 +14,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/eksekutif/dashboard') }}">
+        <a class="nav-link" href="{{ url('/dashboard-managerhr') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -24,12 +24,12 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/eksekutif/dataPegawai') }}">
+        <a class="nav-link" href="{{ url('/datapegawai-managerhr') }}">
             <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
             <span>Data Pegawai</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
+        <a class="nav-link" href="{{ url('/kehadiran-managerhr') }}">
             <i class="fas fa-fw fa-calendar"></i>
             <span>Kehadiran</span></a>
     </li>
@@ -43,18 +43,18 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="{{ url('/eksekutif/pengajuanCuti') }}">Izin</a>
-                <a class="collapse-item" href="{{ url('/eksekutif/pengajuanReimbursement') }}">Reimbursement</a>
+                <a class="collapse-item" href="{{ url('/tabelpengajuanizin-managerhr') }}">Izin</a>
+                <a class="collapse-item" href="{{ url('/tabelpengajuanreimbursement-managerhr') }}">Reimbursement</a>
             </div>
         </div>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/eksekutif/project') }}">
+        <a class="nav-link" href="{{ url('/penggajian-managerhr') }}">
             <i class="fas fa-fw fa-calculator"></i>
             <span>Penggajian</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/eksekutif/reporting') }}">
+        <a class="nav-link" href="{{ url('/reporting-managerhr') }}">
             <i class="fas fa-fw fa-folder-open"></i>
             <span>Reporting</span></a>
     </li>
