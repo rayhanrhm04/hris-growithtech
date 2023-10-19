@@ -82,6 +82,9 @@ Route::get('/pengajuanizin-staffdev', function () {
 Route::get('/pengajuanreimbursement-staffdev', function () {
     return view('dep-dev.staff.pengajuanreimbursement');
 });
+Route::get('/profile-staffdev', function () {
+    return view('dep-dev.staff.profile');
+});
 
 
 Route::view('/staffdev/project','dep-dev.staff.project');
