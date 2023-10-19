@@ -38,7 +38,34 @@ Route::view('/eksekutif/profile','eksekutif.profile');
 
 //Manager Development
 Route::get('/dashboard-managerdev', function () {
-    return view('dep-dev.dashboard-managerdev');
+    return view('dep-dev.manager.dashboard-managerdev');
+});
+Route::get('/kehadiran-managerdev', function () {
+    return view('dep-dev.manager.kehadiran');
+});
+Route::get('/project-managerdev', function () {
+    return view('dep-dev.manager.project');
+});
+Route::get('/tambahproject-managerdev', function () {
+    return view('dep-dev.manager.tambahproject');
+});
+Route::get('/tambahpegawaiproject-managerdev', function () {
+    return view('dep-dev.manager.tambahpegawaiproject');
+});
+Route::get('/tabelpengajuancuti-managerdev', function () {
+    return view('dep-dev.manager.tabelpengajuancuti');
+});
+Route::get('/pengajuancuti-managerdev', function () {
+    return view('dep-dev.manager.pengajuancuti');
+});
+Route::get('/tabelpengajuanreimbursement-managerdev', function () {
+    return view('dep-dev.manager.tabelpengajuanreimbursement');
+});
+Route::get('/reporting-managerdev', function () {
+    return view('dep-dev.manager.reporting');
+});
+Route::get('/profile-managerdev', function () {
+    return view('dep-dev.manager.profile');
 });
 
 

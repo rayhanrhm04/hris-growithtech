@@ -185,9 +185,12 @@
                                             </div>
                                             <div class="col-2">
                                                 <a href="#" class="btn btn-primary btn-sm btn-icon-split m-6">
+                                                    <span class="icon text-white-50">
+                                                        <i class="fas fa-calendar"></i>
+                                                    </span>
                                                     <span class="text">Tampilkan Data</span>
                                                 </a>
-                                            </div>
+                                            </div>>
                                         </div>
                                     </div>
                                     <div class="justify-content-start">

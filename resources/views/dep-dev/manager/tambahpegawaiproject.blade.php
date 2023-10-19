@@ -140,137 +140,60 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Reporting</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Daftar Pegawai</h1>
                     </div>
 
-                        <!-- DataTales Example -->
-                        <div class="card shadow mb-4">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-1">
-                                                <h8>Bulan</h8>
-                                            </div>
-                                            <div class="col-2">
-                                                <div class="mb-3">
-                                                    <select name="bulan" id="bulan">
-                                                        <option selected>-Pilih Bulan-</option>
-                                                        <option value="januari">Januari</option>
-                                                        <option value="februari">Februari</option>
-                                                        <option value="maret">Maret</option>
-                                                        <option value="april">April</option>
-                                                        <option value="mei">Mei</option>
-                                                        <option value="juni">Juni</option>
-                                                        <option value="juli">Juli</option>
-                                                        <option value="agustus">Agustus</option>
-                                                        <option value="september">September</option>
-                                                        <option value="oktober">Oktober</option>
-                                                        <option value="november">November</option>
-                                                        <option value="desember">Desember</option>
-                                                    </select>
-                                                </div>   
-                                            </div>
-                                            <div class="col-1">
-                                                <h8>Tahun</h8>
-                                            </div>
-                                            <div class="col-2">
-                                                <div class="mb-3">
-                                                    <select name="bulan" id="bulan">
-                                                        <option selected>-Pilih Tahun-</option>
-                                                        <option value="2022">2022</option>
-                                                        <option value="2023">2023</option>
-                                                    </select>
-                                                </div> 
-                                            </div>
-                                            <div class="col-2">
-                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-6">
-                                                    <span class="icon text-white-50">
-                                                        <i class="fas fa-calendar"></i>
-                                                    </span>
-                                                    <span class="text">Tampilkan Data</span>
-                                                </a>
-                                            </div>
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Area Chart -->
+                        <div class="col-xl col-lg">
+                            <div class="card shadow mb-4">
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="row">   
+                                        <div class="col">
+                                            <form>
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Nama Project</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnip">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Nama Pegawai</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Department</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Jabatan</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="inputnama">
+                                                    </div>
+                                                </div>  
+
+                                                <div class="row mb-3 ">
+                                                    <div class="col-sm-5 text-center">
+                                                        <button type="submit" class="btn btn-primary">Tambah</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
-                                    <div class="justify-content-start">
-                                        <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                            <span class="text">Excel</span>
-                                        </a>
-                                        <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                            <span class="text">PDF</span>
-                                        </a>
-                                        <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                            <span class="text">Print</span>
-                                        </a>
-                                    </div>
-                                    <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">No</th>
-                                                <th class="text-center">NIP</th>
-                                                <th class="text-center">Nama Pegawai</th>
-                                                <th class="text-center">Department</th>
-                                                <th class="text-center">Jabatan</th>
-                                                <th class="text-center">Jumlah Project</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>1231</td>
-                                                <td>Dava Attabrani</td>
-                                                <td>Development</td>
-                                                <td>Manajer</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>1231</td>
-                                                <td>Dava Attabrani</td>
-                                                <td>Development</td>
-                                                <td>Manajer</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>1231</td>
-                                                <td>Dava Attabrani</td>
-                                                <td>Development</td>
-                                                <td>Manajer</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>1231</td>
-                                                <td>Dava Attabrani</td>
-                                                <td>Development</td>
-                                                <td>Manajer</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>1231</td>
-                                                <td>Dava Attabrani</td>
-                                                <td>Development</td>
-                                                <td>Manajer</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>1231</td>
-                                                <td>Dava Attabrani</td>
-                                                <td>Development</td>
-                                                <td>Manajer</td>
-                                                <td>3</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
                         </div>
-
-                    
+                    </div>
 
                 </div>
                 <!-- /.container-fluid -->
