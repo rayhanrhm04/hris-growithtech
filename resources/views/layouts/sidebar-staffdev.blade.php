@@ -14,12 +14,12 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/kehadiran-staffdev') }}">
+        <a class="nav-link" href="{{ url('/staff-dev/kehadiran') }}">
             <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
             <span>Kehadiran / Attendance </span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/project-staffdev') }}">
+        <a class="nav-link" href="{{ url('/staff-dev/project') }}">
             <i class="fas fa-fw fa-list"></i>
             <span>Project</span></a>
     </li>
@@ -33,8 +33,8 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="{{ url('/pengajuanizin-staffdev') }}">Izin</a>
-                <a class="collapse-item" href="{{ url('/pengajuanreimbursement-staffdev') }}">Reimbursement</a>
+                <a class="collapse-item" href="{{ url('/staff-dev/pengajuanCuti') }}">Izin</a>
+                <a class="collapse-item" href="{{ url('/staff-dev/pengajuanReimbursement') }}">Reimbursement</a>
             </div>
         </div>
     </li>

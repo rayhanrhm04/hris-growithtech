@@ -32,7 +32,7 @@ Route::view('/eksekutif/reporting','eksekutif.reporting');
 Route::view('/eksekutif/profile','eksekutif.profile');
 Route::view('/eksekutif/tambahPegawai','eksekutif.tambahPegawai');
 Route::view('/eksekutif/tambahProject','eksekutif.tambahProject');
-Route::view('/eksekutif/tambahPegawaiProject','eksekutif.tambahPegawaiProject');
+Route::view('/eksekutif/tambahPegawaiProject','eksekutif.tambahPegawaiProject'); //ini belum ada buttonnya
 
 
 //Manager Development
@@ -50,47 +50,12 @@ Route::view('/manager-dev/reporting','dep-dev.manager.reporting');
 Route::view('/manager-dev/profile','dep-dev.manager.profile');
 
 
-
-
-Route::get('/tambahpegawaiproject-managerdev', function () {
-    return view('dep-dev.manager.tambahpegawaiproject');
-});
-Route::get('/tabelpengajuancuti-managerdev', function () {
-    return view('dep-dev.manager.tabelpengajuancuti');
-});
-Route::get('/pengajuancuti-managerdev', function () {
-    return view('dep-dev.manager.pengajuancuti');
-});
-Route::get('/tabelpengajuanreimbursement-managerdev', function () {
-    return view('dep-dev.manager.tabelpengajuanreimbursement');
-});
-Route::get('/reporting-managerdev', function () {
-    return view('dep-dev.manager.reporting');
-});
-Route::get('/profile-managerdev', function () {
-    return view('dep-dev.manager.profile');
-});
-
-
 //Staff Development
-Route::get('/kehadiran-staffdev', function () {
-    return view('dep-dev.staff.kehadiran');
-});
-Route::get('/project-staffdev', function () {
-    return view('dep-dev.staff.project');
-});
-Route::get('/pengajuanizin-staffdev', function () {
-    return view('dep-dev.staff.pengajuanizin');
-});
-Route::get('/pengajuanreimbursement-staffdev', function () {
-    return view('dep-dev.staff.pengajuanreimbursement');
-});
-Route::get('/profile-staffdev', function () {
-    return view('dep-dev.staff.profile');
-});
-
-
-Route::view('/staffdev/project','dep-dev.staff.project');
+Route::view('/staff-dev/kehadiran','dep-dev.staff.kehadiran');
+Route::view('/staff-dev/project','dep-dev.staff.project');
+Route::view('/staff-dev/pengajuanCuti','dep-dev.staff.pengajuanCuti');
+Route::view('/staff-dev/pengajuanReimbursement','dep-dev.staff.pengajuanReimbursement');
+Route::view('/staff-dev/profile','dep-dev.staff.profile');
 Route::get('/projectstaff', [ProjectController::class,'project'])->name('project');
 
 
