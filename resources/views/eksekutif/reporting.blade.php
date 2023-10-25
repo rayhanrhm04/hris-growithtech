@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HRIS Growithtech</title>
+    <title>Reporting | HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('sbadmin')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -145,7 +145,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <div class="container">
-                                    <div class="row">
+                                    <div class="row ">
                                         <div class="col-1">
                                             <h8>Bulan</h8>
                                         </div>

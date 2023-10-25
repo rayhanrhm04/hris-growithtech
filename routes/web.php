@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes ngoding tes git doang
+| Web Routes    
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -19,36 +19,39 @@ Route::get('/', function () {
 });
 
 //Eksekutif
-Route::get('/dashboard-eksekutif', function () {
+Route::get('/eksekutif/dashboard-eksekutif', function () {
     return view('eksekutif.dashboard-eksekutif');
 });
 
 Route::view('/eksekutif/kehadiran','eksekutif.kehadiran');
 Route::view('/eksekutif/dataPegawai','eksekutif.dataPegawai');
-Route::view('/eksekutif/tambahpegawai','eksekutif.tambahpegawai');
 Route::view('/eksekutif/project','eksekutif.project');
-Route::view('/eksekutif/tambahproject','eksekutif.tambahproject');
-Route::view('/eksekutif/tambahpegawaiproject','eksekutif.tambahpegawaiproject');
 Route::view('/eksekutif/pengajuanCuti','eksekutif.pengajuanCuti');
 Route::view('/eksekutif/pengajuanReimbursement','eksekutif.pengajuanReimbursement');
 Route::view('/eksekutif/reporting','eksekutif.reporting');
 Route::view('/eksekutif/profile','eksekutif.profile');
-
+Route::view('/eksekutif/tambahPegawai','eksekutif.tambahPegawai');
+Route::view('/eksekutif/tambahProject','eksekutif.tambahProject');
+Route::view('/eksekutif/tambahPegawaiProject','eksekutif.tambahPegawaiProject');
 
 
 //Manager Development
-Route::get('/dashboard-managerdev', function () {
-    return view('dep-dev.manager.dashboard-managerdev');
-});
-Route::get('/kehadiran-managerdev', function () {
-    return view('dep-dev.manager.kehadiran');
-});
-Route::get('/project-managerdev', function () {
-    return view('dep-dev.manager.project');
-});
-Route::get('/tambahproject-managerdev', function () {
-    return view('dep-dev.manager.tambahproject');
-});
+Route::view('/manager-dev/dashboard-managerdev','dep-dev.manager.dashboard-managerdev');
+Route::view('/manager-dev/kehadiran','dep-dev.manager.kehadiran');
+Route::view('/manager-dev/project','dep-dev.manager.project');
+Route::view('/manager-dev/tambahProject','dep-dev.manager.tambahProject');
+Route::view('/manager-dev/tambahPegawaiProject','dep-dev.manager.tambahPegawaiProject'); //ini belum ada buttonnya
+Route::view('/manager-dev/permintaanCuti','dep-dev.manager.permintaanCuti');
+Route::view('/manager-dev/pengajuanCuti','dep-dev.manager.pengajuanCuti');
+Route::view('/manager-dev/permintaanReimbursement','dep-dev.manager.permintaanReimbursement');
+Route::view('/manager-dev/pengajuanReimbursement','dep-dev.manager.pengajuanReimbursement');
+Route::view('/manager-dev/tambahpengajuanCuti','dep-dev.manager.tambahpengajuanCuti');
+Route::view('/manager-dev/reporting','dep-dev.manager.reporting');
+Route::view('/manager-dev/profile','dep-dev.manager.profile');
+
+
+
+
 Route::get('/tambahpegawaiproject-managerdev', function () {
     return view('dep-dev.manager.tambahpegawaiproject');
 });

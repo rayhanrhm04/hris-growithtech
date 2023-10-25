@@ -118,7 +118,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{ url('/manager-dev/profile') }}">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profil
                                 </a>
@@ -174,7 +174,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <div class="justify-content-start">
-                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                    <a href="{{ url('/manager-dev/tambahProject') }}" class="btn btn-primary btn-sm btn-icon-split">
                                         <span class="icon text-white-50">
                                             <i class="fas fa-plus"></i>
                                         </span>

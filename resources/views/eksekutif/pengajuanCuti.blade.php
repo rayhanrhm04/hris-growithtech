@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HRIS Growithtech</title>
+    <title>Pengajuan Cuti | HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('sbadmin')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -137,7 +137,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Izin</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Cuti</h1>
                     </div>
 
                         <!-- DataTales Example -->

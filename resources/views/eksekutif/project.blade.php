@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HRIS Growithtech</title>
+    <title>Project | HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('sbadmin')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -170,13 +170,26 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <div class="justify-content-start">
-                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                        <span class="text">Tambah</span>
-                                    </a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="justify-content-start">
+                                        <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                            <span class="text">Excel</span>
+                                        </a>
+                                        <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                            <span class="text">PDF</span>
+                                        </a>
+                                        <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                            <span class="text">Print</span>
+                                        </a>
+                                    </div>
+                                    <div class="justify-content-start">
+                                        <a href="{{ url('/eksekutif/tambahProject') }}" class="btn btn-primary btn-sm btn-icon-split">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                            <span class="text">Tambah</span>
+                                        </a>
+                                    </div>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
