@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\EksekutifController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +15,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [SessionController::class, 'index']);
+Route::post('/', [SessionController::class, 'login']);
+Route::get('/eksekutif' [EksekutifController::class], 'index');
+// Route::get('/', function () {
+//     return view('login');
+// });
 
-Route::get('/', function () {
-    return view('login');
-});
 
 //Eksekutif
 Route::get('/eksekutif/dashboard-eksekutif', function () {
