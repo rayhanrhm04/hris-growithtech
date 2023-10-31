@@ -125,7 +125,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{ url('/manager-hr/profile') }}">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profil
                                 </a>
@@ -147,7 +147,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Pengajuan Reimbursement</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Permintaan Reimbursement</h1>
                     </div>
 
                         <!-- DataTales Example -->
@@ -166,12 +166,6 @@
                                     </a>
                                     <a href="#" class="btn btn-primary btn-sm btn-icon-split">
                                         <span class="text">Print</span>
-                                    </a>
-                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                        <span class="text">Tambah</span>
                                     </a>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
