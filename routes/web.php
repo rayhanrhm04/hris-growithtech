@@ -1,7 +1,12 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\ManagerHrController;
+=======
+use App\Http\Controllers\EksekutifController;
+>>>>>>> 700c60653bf38f806b7e96d41c480104d09c8365
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,10 +19,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [SessionController::class, 'index']);
+Route::post('/', [SessionController::class, 'login']);
+Route::get('/eksekutif', [EksekutifController::class, 'index']);
+// Route::get('/', function () {
+//     return view('login');
+// });
 
-Route::get('/', function () {
-    return view('login');
-});
 
 //Eksekutif
 Route::get('/eksekutif/dashboard-eksekutif', function () {
@@ -61,39 +69,18 @@ Route::get('/projectstaff', [ProjectController::class,'project'])->name('project
 
 
 //Manager HR
-Route::get('/dashboard-managerhr', function () {
-    return view('dep-hr.manager.dashboard-managerhr');
-});
-Route::get('/datapegawai-managerhr', function () {
-    return view('dep-hr.manager.datapegawai');
-});
-Route::get('/tambahpegawai-managerhr', function () {
-    return view('dep-hr.manager.tambahpegawai');
-});
-Route::get('/kehadiran-managerhr', function () {
-    return view('dep-hr.manager.kehadiran');
-});
-Route::get('/tabelpengajuanizin-managerhr', function () {
-    return view('dep-hr.manager.tabelpengajuanizin');
-});
-Route::get('/pengajuanizin-managerhr', function () {
-    return view('dep-hr.manager.pengajuanizin');
-});
-Route::get('/tabelpengajuanreimbursement-managerhr', function () {
-    return view('dep-hr.manager.tabelpengajuanreimbursement');
-});
-Route::get('/pengajuanreimbursement-managerhr', function () {
-    return view('dep-hr.manager.pengajuanreimbursement');
-});
-Route::get('/penggajian-managerhr', function () {
-    return view('dep-hr.manager.penggajian');
-});
-Route::get('/reporting-managerhr', function () {
-    return view('dep-hr.manager.reporting');
-});
-Route::get('/profile-managerhr', function () {
-    return view('dep-hr.manager.profile');
-});
+Route::view('/manager-hr/dashboard-managerhr','dep-hr.manager.dashboard-managerhr');
+Route::view('/manager-hr/dataPegawai','dep-hr.manager.dataPegawai');
+Route::view('/manager-hr/tambahPegawai','dep-hr.manager.tambahPegawai');
+Route::view('/manager-hr/kehadiran','dep-hr.manager.kehadiran');
+Route::view('/manager-hr/permintaanCuti','dep-hr.manager.permintaanCuti');
+Route::view('/manager-hr/pengajuanCuti','dep-hr.manager.pengajuanCuti');
+Route::view('/manager-hr/pengajuanReimbursement','dep-hr.manager.pengajuanReimbursement');
+Route::view('/manager-hr/tambahReimbursement','dep-hr.manager.tambahReimbursement');
+Route::view('/manager-hr/permintaanReimbursement','dep-hr.manager.permintaanReimbursement');
+Route::view('/manager-hr/penggajian','dep-hr.manager.penggajian');
+Route::view('/manager-hr/reporting','dep-hr.manager.reporting');
+Route::view('/manager-hr/profile','dep-hr.manager.profile');
 
 //route pegawai
 Route::resource('pegawai', ManagerHrController::class);

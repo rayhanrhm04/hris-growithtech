@@ -12,7 +12,7 @@
     <div class="container py-5">
         <div class="w-50 center border rounded px-3 py-3 mx-auto">
             <div class="h2 text-center">Login</div>
-            {{-- @if($errors->any())
+            @if($errors->any())
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $item)
@@ -20,7 +20,7 @@
                         @endforeach
                     </ul>
                 </div>
-            @endif --}}
+            @endif
             <form action="" method="POST">
                 @csrf
                 <div class="mb-3">
