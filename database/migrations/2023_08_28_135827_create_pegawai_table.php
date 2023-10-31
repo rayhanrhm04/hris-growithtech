@@ -13,13 +13,24 @@ return new class extends Migration
     {
         Schema::create('pegawai', function (Blueprint $table) {
             $table->id();
+            $table->string('nip');
             $table->string('nama');
-            $table->integer('no hp');
-            $table->string('jenkel');
+            $table->string('jeniskelamin');
+            $table->string('ttl');
+            $table->string('departemen');
+            $table->string('jabatan');
             $table->string('agama');
-            $table->string('status');
+            $table->string('alamat');
+            $table->string('notelp');
             $table->string('email');
             $table->string('password');
+            $table->integer('tunjanganmakan');
+            $table->integer('bonusproyek');
+            $table->integer('reimbursement');
+            $table->integer('gajipokok');
+            $table->integer('potongan');
+            $table->integer('tambahan');
+            $table->integer('totalgaji');
             $table->timestamps();
         });
     }

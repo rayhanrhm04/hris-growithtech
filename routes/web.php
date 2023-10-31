@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ManagerHrController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
@@ -93,6 +94,9 @@ Route::get('/reporting-managerhr', function () {
 Route::get('/profile-managerhr', function () {
     return view('dep-hr.manager.profile');
 });
+
+//route pegawai
+Route::resource('pegawai', ManagerHrController::class);
 
 //Staff HR
 Route::get('/dashboard-staffhr', function () {
