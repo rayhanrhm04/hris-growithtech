@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [SessionController::class, 'index']);
 Route::post('/', [SessionController::class, 'login']);
-Route::get('/eksekutif' [EksekutifController::class], 'index');
+Route::get('/eksekutif', [EksekutifController::class, 'index']);
 // Route::get('/', function () {
 //     return view('login');
 // });
