@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ManagerHrController;
-=======
-use App\Http\Controllers\EksekutifController;
->>>>>>> 700c60653bf38f806b7e96d41c480104d09c8365
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
@@ -19,18 +16,38 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [SessionController::class, 'index']);
-Route::post('/', [SessionController::class, 'login']);
-Route::get('/eksekutif', [EksekutifController::class, 'index']);
+Route::middleware(['guest'])->group(function () {
+    Route::get('/', [SessionController::class, 'index'])->name('login');
+    Route::post('/', [SessionController::class, 'login']);
+});
+Route::get('/home', function(){
+    return redirect('/admin');
+});
+
+Route::middleware(['auth'])->group(function(){
+    Route::get('/admin', [AdminController::class, 'index']);
+    Route::get('/logout', [SessionController::class, 'logout'])->name('logout');
+    Route::get('/admin/managerhr', [AdminController::class, 'managerhr'])->middleware('userAkses:managerhr');
+    Route::get('/admin/staffhr', [AdminController::class, 'staffhr'])->middleware('userAkses:staffhr');
+    Route::get('/admin/managerdev', [AdminController::class, 'managerhr'])->middleware('userAkses:managerdev');
+    Route::get('/admin/staffdev', [AdminController::class, 'staffhr'])->middleware('userAkses:managerdev');
+});
+
+
 // Route::get('/', function () {
 //     return view('login');
 // });
 
 
 //Eksekutif
-Route::get('/eksekutif/dashboard-eksekutif', function () {
-    return view('eksekutif.dashboard-eksekutif');
+// Route::get('/eksekutif/dashboard-eksekutif', function () {
+//     return view('eksekutif.dashboard-eksekutif');
+// });
+Route::get('/eksekutif/dashboard', function () {
+    return view('dashboard');
 });
+
+
 
 Route::view('/eksekutif/kehadiran','eksekutif.kehadiran');
 Route::view('/eksekutif/dataPegawai','eksekutif.dataPegawai');

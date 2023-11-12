@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class EksekutifController extends Controller
 {
     //
-    function index(){
-        return view('eksekutif.dashboard-eksekutif');
-    }
+    // function index(){
+    //     return view('dashboard');
+    // }
 }
