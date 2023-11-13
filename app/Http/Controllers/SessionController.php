@@ -36,6 +36,8 @@ class SessionController extends Controller
                 return redirect('admin/managerdev');
             }elseif(Auth::user()->role == 'staffdev'){
                 return redirect('admin/staffdev');
+            }elseif(Auth::user()->role == 'eksekutif'){
+                return redirect('admin/eksekutif');
             }
         }else{
             return redirect('')->withErrors('Email dan Password yang dimasukan tidak sesuai')->withInput();

@@ -27,6 +27,7 @@ Route::get('/home', function(){
 Route::middleware(['auth'])->group(function(){
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/logout', [SessionController::class, 'logout'])->name('logout');
+    Route::get('/admin/eksekutif', [AdminController::class, 'eksekutif'])->middleware('userAkses:eksekutif');
     Route::get('/admin/managerhr', [AdminController::class, 'managerhr'])->middleware('userAkses:managerhr');
     Route::get('/admin/staffhr', [AdminController::class, 'staffhr'])->middleware('userAkses:staffhr');
     Route::get('/admin/managerdev', [AdminController::class, 'managerhr'])->middleware('userAkses:managerdev');

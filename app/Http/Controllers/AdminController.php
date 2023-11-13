@@ -11,6 +11,9 @@ class AdminController extends Controller
     function index(){
         return view('dashboard');
     }
+    function eksekutif(){
+        return view('dashboard');
+    }
     function managerhr(){
         return view('dashboard');
     }
