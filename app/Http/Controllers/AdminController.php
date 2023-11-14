@@ -12,13 +12,13 @@ class AdminController extends Controller
         return view('dashboard');
     }
     function eksekutif(){
-        return view('dashboard');
+        return view('eksekutif.dashboard-eksekutif');
     }
     function managerhr(){
-        return view('dashboard');
+        return view('dep-hr.manager.dashboard-managerhr');
     }
     function staffhr(){
-        return view('dashboard');
+        return view('dep-hr.staff.dashboard-staffhr');
     }
     function managerdev(){
         return view('dashboard');

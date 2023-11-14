@@ -51,7 +51,8 @@
                     </button>
 
                     <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    @include('layouts.navbar.navbar')
+                    {{-- <ul class="navbar-nav ml-auto">
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
@@ -131,7 +132,7 @@
 
                     </ul>
 
-                </nav>
+                </nav> --}}
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -319,7 +320,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
+    {{-- <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -337,7 +338,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('sbadmin')}}/vendor/jquery/jquery.min.js"></script>
