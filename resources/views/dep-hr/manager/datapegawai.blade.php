@@ -185,21 +185,21 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($pegawai as $peg)
+                                        @foreach($pegawai as $pegawai)
                                         <tr>
                                             <th scope="row">{{ loop->iteration }} </th>
                                             <td>1</td>
-                                            <td>{{$peg->nim }}</td>
-                                            <td>{{$peg->nama }}</td>
-                                            <td>{{$peg->jeniskelamin }}</td>
-                                            <td>{{$peg->ttl }}</td>
-                                            <td>{{$peg->departemen }}</td>
-                                            <td>{{$peg->posisi }}  </td>
-                                            <td>{{$peg->agama }}</td>
-                                            <td>{{$peg->alamat }}</td>
-                                            <td>{{$peg->notelp }}</td>
-                                            <td>{{$peg->email }}</td>
-                                            <td>{{$peg->password }}</td>
+                                            <td>{{$pegawai->nip }}</td>
+                                            <td>{{$pegawai->nama }}</td>
+                                            <td>{{$pegawai->jeniskelamin }}</td>
+                                            <td>{{$pegawai->ttl }}</td>
+                                            <td>{{$pegawai->departemen }}</td>
+                                            <td>{{$pegawai->jabatan }}  </td>
+                                            <td>{{$pegawai->agama }}</td>
+                                            <td>{{$pegawai->alamat }}</td>
+                                            <td>{{$pegawai->notelp }}</td>
+                                            <td>{{$pegawai->email }}</td>
+                                            <td>{{$pegawai->password }}</td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">

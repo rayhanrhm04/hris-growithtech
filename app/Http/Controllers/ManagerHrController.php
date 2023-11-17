@@ -10,8 +10,9 @@ use Database\Seeders\PegawaiSeeder;
 
 class ManagerHrController extends Controller
 {
-    public function index(){
-        return view('dep-hr.manager.datapegawai');
+    public function tampildata(){
+        $pegawai = PegawaiSeeder::all();
+        return view('dep-hr.manager.dataPegawai', compact('pegawai'));
     }
 
     public function create(){

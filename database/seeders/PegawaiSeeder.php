@@ -77,8 +77,8 @@ class PegawaiSeeder extends Seeder
             ],
         ];
         
-        foreach($pegawai as $key => $peg){
-            User::create($peg);
+        foreach($pegawai as $key => $pegawai){
+            User::create($pegawai);
         }
     }
 }

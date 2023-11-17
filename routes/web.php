@@ -1,13 +1,12 @@
 <?php
 
-<<<<<<< HEAD
+
 use App\Http\Controllers\ManagerHrController;
-=======
 use App\Http\Controllers\EksekutifController;
->>>>>>> 700c60653bf38f806b7e96d41c480104d09c8365
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,7 +69,9 @@ Route::get('/projectstaff', [ProjectController::class,'project'])->name('project
 
 //Manager HR
 Route::view('/manager-hr/dashboard-managerhr','dep-hr.manager.dashboard-managerhr');
-Route::view('/manager-hr/dataPegawai','dep-hr.manager.dataPegawai');
+//Route::view('/manager-hr/dataPegawai','dep-hr.manager.dataPegawai');
+Route::get('/manager-hr/dataPegawai', [ManagerHrController::class, 'tampildata']);
+
 Route::view('/manager-hr/tambahPegawai','dep-hr.manager.tambahPegawai');
 Route::view('/manager-hr/kehadiran','dep-hr.manager.kehadiran');
 Route::view('/manager-hr/permintaanCuti','dep-hr.manager.permintaanCuti');
