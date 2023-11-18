@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard | HRIS Growithtech</title>
+    <title>Tambah Department | HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('sbadmin') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -57,7 +57,7 @@
 
                         <!-- Page Heading -->
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0 text-gray-800">Tambah Pegawai</h1>
+                            <h1 class="h3 mb-0 text-gray-800">Tambah Department</h1>
                         </div>
 
                         <!-- Content Row -->
@@ -70,97 +70,40 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col">
-                                                <form>
+                                                <form action="{{ route('department.store') }}" method="POST">
+                                                    @csrf
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">NIP</label>
+                                                        <label class="col-sm-2 col-form-label">Kode</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnip">
+                                                            <input class="form-control" id="code" name="code">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Nama Pegawai</label>
+                                                        <label class="col-sm-2 col-form-label">Nama Department</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="name" name="name">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                                                        <label class="col-sm-2 col-form-label">Induk Department</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">TTL</label>
-                                                        <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Departemen</label>
-                                                        <div class="col-sm-4">
-                                                            <select name="department_id" id=""
+                                                            <select name="parent_code" id=""
                                                                 class="form-control">
-                                                                <option value="1">Human Resource Recruitment
-                                                                </option>
-                                                                <option value="1">Software Developmnt Department
-                                                                </option>
-                                                                <option value="1">Hardware Developmnt Department
-                                                                </option>
+                                                                <option value="">-</option>
+                                                                @foreach ($departments as $department)
+                                                                    <option value="{{ $department->code }}">
+                                                                        {{ $department->name }}</option>
+                                                                @endforeach
                                                             </select>
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Jabatan</label>
-                                                        <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Agama</label>
-                                                        <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Alamat</label>
-                                                        <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">No Telp</label>
-                                                        <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Email</label>
-                                                        <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Password</label>
-                                                        <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
                                                         </div>
                                                     </div>
 
                                                     <div class="row mb-3 ">
                                                         <div class="col-sm-5 text-center">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Tambah</button>
+                                                                class="btn btn-primary">Simpan</button>
                                                         </div>
                                                     </div>
                                                 </form>

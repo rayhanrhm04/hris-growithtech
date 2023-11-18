@@ -104,21 +104,26 @@
                                                         <div class="col-sm-4">
                                                             <select name="department_id" id=""
                                                                 class="form-control">
-                                                                <option value="1">Human Resource Recruitment
-                                                                </option>
-                                                                <option value="1">Software Developmnt Department
-                                                                </option>
-                                                                <option value="1">Hardware Developmnt Department
-                                                                </option>
+                                                                @foreach ($departments as $dept)
+                                                                    <option value="{{ $dept->id }}">
+                                                                        {{ $dept->name }}
+                                                                    </option>
+                                                                @endforeach
                                                             </select>
-                                                            <input class="form-control" id="inputnama">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Jabatan</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <select name="department_id" id=""
+                                                                class="form-control">
+                                                                @foreach ($positions as $pos)
+                                                                    <option value="{{ $pos->id }}">
+                                                                        {{ $pos->name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            </select>
                                                         </div>
                                                     </div>
 

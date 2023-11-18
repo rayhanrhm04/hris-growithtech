@@ -1,17 +1,17 @@
 <?php
 
-<<<<<<< HEAD
+use App\Http\Controllers\DashboardController;
 
-use App\Http\Controllers\ManagerHrController;
-use App\Http\Controllers\EksekutifController;
-=======
+use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ManagerHrController;
->>>>>>> f85a0f625d98e9d4a2b2d38a0e1c9f2fe0dd9b7a
+use App\Http\Controllers\EksekutifController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ItemController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,9 @@ use App\Http\Controllers\ItemController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::post('/authenticate', [LoginController::class,'authenticate'])->name('authenticate');
+
 Route::middleware(['guest'])->group(function () {
     Route::get('/', [SessionController::class, 'index'])->name('login');
     Route::post('/', [SessionController::class, 'login']);
@@ -39,6 +42,11 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/admin/staffhr', [AdminController::class, 'staffhr'])->middleware('userAkses:staffhr');
     Route::get('/admin/managerdev', [AdminController::class, 'managerhr'])->middleware('userAkses:managerdev');
     Route::get('/admin/staffdev', [AdminController::class, 'staffhr'])->middleware('userAkses:managerdev');
+
+    Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard.dashboard');
+    Route::resource('department', DepartmentController::class);
+    Route::get('/employee', [EmployeeController::class, 'index'])->name('employee.index');
+    Route::get('/employee/create', [EmployeeController::class, 'create'])->name('employee.create');
 });
 
 
@@ -110,7 +118,7 @@ Route::view('/manager-hr/reporting','dep-hr.manager.reporting');
 Route::view('/manager-hr/profile','dep-hr.manager.profile');
 
 //route pegawai
-Route::resource('pegawai', ManagerHrController::class);
+// Route::resource('pegawai', ManagerHrController::class);
 
 //Staff HR
 Route::get('/dashboard-staffhr', function () {
@@ -137,3 +145,6 @@ Route::get('/penggajian-staffhr', function () {
 Route::get('/profile-staffhr', function () {
     return view('dep-hr.staff.profile');
 });
+
+
+Route::get('/tes', [DashboardController::class, 'tes']);
