@@ -1,13 +1,8 @@
 <?php
 
-<<<<<<< HEAD
-
 use App\Http\Controllers\ManagerHrController;
 use App\Http\Controllers\EksekutifController;
-=======
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\ManagerHrController;
->>>>>>> f85a0f625d98e9d4a2b2d38a0e1c9f2fe0dd9b7a
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
