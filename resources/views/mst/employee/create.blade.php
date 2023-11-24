@@ -57,7 +57,7 @@
 
                         <!-- Page Heading -->
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0 text-gray-800">Tambah Pegawai</h1>
+                            <h1 class="h3 mb-0 text-gray-800">New Employee Data</h1>
                         </div>
 
                         <!-- Content Row -->
@@ -70,37 +70,45 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col">
-                                                <form>
+                                                <form action="{{ route('employee.store') }}" method="POST">
+                                                    @csrf
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">NIP</label>
+                                                        <label class="col-sm-2 col-form-label">Employee ID</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="inputnip">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Nama Pegawai</label>
+                                                        <label class="col-sm-2 col-form-label">Name</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="inputnama">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                                                        <label class="col-sm-2 col-form-label">Gender</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="inputnama">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">TTL</label>
+                                                        <label class="col-sm-2 col-form-label">Date Of Birth</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="inputnama">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Departemen</label>
+                                                        <label class="col-sm-2 col-form-label">Place Of Birth</label>
+                                                        <div class="col-sm-4">
+                                                            <input class="form-control" id="inputnama">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3 row">
+                                                        <label class="col-sm-2 col-form-label">Department</label>
                                                         <div class="col-sm-4">
                                                             <select name="department_id" id=""
                                                                 class="form-control">
@@ -114,9 +122,9 @@
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Jabatan</label>
+                                                        <label class="col-sm-2 col-form-label">Position</label>
                                                         <div class="col-sm-4">
-                                                            <select name="department_id" id=""
+                                                            <select name="position_id" id=""
                                                                 class="form-control">
                                                                 @foreach ($positions as $pos)
                                                                     <option value="{{ $pos->id }}">
@@ -128,21 +136,28 @@
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Agama</label>
+                                                        <label class="col-sm-2 col-form-label">Religion</label>
+                                                        <div class="col-sm-4">
+                                                            <select name="religion_id" id=""
+                                                            class="form-control">
+                                                            @foreach ($religions as $reg)
+                                                                <option value="{{ $reg->id }}">
+                                                                    {{ $reg->name }}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3 row">
+                                                        <label class="col-sm-2 col-form-label">Adress</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="inputnama">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Alamat</label>
-                                                        <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">No Telp</label>
+                                                        <label class="col-sm-2 col-form-label">Phone</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="inputnama">
                                                         </div>
@@ -165,7 +180,7 @@
                                                     <div class="row mb-3 ">
                                                         <div class="col-sm-5 text-center">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Tambah</button>
+                                                                class="btn btn-primary">Save</button>
                                                         </div>
                                                     </div>
                                                 </form>

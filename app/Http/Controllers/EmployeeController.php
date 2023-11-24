@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Department;
 use App\Models\Employee;
 use App\Models\Position;
+use App\Models\Religion;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -28,6 +29,7 @@ class EmployeeController extends Controller
         $data['employees'] = Employee::all();
         $data['departments'] = Department::all();
         $data['positions'] = Position::all();
+        $data['religions'] = Religion::all();
 
         return view('mst.employee.create', $data);
     }
@@ -41,6 +43,7 @@ class EmployeeController extends Controller
         $model->name = $request->name;
         $model->department_id = $request->department_id;
         $model->position_id = $request->position_id;
+        $model->religion_id = $request->religion_id;
         $model->password = Hash::make($request->password);
         $model->save();
 
@@ -48,6 +51,8 @@ class EmployeeController extends Controller
         $model2->name = $request->name;
         $model2->password = Hash::make($request->password);
         $model2->save();
+
+        return view('mst.employee.index', $data);
     }
 
     /**
