@@ -28,7 +28,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-       @include('layouts.sidebar-eksekutif')
+       @include('layouts.sidebar')
 
             <!-- Divider -->
             <hr class="sidebar-divider">
