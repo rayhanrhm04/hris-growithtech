@@ -25,7 +25,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/manager-hr/dataPegawai') }}">
+            <a class="nav-link" href="{{ url('/employee') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
                 <span>Data Pegawai</span></a>
         </li>
@@ -164,7 +164,7 @@
 
 
     <!--Staff Development-->
-    @if (Auth::user()->role == 3)
+    @if (Auth::user()->role == 4)
             <!-- Divider -->
         <hr class="sidebar-divider my-0">
 

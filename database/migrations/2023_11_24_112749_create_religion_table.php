@@ -11,17 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('project', function (Blueprint $table) {
+        Schema::create('religion', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->date('start_date');
-            $table->date('end_date');
-            $table->text('description');
-            $table->timestamps('create_at');
+            $table->string('religion');
+            $table->date('create_at');
             $table->integer('create_by');
-            $table->timestamps('update_at');
+            $table->date('update_at');
             $table->integer('update_by');
-            $table->timestamps('deleted_at');
+            $table->date('deleted_at');
             $table->integer('deleted_by');
         });
     }
@@ -31,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('project');
+        Schema::dropIfExists('religion');
     }
 };

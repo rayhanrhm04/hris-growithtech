@@ -52,7 +52,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/projects/create', [ProjectController::class, 'create'])->name('project.create');
 });
 
-
+Route::resource('department', DepartmentController::class);
 // Route::get('/', function () {
 //     return view('login');
 // });
