@@ -52,6 +52,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/projects/create', [ProjectController::class, 'create'])->name('project.create');
 });
 
+
 Route::resource('department', DepartmentController::class);
 // Route::get('/', function () {
 //     return view('login');
@@ -101,13 +102,12 @@ Route::view('/staff-dev/project','dep-dev.staff.project');
 Route::view('/staff-dev/pengajuanCuti','dep-dev.staff.pengajuanCuti');
 Route::view('/staff-dev/pengajuanReimbursement','dep-dev.staff.pengajuanReimbursement');
 Route::view('/staff-dev/profile','dep-dev.staff.profile');
-Route::get('/projectstaff', [ProjectController::class,'project'])->name('project');
 
 
 //Manager HR
 Route::view('/manager-hr/dashboard-managerhr','dep-hr.manager.dashboard-managerhr');
 //Route::view('/manager-hr/dataPegawai','dep-hr.manager.dataPegawai');
-Route::get('/manager-hr/dataPegawai', [ManagerHrController::class, 'tampildata']);
+//Route::get('/manager-hr/dataPegawai', [ManagerHrController::class, 'tampildata']);
 
 Route::view('/manager-hr/tambahPegawai','dep-hr.manager.tambahPegawai');
 Route::view('/manager-hr/kehadiran','dep-hr.manager.kehadiran');

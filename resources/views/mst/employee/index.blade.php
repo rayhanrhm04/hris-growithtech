@@ -29,7 +29,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        @include('layouts.sidebar-eksekutif')
+        @include('layouts.sidebar')
 
         <!-- Divider -->
         <hr class="sidebar-divider">
@@ -60,13 +60,13 @@
 
                         <!-- Page Heading -->
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0 text-gray-800">Data Pegawai</h1>
+                            <h1 class="h3 mb-0 text-gray-800">Employee Data</h1>
                         </div>
 
                         <!-- DataTales Example -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Data Pegawai</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Employee Data</h6>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -88,33 +88,35 @@
                                                 <span class="icon text-white-50">
                                                     <i class="fas fa-plus"></i>
                                                 </span>
-                                                <span class="text">Tambah</span>
+                                                <span class="text">Add Employee Data</span>
                                             </a>
                                         </div>
                                     </div>
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th class="text-center">NIP</th>
-                                                <th class="text-center">Nama Lengkap</th>
-                                                <th class="text-center">Jenis Kelamin</th>
-                                                <th class="text-center">TTL</th>
+                                                <th class="text-center">Id</th>
+                                                <th class="text-center">Name</th>
+                                                <th class="text-center">Gender</th>
+                                                <th class="text-center">Date Of Birth</th>
+                                                <th class="text-center">Place Of Birth</th>
                                                 <th class="text-center">Departemen</th>
-                                                <th class="text-center">Posisi</th>
-                                                <th class="text-center">Agama</th>
-                                                <th class="text-center">Alamat</th>
-                                                <th class="text-center">No Telp</th>
+                                                <th class="text-center">Position</th>
+                                                <th class="text-center">Religion</th>
+                                                <th class="text-center">Adress</th>
+                                                <th class="text-center">Phone</th>
                                                 <th class="text-center">Email</th>
                                                 <th class="text-center">Password</th>
-                                                <th class="text-center">Aksi</th>
+                                                <th class="text-center">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
                                                 <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
+                                                <td>M</td>
                                                 <td>2002/09/02</td>
+                                                <td>Bandung</td>
                                                 <td>Developer</td>
                                                 <td>Manager</td>
                                                 <td>Islam</td>
@@ -128,325 +130,6 @@
                                                             <span class="text">Edit</span>
                                                         </a>
                                                         <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Fasya Mutiara</td>
-                                                <td>Wanita</td>
-                                                <td>2002/07/05</td>
-                                                <td>HR</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Soekarno Hatta</td>
-                                                <td>-</td>
-                                                <td>fasya..mutiara@gmail.com</td>
-                                                <td>fhasyaimhoetz123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Rayhan Miraj B</td>
-                                                <td>Pria</td>
-                                                <td>2002/10/04</td>
-                                                <td>Developer</td>
-                                                <td>Staff</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Moh. Toha</td>
-                                                <td>-</td>
-                                                <td>rayhan.miraj@gmail.com</td>
-                                                <td>rayhanganthengbgtz123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>7</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>8</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>10</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>11</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>12</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>13</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>14</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>15</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>Pria</td>
-                                                <td>2002/09/02</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#"
-                                                            class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="btn btn-danger btn-sm btn-icon-split">
                                                             <span class="text">Hapus</span>
                                                         </a>
                                                     </div>

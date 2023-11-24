@@ -25,14 +25,14 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/employee') }}">
+            <a class="nav-link" href="{{ route('employee.index') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
-                <span>Data Pegawai</span></a>
+                <span>Employee Data</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/manager-hr/kehadiran') }}">
                 <i class="fas fa-fw fa-calendar"></i>
-                <span>Kehadiran</span></a>
+                <span>Attendance</span></a>
         </li>
 
         <!-- Nav Item - Pages Collapse Menu -->
@@ -40,13 +40,11 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-file-alt"></i>
-                <span>Pengajuan</span>
+                <span>Submission</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ url('/manager-hr/permintaanCuti') }}">Permintaan Cuti</a>
-                    <a class="collapse-item" href="{{ url('/manager-hr/pengajuanCuti') }}">Cuti</a>
-                    <a class="collapse-item" href="{{ url('/manager-hr/permintaanReimbursement') }}">Permintaan Reimbursement</a>
+                    <a class="collapse-item" href="{{ url('/manager-hr/pengajuanCuti') }}">Time Off</a>
                     <a class="collapse-item" href="{{ url('/manager-hr/pengajuanReimbursement') }}">Reimbursement</a>
                 </div>
             </div>
@@ -54,7 +52,7 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/manager-hr/penggajian') }}">
                 <i class="fas fa-fw fa-calculator"></i>
-                <span>Penggajian</span></a>
+                <span>Payroll</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/manager-hr/reporting') }}">
@@ -82,12 +80,12 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/datapegawai-staffhr') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-users"></i>
-                <span>Data Pegawai</span></a>
+                <span>Employee Data</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/kehadiran-staffhr') }}">
                 <i class="fas fa-fw fa-calendar"></i>
-                <span>Kehadiran</span></a>
+                <span>Attendance</span></a>
         </li>
 
         <!-- Nav Item - Pages Collapse Menu -->
@@ -95,11 +93,11 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-file-alt"></i>
-                <span>Pengajuan</span>
+                <span>Submission</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ url('/pengajuanizin-staffhr') }}">Izin</a>
+                    <a class="collapse-item" href="{{ url('/pengajuanizin-staffhr') }}">Time Off</a>
                     <a class="collapse-item" href="{{ url('/pengajuanreimbursement-staffhr') }}">Reimbursement</a>
                 </div>
             </div>
@@ -107,7 +105,7 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/penggajian-staffhr') }}">
                 <i class="fas fa-fw fa-calculator"></i>
-                <span>Penggajian</span></a>
+                <span>Payroll</span></a>
         </li>
     @endif
 
@@ -131,7 +129,7 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/manager-dev/kehadiran') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
-                <span>Kehadiran / Attendance </span></a>
+                <span>Attendance</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/manager-dev/project') }}">
@@ -144,13 +142,11 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-file-alt"></i>
-                <span>Pengajuan</span>
+                <span>Submission</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ url('/manager-dev/permintaanCuti') }}">Permintaan Cuti</a>
-                    <a class="collapse-item" href="{{ url('/manager-dev/pengajuanCuti') }}">Cuti</a>
-                    <a class="collapse-item" href="{{ url('/manager-dev/permintaanReimbursement') }}">Permintaan Reimbursement</a>
+                    <a class="collapse-item" href="{{ url('/manager-dev/pengajuanCuti') }}">Time Off</a>
                     <a class="collapse-item" href="{{ url('/manager-dev/pengajuanReimbursement') }}">Reimbursement</a>
                 </div>
             </div>
@@ -172,7 +168,7 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/staff-dev/kehadiran') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
-                <span>Kehadiran / Attendance </span></a>
+                <span>Attendance</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/staff-dev/project') }}">
@@ -185,11 +181,11 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-file-alt"></i>
-                <span>Pengajuan</span>
+                <span>Submission</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ url('/staff-dev/pengajuanCuti') }}">Izin</a>
+                    <a class="collapse-item" href="{{ url('/staff-dev/pengajuanCuti') }}">Time Off</a>
                     <a class="collapse-item" href="{{ url('/staff-dev/pengajuanReimbursement') }}">Reimbursement</a>
                 </div>
             </div>
