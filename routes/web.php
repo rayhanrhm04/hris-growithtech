@@ -48,6 +48,8 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('department', DepartmentController::class);
     Route::get('/employee', [EmployeeController::class, 'index'])->name('employee.index');
     Route::get('/employee/create', [EmployeeController::class, 'create'])->name('employee.create');
+    Route::get('/projects', [ProjectController::class, 'index'])->name('project.index');
+    Route::get('/projects/create', [ProjectController::class, 'create'])->name('project.create');
 });
 
 
