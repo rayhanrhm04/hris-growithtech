@@ -29,7 +29,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        @include('layouts.sidebar-eksekutif')
+        @include('layouts.sidebar')
 
         
             <hr class="sidebar-divider">

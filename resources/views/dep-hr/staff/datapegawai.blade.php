@@ -28,7 +28,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @include('layouts.sidebar-staffhr')
+        @include('layouts.sidebar')
              <!-- Divider -->
              <hr class="sidebar-divider">
  
