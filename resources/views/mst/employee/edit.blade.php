@@ -92,8 +92,15 @@
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Gender</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="gender" name="gender"
-                                                                value="{{ $employee->gender }}">
+                                                            <select name="gender_id" id=""
+                                                                class="form-control">
+                                                                <option value="">-</option>
+                                                                @foreach ($genders as $gen)
+                                                                    <option value="{{ $gen->id }}"
+                                                                        {{ $employee->gender_id == $gen->id ? 'selected' : '' }}>
+                                                                        {{ $gen->name }}</option>
+                                                                @endforeach
+                                                            </select>
                                                         </div>
                                                     </div>
 
@@ -135,7 +142,7 @@
                                                                 class="form-control">
                                                                 <option value="">-</option>
                                                                 @foreach ($positions as $post)
-                                                                    <option value="{{ $post->position_id }}"
+                                                                    <option value="{{ $post->id }}"
                                                                         {{ $employee->postion_id == $post->id ? 'selected' : '' }}>
                                                                         {{ $post->name }}</option>
                                                                 @endforeach

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Department;
 use App\Models\Employee;
+use App\Models\Gender;
 use App\Models\Position;
 use App\Models\Religion;
 use App\Models\User;
@@ -28,6 +29,7 @@ class EmployeeController extends Controller
     public function create()
     {
         $data['employees'] = Employee::all();
+        $data['genders'] = Gender::all();
         $data['departments'] = Department::all();
         $data['positions'] = Position::all();
         $data['religions'] = Religion::all();
@@ -44,7 +46,7 @@ class EmployeeController extends Controller
 
         $model->empl_id = $request->empl_id;
         $model->name = $request->name;
-        $model->gender = $request->gender;
+        $model->gender_id = $request->gender_id;
         $model->dob = $request->dob;
         $model->pob = $request->pob;
         $model->department_id = $request->department_id;
@@ -80,11 +82,13 @@ class EmployeeController extends Controller
     public function edit(string $id)
     {
         $data['employees'] = Employee::all();
+        $data['genders'] = Gender::all();
         $data['departments'] = Department::all();
         $data['positions'] = Position::all();
         $data['religions'] = Religion::all();
 
         $data['employee'] = Employee::find($id);
+        $data['gender'] = Gender::find($id);
         $data['department'] = Department::find($id);
         $data['position'] = Position::find($id);
         $data['religion'] = Religion::find($id);
@@ -101,7 +105,7 @@ class EmployeeController extends Controller
 
         $model->empl_id = $request->empl_id;
         $model->name = $request->name;
-        $model->gender = $request->gender;
+        $model->gender_id = $request->gender_id;
         $model->dob = $request->dob;
         $model->pob = $request->pob;
         $model->department_id = $request->department_id;

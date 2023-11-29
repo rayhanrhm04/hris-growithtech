@@ -114,7 +114,7 @@
                                                 <tr>
                                                     <td>{{ $employee->empl_id }}</td>
                                                     <td>{{ $employee->name }}</td>
-                                                    <td>{{ $employee->gender }}</td>
+                                                    <td>{{ $employee->gender->name}}</td>
                                                     <td>{{ $employee->dob }}</td>
                                                     <td>{{ $employee->pob }}</td>
                                                     <td>{{ $employee->department[0]['name'] }}</td>

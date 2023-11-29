@@ -89,7 +89,14 @@
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Gender</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="gender" name="gender">
+                                                            <select name="gender_id" id=""
+                                                                class="form-control">
+                                                                @foreach ($genders as $gen)
+                                                                    <option value="{{ $gen->id }}">
+                                                                        {{ $gen->name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            </select>
                                                         </div>
                                                     </div>
 
