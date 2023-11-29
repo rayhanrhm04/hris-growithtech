@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard | HRIS Growithtech</title>
+    <title>Edit Employee | HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('sbadmin') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -57,7 +57,7 @@
 
                         <!-- Page Heading -->
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0 text-gray-800">New Employee Data</h1>
+                            <h1 class="h3 mb-0 text-gray-800">Edit Employee</h1>
                         </div>
 
                         <!-- Content Row -->
@@ -70,40 +70,46 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col">
-                                                <form action="{{ route('employee.store') }}" method="POST">
-                                                    @csrf
+                                                <form action="{{ route('employee.update', $employee->id) }}"
+                                                    method="POST">
+                                                    @csrf @method('PUT')
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Employee ID</label>
+                                                        <label class="col-sm-2 col-form-label">Id</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="empl_id" name="empl_id">
+                                                            <input class="form-control" id="empl_id" name="empl_id"
+                                                                value="{{ $employee->empl_id }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Name</label>
+                                                        <label class="col-sm-2 col-form-label">Employee Name</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="name" name="name">
+                                                            <input class="form-control" id="name" name="name"
+                                                                value="{{ $employee->name }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Gender</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="gender" name="gender">
+                                                            <input class="form-control" id="gender" name="gender"
+                                                                value="{{ $employee->gender }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Date Of Birth</label>
                                                         <div class="col-sm-4">
-                                                            <input type="date" data-toggle="datatimepicker" class="form-control" id="dob" name="dob">
+                                                            <input type="date" data-toggle="datatimepicker" class="form-control" id="dob" name="dob"
+                                                                value="{{ $employee->dob }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Place Of Birth</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="pob" name="pob">
+                                                            <input class="form-control" id="pob" name="pob"
+                                                                value="{{ $employee->pob }}">
                                                         </div>
                                                     </div>
 
@@ -112,10 +118,11 @@
                                                         <div class="col-sm-4">
                                                             <select name="department_id" id=""
                                                                 class="form-control">
+                                                                <option value="">-</option>
                                                                 @foreach ($departments as $dept)
-                                                                    <option value="{{ $dept->id }}">
-                                                                        {{ $dept->name }}
-                                                                    </option>
+                                                                    <option value="{{ $dept->id }}"
+                                                                        {{ $employee->department_id == $dept->id ? 'selected' : '' }}>
+                                                                        {{ $dept->name }}</option>
                                                                 @endforeach
                                                             </select>
                                                         </div>
@@ -126,10 +133,11 @@
                                                         <div class="col-sm-4">
                                                             <select name="position_id" id=""
                                                                 class="form-control">
-                                                                @foreach ($positions as $pos)
-                                                                    <option value="{{ $pos->id }}">
-                                                                        {{ $pos->name }}
-                                                                    </option>
+                                                                <option value="">-</option>
+                                                                @foreach ($positions as $post)
+                                                                    <option value="{{ $post->position_id }}"
+                                                                        {{ $employee->postion_id == $post->id ? 'selected' : '' }}>
+                                                                        {{ $post->name }}</option>
                                                                 @endforeach
                                                             </select>
                                                         </div>
@@ -139,48 +147,53 @@
                                                         <label class="col-sm-2 col-form-label">Religion</label>
                                                         <div class="col-sm-4">
                                                             <select name="religion_id" id=""
-                                                            class="form-control">
-                                                            @foreach ($religions as $reg)
-                                                                <option value="{{ $reg->id }}">
-                                                                    {{ $reg->name }}
-                                                                </option>
-                                                            @endforeach
-                                                        </select>
+                                                                class="form-control">
+                                                                <option value="">-</option>
+                                                                @foreach ($religions as $reg)
+                                                                    <option value="{{ $reg->id }}"
+                                                                        {{ $employee->religion_id == $reg->id ? 'selected' : '' }}>
+                                                                        {{ $reg->name }}</option>
+                                                                @endforeach
+                                                            </select>
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Adress</label>
+                                                        <label class="col-sm-2 col-form-label">Address</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="address" name="address">
+                                                            <input class="form-control" id="address" name="address"
+                                                                value="{{ $employee->address }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Phone</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="phone" name="phone">
+                                                            <input class="form-control" id="phone" name="phone"
+                                                                value="{{ $employee->phone }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Email</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="email" name="email">
+                                                            <input class="form-control" id="email" name="email"
+                                                                value="{{ $employee->email }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Password</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="password" name="password">
+                                                            <input class="form-control" id="password" name="password"
+                                                                value="{{ $employee->password }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="row mb-3 ">
                                                         <div class="col-sm-5 text-center">
                                                             <button type="submit"
-                                                                class="btn btn-primary">Save</button>
+                                                                class="btn btn-primary">Update</button>
                                                         </div>
                                                     </div>
                                                 </form>

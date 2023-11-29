@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -100,10 +99,10 @@
                                                 <th class="text-center">Gender</th>
                                                 <th class="text-center">Date Of Birth</th>
                                                 <th class="text-center">Place Of Birth</th>
-                                                <th class="text-center">Departemen</th>
+                                                <th class="text-center">Department</th>
                                                 <th class="text-center">Position</th>
                                                 <th class="text-center">Religion</th>
-                                                <th class="text-center">Adress</th>
+                                                <th class="text-center">Address</th>
                                                 <th class="text-center">Phone</th>
                                                 <th class="text-center">Email</th>
                                                 <th class="text-center">Password</th>
@@ -118,9 +117,9 @@
                                                     <td>{{ $employee->gender }}</td>
                                                     <td>{{ $employee->dob }}</td>
                                                     <td>{{ $employee->pob }}</td>
-                                                    <td>{{ $employee->department_id }}</td>
-                                                    <td>{{ $employee->position_id }}</td>
-                                                    <td>{{ $employee->religion_id }}</td>
+                                                    <td>{{ $employee->department[0]['name'] }}</td>
+                                                    <td>{{ $employee->position[0]['name'] }}</td>
+                                                    <td>{{ $employee->religion->name}}</td>
                                                     <td>{{ $employee->address }}</td>
                                                     <td>{{ $employee->phone }}</td>
                                                     <td>{{ $employee->email }}</td>
@@ -137,7 +136,7 @@
                                                                 {{ csrf_field() }}
 
                                                                 <button class="btn btn-danger btn-sm btn-icon-split">
-                                                                    <span class="text">Hapus</span>
+                                                                    <span class="text">Delete</span>
                                                                 </button>
 
                                                             </form>
