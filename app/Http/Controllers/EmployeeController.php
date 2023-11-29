@@ -9,6 +9,7 @@ use App\Models\Religion;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class EmployeeController extends Controller
 {
@@ -17,7 +18,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        $data['departments'] = Employee::all();
+        $data['employees'] = Employee::all();
         return view('mst.employee.index', $data);
     }
 
@@ -40,19 +41,29 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
         $model = new Employee();
+
+        $model->empl_id = $request->empl_id;
         $model->name = $request->name;
+        $model->gender = $request->gender;
+        $model->dob = $request->dob;
+        $model->pob = $request->pob;
         $model->department_id = $request->department_id;
         $model->position_id = $request->position_id;
         $model->religion_id = $request->religion_id;
+        $model->address = $request->address;
+        $model->phone = $request->phone;
+        $model->email = $request->email;
         $model->password = Hash::make($request->password);
+        $model->created_by = Auth::user()->id;
+        
         $model->save();
 
-        $model2 = new User();
-        $model2->name = $request->name;
-        $model2->password = Hash::make($request->password);
-        $model2->save();
+        //$model2 = new User();
+        //$model2->name = $request->name;
+       // $model2->password = Hash::make($request->password);
+        //$model2->save();
 
-        return view('mst.employee.index', $data);
+        return redirect()->route('employee.index');
     }
 
     /**
@@ -68,7 +79,9 @@ class EmployeeController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $data['employees'] = Employee::all();
+        $data['employee'] = Employee::find($id);
+        return view('mst.employee.edit', $data);
     }
 
     /**
@@ -76,7 +89,25 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $model = Employee::find($id);
+
+        $model->empl_id = $request->empl_id;
+        $model->name = $request->name;
+        $model->gender = $request->gender;
+        $model->dob = $request->dob;
+        $model->pob = $request->pob;
+        $model->department_id = $request->department_id;
+        $model->position_id = $request->position_id;
+        $model->religion_id = $request->religion_id;
+        $model->address = $request->address;
+        $model->phone = $request->phone;
+        $model->email = $request->email;
+        $model->password = Hash::make($request->password);
+        $model->updated_by = Auth::user()->id;
+
+        $model->save();
+
+        return redirect()->route('employee.index');
     }
 
     /**
@@ -84,6 +115,13 @@ class EmployeeController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $model = Employee::find($id);
+        $model->deleted_by = Auth::user()->id;
+
+        $model->save();
+
+        $model->delete();
+
+        return redirect()->route('employee.index');
     }
 }

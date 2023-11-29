@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Data Pegawai | HRIS Growithtech</title>
+    <title>Employee Data | HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('sbadmin') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -111,30 +111,40 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Dava Attabrani Akbar</td>
-                                                <td>M</td>
-                                                <td>2002/09/02</td>
-                                                <td>Bandung</td>
-                                                <td>Developer</td>
-                                                <td>Manager</td>
-                                                <td>Islam</td>
-                                                <td>Jl. Kopo</td>
-                                                <td>08958992905</td>
-                                                <td>attabrani.dava@gmail.com</td>
-                                                <td>davaganteng123</td>
-                                                <td class="text-center">
-                                                    <div class="justify-content-start">
-                                                        <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                            <span class="text">Edit</span>
-                                                        </a>
-                                                        <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                            <span class="text">Hapus</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                            @foreach ($employees as $employee)
+                                                <tr>
+                                                    <td>{{ $employee->empl_id }}</td>
+                                                    <td>{{ $employee->name }}</td>
+                                                    <td>{{ $employee->gender }}</td>
+                                                    <td>{{ $employee->dob }}</td>
+                                                    <td>{{ $employee->pob }}</td>
+                                                    <td>{{ $employee->department_id }}</td>
+                                                    <td>{{ $employee->position_id }}</td>
+                                                    <td>{{ $employee->religion_id }}</td>
+                                                    <td>{{ $employee->address }}</td>
+                                                    <td>{{ $employee->phone }}</td>
+                                                    <td>{{ $employee->email }}</td>
+                                                    <td>{{ $employee->password }}</td>
+                                                    <td class="text-center">
+                                                        <div class="justify-content-start">
+                                                            <a href="{{ route('employee.edit', $employee->id) }}"
+                                                                class="btn btn-success btn-sm btn-icon-split">
+                                                                <span class="text">Edit</span>
+                                                            </a>
+                                                            <form method="POST"
+                                                                action="{{ route('employee.destroy', $employee->id) }}">
+                                                                @method('DELETE')
+                                                                {{ csrf_field() }}
+
+                                                                <button class="btn btn-danger btn-sm btn-icon-split">
+                                                                    <span class="text">Hapus</span>
+                                                                </button>
+
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>

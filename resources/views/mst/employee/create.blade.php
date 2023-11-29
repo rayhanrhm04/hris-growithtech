@@ -75,35 +75,35 @@
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Employee ID</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnip">
+                                                            <input class="form-control" id="empl_id" name="empl_id">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Name</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="name" name="name">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Gender</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="gender" name="gender">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Date Of Birth</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="dob" name="dob">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Place Of Birth</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="pob" name="pob">
                                                         </div>
                                                     </div>
 
@@ -152,28 +152,28 @@
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Adress</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="address" name="address">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Phone</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="phone" name="phone">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Email</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="email" name="email">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Password</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="password" name="password">
                                                         </div>
                                                     </div>
 
