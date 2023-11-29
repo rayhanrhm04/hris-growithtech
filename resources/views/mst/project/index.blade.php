@@ -29,11 +29,11 @@
     <div id="wrapper">
 
         @include('layouts.sidebar')
-             <!-- Divider -->
-             <hr class="sidebar-divider">
- 
-         </ul>
-         <!-- End of Sidebar -->
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+    </ul>
+    <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -58,57 +58,76 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Daftar Pegawai</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Project</h1>
                     </div>
 
                     <!-- Content Row -->
                     <div class="row">
 
-                        <!-- Area Chart -->
-                        <div class="col-xl col-lg">
-                            <div class="card shadow mb-4">
-                                <!-- Card Body -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="row">   
-                                        <div class="col">
-                                            <form>
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Nama Project</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnip">
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Nama Pegawai</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Department</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Jabatan</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
-                                                    </div>
-                                                </div>  
-
-                                                <div class="row mb-3 ">
-                                                    <div class="col-sm-5 text-center">
-                                                        <button type="submit" class="btn btn-primary">Tambah</button>
-                                                    </div>
-                                                </div>
-                                            </form>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Jumlah project</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-folder fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Data Project</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <div class="justify-content-start">
+                                    <a href="{{ url('/project/create')}}" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                        <span class="text">Tambah</span>
+                                    </a>
+                                </div>
+                                <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">Nama Project</th>
+                                            <th class="text-center">Tanggal Mulai</th>
+                                            <th class="text-center">Tanggal Selesai</th>
+                                            <th class="text-center">Keterangan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>HRIS Growithtech</td>
+                                            <td>2011/04/25</td>
+                                            <td>2012/04/25</td>
+                                            <td>Proses Pengerjaan Front-End</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>HRIS Growithtech</td>
+                                            <td>2011/04/25</td>
+                                            <td>2012/04/25</td>
+                                            <td>Proses Pengerjaan Front-End</td>
+                                        </tr>
+                                        
+                                        
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -119,8 +138,10 @@
             </div>
             <!-- End of Main Content -->
 
+            
+
             <!-- Footer -->
-        @include('layouts.footer')
+            @include('layouts.footer')
             <!-- End of Footer -->
 
         </div>

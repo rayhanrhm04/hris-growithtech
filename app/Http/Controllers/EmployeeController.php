@@ -65,7 +65,11 @@ class EmployeeController extends Controller
        // $model2->password = Hash::make($request->password);
         //$model2->save();
 
+
+        return view('mst.employee.index', );
+        
         return redirect()->route('employee.index');
+
     }
 
     /**

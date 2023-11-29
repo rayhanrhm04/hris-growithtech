@@ -82,6 +82,7 @@
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Name</label>
                                                         <div class="col-sm-4">
+
                                                             <input class="form-control" id="name" name="name">
                                                         </div>
                                                     </div>
@@ -157,16 +158,16 @@
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Adress</label>
+                                                        <label class="col-sm-2 col-form-label">Address</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="address" name="address">
+                                                            <input class="form-control" id="address">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Phone</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="phone" name="phone">
+                                                            <input class="form-control" id="phone">
                                                         </div>
                                                     </div>
 

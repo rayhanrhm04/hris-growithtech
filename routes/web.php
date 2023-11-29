@@ -50,8 +50,10 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('employee', EmployeeController::class);
     
     
-    Route::get('/projects', [ProjectController::class, 'index'])->name('project.index');
-    Route::get('/projects/create', [ProjectController::class, 'create'])->name('project.create');
+    Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
+    Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
+    Route::post('/project/store', [ProjectController::class, 'store'])->name('project.store');
+
 });
 
 

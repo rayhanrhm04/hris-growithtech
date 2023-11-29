@@ -132,7 +132,7 @@
                 <span>Attendance</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/eksekutif/project') }}">
+            <a class="nav-link" href="{{ url('/project') }}">
                 <i class="fas fa-fw fa-list"></i>
                 <span>Project</span></a>
         </li>
@@ -171,7 +171,7 @@
                 <span>Attendance</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/staff-dev/project') }}">
+            <a class="nav-link" href="{{ url('project.index') }}">
                 <i class="fas fa-fw fa-list"></i>
                 <span>Project</span></a>
         </li>
