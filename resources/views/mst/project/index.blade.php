@@ -85,9 +85,9 @@
 
 
                     <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
+                    <div class="card shadow mb-5">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Project</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Projects</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -96,36 +96,47 @@
                                         <span class="icon text-white-50">
                                             <i class="fas fa-plus"></i>
                                         </span>
-                                        <span class="text">Tambah</span>
+                                        <span class="text">Add Projects</span>
                                     </a>
                                 </div>
-                                <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th class="text-center">No</th>
-                                            <th class="text-center">Nama Project</th>
-                                            <th class="text-center">Tanggal Mulai</th>
-                                            <th class="text-center">Tanggal Selesai</th>
-                                            <th class="text-center">Keterangan</th>
+                                            <th class="text-center">Project Name</th>
+                                            <th class="text-center">Start Date</th>
+                                            <th class="text-center">End Date</th>
+                                            <th class="text-center">Description</th>
+                                            <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($projects as $project)
                                         <tr>
-                                            <td>1</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
+                                            <td>{{ $project->id }}</td>
+                                            <td>{{ $project->name }}</td>
+                                            <td>{{ $project->start_date }}</td>
+                                            <td>{{ $project->end_date }}</td>
+                                            <td>{{ $project->description }}</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="{{ route('project.edit', $project->id) }}"
+                                                        class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="text">Edit</span>
+                                                    </a>
+                                                    <form method="POST"
+                                                        action="{{ route('project.destroy', $project->id) }}">
+                                                        @method('DELETE')
+                                                        {{ csrf_field() }}
+
+                                                        <button class="btn btn-danger btn-sm btn-icon-split">
+                                                            <span class="text">Delete</span>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
-                                        </tr>
-                                        
-                                        
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
@@ -154,26 +165,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('sbadmin')}}/vendor/jquery/jquery.min.js"></script>

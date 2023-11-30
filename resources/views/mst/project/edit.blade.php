@@ -50,7 +50,7 @@
                     </button>
 
                     <!-- Topbar Navbar -->
-                  @include('layouts.navbar.navbar')
+                    @include('layouts.navbar.navbar')
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -58,11 +58,10 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Attandance</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Edit Project</h1>
                     </div>
 
                     <!-- Content Row -->
-
                     <div class="row">
 
                         <!-- Area Chart -->
@@ -70,44 +69,50 @@
                             <div class="card shadow mb-4">
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="row">
+                                    <div class="row">   
                                         <div class="col">
-                                            <span class="text">Employee Id</span>
-                                            <h1 class="h5 mb-2 text-gray-800">E001</h1>
-                                            <span class="text">Name</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
-                                            <span class="text">Position</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Eksekutif</h1>
-                                            <span class="text">Check In Time</span>
-                                            <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
-                                            <span class="text">Check In Location</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                            <span class="text">Check Out Time</span>
-                                            <h1 class="h5 mb-2 text-gray-800">17.00 WIB</h1>
-                                            <span class="text">Check Out Location</span>
-                                            <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                        </div>
-                                        <div class=" justify-content-end">
-                                            <a href="#" class="btn btn-success btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-check"></i>
-                                                </span>
-                                                <span class="text">Check In</span>
-                                            </a>
-                                            <a href="#" class="btn btn-danger btn-icon-split">
-                                                <span class="icon text-white-50">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <span class="text">Check Out</span>
-                                            </a>
+                                            <form action="{{ route('project.update', $project->id) }}" method="POST">
+                                                @csrf @method('PUT')
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Project Name</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="name" name="name" value="{{ $project->name }}">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Start Date</label>
+                                                    <div class="col-sm-4">
+                                                      <input type="date" data-toggle="datatimepicker" class="form-control" id="start_date" name="start_date" value="{{ $project->start_date }}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">End Date</label>
+                                                    <div class="col-sm-4">
+                                                        <input type="date" data-toggle="datatimepicker" class="form-control" id="end_date" name="end_date" value="{{ $project->end_date }}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Description</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="description" name="description" value="{{ $project->description }}">
+                                                    </div>
+                                                </div>  
+
+                                                <div class="row mb-3 ">
+                                                    <div class="col-sm-5 text-center">
+                                                        <button type="submit" class="btn btn-primary" id="save">Update</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    
 
                 </div>
                 <!-- /.container-fluid -->
@@ -116,7 +121,13 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            @include('layouts.footer')
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
             <!-- End of Footer -->
 
         </div>
@@ -161,11 +172,11 @@
     <script src="{{asset('sbadmin')}}/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="{{asset('sbadmin')}}/vendor/chart.js/Chart.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('sbadmin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{asset('sbadmin')}}/js/demo/chart-area-demo.js"></script>
-    <script src="{{asset('sbadmin')}}/js/demo/chart-pie-demo.js"></script>
+    <script src="{{asset('sbadmin')}}/js/demo/datatables-demo.js"></script>
 
 </body>
 

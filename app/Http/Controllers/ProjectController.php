@@ -8,6 +8,7 @@ use App\Models\Position;
 use App\Models\Project;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class ProjectController extends Controller
@@ -49,6 +50,8 @@ class ProjectController extends Controller
         $model->save();
 
         return view('mst.project.index');
+
+        return redirect()->route('project.index');
     }
 
     /**
@@ -65,6 +68,17 @@ class ProjectController extends Controller
     public function edit(string $id)
     {
         //
+        $data['employees'] = Employee::all();
+        $data['departments'] = Department::all();
+        $data['positions'] = Position::all();
+        $data['projects'] = Project::all();
+
+        $data['employee'] = Employee::find($id);
+        $data['department'] = Department::find($id);
+        $data['position'] = Position::find($id);
+        $data['project'] = Project::find($id);
+        
+        return view('mst.project.edit', $data);
     }
 
     /**
@@ -73,6 +87,17 @@ class ProjectController extends Controller
     public function update(Request $request, string $id)
     {
         //
+        $model = Project::find($id);
+
+        $model->name = $request->name;
+        $model->start_date = $request->start_date;
+        $model->end_date = $request->end_date;
+        $model->description = $request->description;
+        $model->updated_by = Auth::user()->id;
+
+        $model->save();
+
+        return redirect()->route('project.index');
     }
 
     /**
@@ -81,5 +106,13 @@ class ProjectController extends Controller
     public function destroy(string $id)
     {
         //
+        $model = Project::find($id);
+        $model->deleted_by = Auth::user()->id;
+
+        $model->save();
+
+        $model->delete();
+
+        return redirect()->route('project.index');
     }
 }
