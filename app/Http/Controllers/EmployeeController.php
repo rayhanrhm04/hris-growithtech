@@ -84,7 +84,15 @@ class EmployeeController extends Controller
     public function edit(string $id)
     {
         $data['employees'] = Employee::all();
+        $data['departments'] = Department::all();
+        $data['positions'] = Position::all();
+        $data['religions'] = Religion::all();
+
         $data['employee'] = Employee::find($id);
+        $data['department'] = Department::find($id);
+        $data['position'] = Position::find($id);
+        $data['religion'] = Religion::find($id);
+        
         return view('mst.employee.edit', $data);
     }
 

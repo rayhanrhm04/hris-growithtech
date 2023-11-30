@@ -46,12 +46,9 @@ Route::middleware(['auth'])->group(function(){
 
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard.dashboard');
     Route::resource('department', DepartmentController::class);
+
+    Route::resource('employee', EmployeeController::class);
     
-    Route::get('/employee', [EmployeeController::class, 'index'])->name('employee.index');
-    Route::get('/employee/create', [EmployeeController::class, 'create'])->name('employee.create');
-    Route::post('/employee/store', [EmployeeController::class, 'store'])->name('employee.store');
-    Route::post('/employee/edit', [EmployeeController::class, 'edit'])->name('employee.edit');
-    Route::post('/employee/destroy', [EmployeeController::class, 'destroy'])->name('employee.destroy');
     
     Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
     Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');

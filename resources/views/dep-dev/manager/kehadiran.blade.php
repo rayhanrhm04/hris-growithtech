@@ -50,7 +50,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Kehadiran</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Attandance</h1>
                     </div>
 
                     <!-- Content Row -->
@@ -64,19 +64,19 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">
-                                            <span class="text">NIP</span>
+                                            <span class="text">Employee Id</span>
                                             <h1 class="h5 mb-2 text-gray-800">E001</h1>
-                                            <span class="text">Nama Pegawai</span>
+                                            <span class="text">Name</span>
                                             <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
-                                            <span class="text">Jabatan</span>
+                                            <span class="text">Position</span>
                                             <h1 class="h5 mb-2 text-gray-800">Eksekutif</h1>
-                                            <span class="text">Waktu Check In</span>
+                                            <span class="text">Check In Time</span>
                                             <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
-                                            <span class="text">Lokasi Check In</span>
+                                            <span class="text">Check In Location</span>
                                             <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                            <span class="text">Waktu Check Out</span>
+                                            <span class="text">Check Out Time</span>
                                             <h1 class="h5 mb-2 text-gray-800">17.00 WIB</h1>
-                                            <span class="text">Lokasi Check Out</span>
+                                            <span class="text">Check Out Location</span>
                                             <h1 class="h5 mb-2 text-gray-800">-</h1>
                                         </div>
                                         <div class=" justify-content-end">
