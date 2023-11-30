@@ -58,7 +58,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Daftar Pegawai</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Project</h1>
                     </div>
 
                     <!-- Content Row -->
@@ -71,38 +71,38 @@
                                 <div class="card-body">
                                     <div class="row">   
                                         <div class="col">
-                                            <form>
+                                            <form action="{{ route('project.store') }}" method="POST">
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Nama Project</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnip">
+                                                      <input class="form-control" id="name">
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Nama Pegawai</label>
+                                                    <label class="col-sm-2 col-form-label">Tanggal Mulai</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
+                                                      <input type="date" data-toggle="datatimepicker" class="form-control" id="start_date">
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Department</label>
+                                                    <label class="col-sm-2 col-form-label">Tanggal Selesai</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
+                                                        <input type="date" data-toggle="datatimepicker" class="form-control" id="end_date">
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Jabatan</label>
+                                                    <label class="col-sm-2 col-form-label">Keterangan</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
+                                                      <input class="form-control" id="description">
                                                     </div>
                                                 </div>  
 
                                                 <div class="row mb-3 ">
                                                     <div class="col-sm-5 text-center">
-                                                        <button type="submit" class="btn btn-primary">Tambah</button>
+                                                        <button type="submit" class="btn btn-primary" id="save">Tambah</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -120,7 +120,13 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-        @include('layouts.footer')
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
             <!-- End of Footer -->
 
         </div>

@@ -166,48 +166,7 @@
                                             <td>2012/04/25</td>
                                             <td>Proses Pengerjaan Front-End</td>
                                         </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
-                                        </tr>
-                                        <tr>
-                                            <td>11</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
-                                        </tr>
-                                        <tr>
-                                            <td>14</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
-                                        </tr>
-                                        <tr>
-                                            <td>15</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>

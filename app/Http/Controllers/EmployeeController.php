@@ -52,7 +52,7 @@ class EmployeeController extends Controller
         $model2->password = Hash::make($request->password);
         $model2->save();
 
-        return view('mst.employee.index', $data);
+        return view('mst.employee.index', );
     }
 
     /**

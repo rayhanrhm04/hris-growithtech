@@ -189,24 +189,7 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>15</td>
-                                            <td>HRIS Growithtech</td>
-                                            <td>2011/04/25</td>
-                                            <td>2012/04/25</td>
-                                            <td>Proses Pengerjaan Front-End</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="text">Edit</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="text">Hapus</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                        
                                 </table>
                             </div>
                         </div>

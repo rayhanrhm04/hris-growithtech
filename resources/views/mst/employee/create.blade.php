@@ -82,28 +82,28 @@
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Name</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="name">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Gender</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="gender">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Date Of Birth</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="dob">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Place Of Birth</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="pob">
                                                         </div>
                                                     </div>
 
@@ -150,30 +150,30 @@
                                                     </div>
 
                                                     <div class="mb-3 row">
-                                                        <label class="col-sm-2 col-form-label">Adress</label>
+                                                        <label class="col-sm-2 col-form-label">Address</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="address">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Phone</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="phone">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Email</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="email">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Password</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="inputnama">
+                                                            <input class="form-control" id="password">
                                                         </div>
                                                     </div>
 

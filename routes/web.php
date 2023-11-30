@@ -50,8 +50,10 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/employee/create', [EmployeeController::class, 'create'])->name('employee.create');
     Route::get('/employee/store', [EmployeeController::class, 'store'])->name('employee.store');
     
-    Route::get('/projects', [ProjectController::class, 'index'])->name('project.index');
-    Route::get('/projects/create', [ProjectController::class, 'create'])->name('project.create');
+    Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
+    Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
+    Route::get('/project/store', [ProjectController::class, 'store'])->name('project.store');
+
 });
 
 

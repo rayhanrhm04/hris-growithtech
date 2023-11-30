@@ -6,7 +6,9 @@ use App\Models\Department;
 use App\Models\Employee;
 use App\Models\Position;
 use App\Models\Project;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class ProjectController extends Controller
 {
@@ -16,7 +18,7 @@ class ProjectController extends Controller
     public function index()
     {
         //
-        $data['project'] = Project::all();
+        $data['projects'] = Project::all();
         return view('mst.project.index', $data);
     }
 
@@ -26,7 +28,7 @@ class ProjectController extends Controller
     public function create()
     {
         $data['employees'] = Employee::all();
-        $data['project'] = Project::all();
+        $data['projects'] = Project::all();
         $data['departments'] = Department::all();
         $data['positions'] = Position::all();
 
@@ -39,6 +41,14 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         //
+        $model = new Project();
+        $model->name = $request->name;
+        $model->start_date = $request->start_date;
+        $model->end_date = $request->end_date;
+        $model->description = $request->description;
+        $model->save();
+
+        return view('mst.project.index');
     }
 
     /**

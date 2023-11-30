@@ -82,27 +82,27 @@
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Tanggal Mulai</label>
                                                     <div class="col-sm-4">
-                                                      <input type="date" data-toggle="datatimepicker" class="form-control" id="date_start">
+                                                      <input type="date" data-toggle="datatimepicker" class="form-control" id="start_date">
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Tanggal Selesai</label>
                                                     <div class="col-sm-4">
-                                                        <input type="date" data-toggle="datatimepicker" class="form-control" id="date_end">
+                                                        <input type="date" data-toggle="datatimepicker" class="form-control" id="end_date">
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Keterangan</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
+                                                      <input class="form-control" id="description">
                                                     </div>
                                                 </div>  
 
                                                 <div class="row mb-3 ">
                                                     <div class="col-sm-5 text-center">
-                                                        <button type="submit" class="btn btn-primary">Tambah</button>
+                                                        <button type="submit" class="btn btn-primary" id="save">Tambah</button>
                                                     </div>
                                                 </div>
                                             </form>
