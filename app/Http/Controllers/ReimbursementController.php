@@ -2,23 +2,18 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Models\Employee;
-use App\Models\Position;
-use App\Models\User;
+use App\Models\Reimbursement;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
 
-class ReqTimeOffController extends Controller
+class ReimbursementController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data['req_time_offs'] = ReqTimeOff::all();
-        return view('mst.requestTimeOff.index', $data);
+        $data['reimbursements'] = Reimbursement::all();
+        return view('mst.reimbursement.index', $data);
     }
 
     /**
@@ -26,11 +21,7 @@ class ReqTimeOffController extends Controller
      */
     public function create()
     {
-        $data['req_time_offs'] = ReqTimeOff::all();
-        $data['employees'] = Employee::all();
-        $data['positions'] = Position::all();
-
-        return view('mst.requestTimeOff.index', $data);
+        
     }
 
     /**
@@ -38,16 +29,8 @@ class ReqTimeOffController extends Controller
      */
     public function store(Request $request)
     {
-        $model = new ReqTimeOff();
+        
 
-        $model->name = $request->name;
-        $model->position = $request->position;
-        $model->type = $request->type;  
-        $model->reason = $request->reason;  
-
-        $model->save();
-        return view('mst.requestTimeOff.index');
-        return redirect('mst.requestTimeOff.index');
     }
 
     /**
@@ -63,7 +46,7 @@ class ReqTimeOffController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        
     }
 
     /**
@@ -71,7 +54,7 @@ class ReqTimeOffController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        
     }
 
     /**
@@ -79,6 +62,7 @@ class ReqTimeOffController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+
     }
 }
+
