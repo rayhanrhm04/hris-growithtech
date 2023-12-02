@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Reimbursement;
 use Illuminate\Http\Request;
+use App\Models\Department;
+use App\Models\Employee;
+use App\Models\Position;
 
 class ReimbursementController extends Controller
 {
@@ -21,7 +24,11 @@ class ReimbursementController extends Controller
      */
     public function create()
     {
-        
+        $data['employees'] = Employee::all();
+        $data['departments'] = Department::all();
+        $data['positions'] = Position::all();
+
+        return view('mst.reimbursement.create', $data);
     }
 
     /**

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Employee Data | HRIS Growithtech</title>
+    <title>Reimbursement Data | HRIS Growithtech</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('sbadmin') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -55,56 +55,53 @@
                     <!-- End of Topbar -->
 
                     <!-- Begin Page Content -->
-                    <div class="container-fluid">
+                <div class="container-fluid">
 
-                        <!-- Page Heading -->
+                    <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Permintaan Reimbursement</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Reimbursement</h1>
                     </div>
 
                         <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Pengajuan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Reimbursement Data</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <div class="justify-content-start">
-                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-<<<<<<< HEAD
-                                        <span class="text" href="{{ url('/manager-hr/pengajuanreimbursement') }}">Add Reimbursement</span>
-=======
-                                        <span class="text" href="{{ url('reimbursement.create') }}">Add Reimbursement</span>
->>>>>>> 18ff08dc96bd4d185963f2588a531b4ae74a525d
+                                    <a href="{{ route('reimbursement.create') }}"
+                                        class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                        <span class="text">Add New Reimbursement</span>
                                     </a>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th class="text-center">No</th>
-                                            <th class="text-center">NIP</th>
-                                            <th class="text-center">Nama Pegawai</th>
+                                            <th class="text-center">Name</th>
                                             <th class="text-center">Department</th>
-                                            <th class="text-center">Posisi</th>
-                                            <th class="text-center">Tanggal Pengajuan</th>
-                                            <th class="text-center">Nominal Pengajuan</th>
-                                            <th class="text-center">Bukti</th>
-                                            <th class="text-center">Aksi</th>
+                                            <th class="text-center">Position</th>
+                                            <th class="text-center">Date</th>
+                                            <th class="text-center">Nominal</th>
+                                            <th class="text-center">Picture</th>
+                                            <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
+                                        @foreach ($reimbursements as $reim)
+                                        <tr>                             
+                                            <td>{{ $reim->employee->name }}</td>
+                                            <td>{{ $reim->department[0]['name'] }}</td>
+                                            <td>{{ $reim->position[0]['name'] }}</td>
+                                            <td>{{ $reim->date }}</td>
+                                            <td>{{ $reim->nominal }}</td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
+                                                        <span class="text">See</span>
                                                     </a>
                                                 </div>
                                             </td>
@@ -114,177 +111,18 @@
                                                         <span class="icon text-white-50">
                                                             <i class="fas fa-check"></i>
                                                         </span>
-                                                        <span class="text">Terima</span>
+                                                        <span class="text">Accept</span>
                                                     </a>
                                                     <a href="#" class="btn btn-danger btn-sm btn-icon-split">
                                                         <span class="icon text-white-50">
                                                             <i class="fas fa-times"></i>
                                                         </span>
-                                                        <span class="text">Tolak</span>
+                                                        <span class="text">Reject</span>
                                                     </a>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>2023/12/28</td>
-                                            <td>Rp.500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-check"></i>
-                                                        </span>
-                                                        <span class="text">Terima</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
-                                                        <span class="icon text-white-50">
-                                                            <i class="fas fa-times"></i>
-                                                        </span>
-                                                        <span class="text">Tolak</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
