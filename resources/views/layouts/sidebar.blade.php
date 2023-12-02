@@ -40,12 +40,12 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-file-alt"></i>
-                <span>Submission</span>
+                <span>Request</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ url('/manager-hr/pengajuanCuti') }}">Time Off</a>
-                    <a class="collapse-item" href="{{ url('/manager-hr/pengajuanReimbursement') }}">Reimbursement</a>
+                    <a class="collapse-item" href="{{ route('requestTimeOff.index') }}">Time Off</a>
+                    <a class="collapse-item" href="#">Reimbursement</a>
                 </div>
             </div>
         </li>
