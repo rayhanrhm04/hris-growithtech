@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\Employee;
+use App\Models\Position;
+use App\Models\Reimbursement;
 use Illuminate\Http\Request;
+use App\Models\User;
 use App\Models\TypesTimeOff;
 
 class TypesTimeOffController extends Controller
@@ -15,13 +20,20 @@ class TypesTimeOffController extends Controller
         $data['types_timeoff'] = Timeoff::all();
         return view('mst.timeoff.index', $data);
     }
-
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        //
+        $data['employees'] = Employee::all();
+        $data['positions'] = Position::all();
+
+        return view('mst.reimbursement.create', $data);
+        $data['req_time_offs'] = ReqTimeOff::all();
+        $data['employees'] = Employee::all();
+        $data['positions'] = Position::all();
+
+        return view('mst.requestTimeOff.index', $data);
     }
 
     /**
