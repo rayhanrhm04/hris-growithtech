@@ -70,7 +70,7 @@
                             <div class="table-responsive">
                                 <div class="table-responsive">
                                     <div class="justify-content-start">
-                                        <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <a href="{{ url('/manager-dev/pengajuanCuti') }}" class="btn btn-primary btn-sm btn-icon-split">
                                             <span class="icon text-white-50">
                                                 <i class="fas fa-plus"></i>
                                             </span>
