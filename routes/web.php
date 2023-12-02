@@ -11,6 +11,8 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\TimeoffController;
+use App\Models\Timeoff;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -46,9 +48,9 @@ Route::middleware(['auth'])->group(function(){
 
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard.dashboard');
     Route::resource('department', DepartmentController::class);
-
     Route::resource('employee', EmployeeController::class);
     Route::resource('project', ProjectController::class);
+    Route::resource('timeoff', TimeoffController::class);
     
     
     Route::get('/project', [ProjectController::class, 'index'])->name('project.index');

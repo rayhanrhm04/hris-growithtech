@@ -71,7 +71,23 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                jumlah pegawai</div>
+                                                Department</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">9</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Total Employees</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">9</div>
                                         </div>
                                         <div class="col-auto">
@@ -81,35 +97,17 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Jumlah Pegawai Hadir</div>
+                                                Number of Employees Present</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-user-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Project</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-folder fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +119,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Jumlah Pengajuan Cuti</div>
+                                                Permit Application</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
                                         </div>
                                         <div class="col-auto">
@@ -137,7 +135,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Pengajuan diterima</div>
+                                                Permission Received</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
                                         </div>
                                         <div class="col-auto">
@@ -154,7 +152,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pengajuan ditolak</div>
+                                                Permission Denied</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                                         </div>
                                         <div class="col-auto">
@@ -168,7 +166,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Kehadiran</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Attandance</h1>
                     </div>
 
                     <!-- Content Row -->
@@ -181,19 +179,19 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">
-                                            <span class="text">NIP</span>
+                                            <span class="text">Employee Id</span>
                                             <h1 class="h5 mb-2 text-gray-800">E001</h1>
-                                            <span class="text">Nama Pegawai</span>
+                                            <span class="text">Name</span>
                                             <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
-                                            <span class="text">Jabatan</span>
+                                            <span class="text">Position</span>
                                             <h1 class="h5 mb-2 text-gray-800">Eksekutif</h1>
-                                            <span class="text">Waktu Check In</span>
+                                            <span class="text">Check In Time</span>
                                             <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
-                                            <span class="text">Lokasi Check In</span>
+                                            <span class="text">Check In Location</span>
                                             <h1 class="h5 mb-2 text-gray-800">-</h1>
-                                            <span class="text">Waktu Check Out</span>
+                                            <span class="text">Check Out Time</span>
                                             <h1 class="h5 mb-2 text-gray-800">17.00 WIB</h1>
-                                            <span class="text">Lokasi Check Out</span>
+                                            <span class="text">Check Out Location</span>
                                             <h1 class="h5 mb-2 text-gray-800">-</h1>
                                         </div>
                                         <div class=" justify-content-end">

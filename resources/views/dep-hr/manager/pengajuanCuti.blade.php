@@ -28,7 +28,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @include('layouts.sidebar-managerhr')
+        @include('layouts.sidebar')
              <!-- Divider -->
              <hr class="sidebar-divider">
  
