@@ -10,9 +10,10 @@ use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ReimbursementController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\TimeoffController;
-use App\Models\Timeoff;
+use App\Models\Reimbursement;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -50,12 +51,17 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('department', DepartmentController::class);
     Route::resource('employee', EmployeeController::class);
     Route::resource('project', ProjectController::class);
+<<<<<<< HEAD
     Route::resource('timeoff', TimeoffController::class);
     
     Route::resource('project', ProjectController::class);  
 
     //Route::resource('requestTimeOff', ReqTimeOffController::class);  
     Route::get('/requestTimeOff', [ReqTimeOffController::class, 'index'])->name('requesTimeOff.index');
+=======
+    Route::resource('timeoff', TimeoffController::class); 
+    Route::resource('reimbursement', ReimbursementController::class); 
+>>>>>>> fd3bf47a4ad43448cdaa5d4c3a3f06b40a38827f
     
     Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
     Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
