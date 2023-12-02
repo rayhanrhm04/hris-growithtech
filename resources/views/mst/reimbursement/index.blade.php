@@ -57,9 +57,9 @@
                     <!-- Begin Page Content -->
                     <div class="container-fluid">
 
-                    <!-- Page Heading -->
+                        <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Permintaan Cuti</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Permintaan Reimbursement</h1>
                     </div>
 
                         <!-- DataTales Example -->
@@ -71,34 +71,39 @@
                             <div class="table-responsive">
                                 <div class="justify-content-start">
                                     <a href="#" class="btn btn-primary btn-sm btn-icon-split">
-                                        <span class="text" href="{{ url('/manager-hr/pengajuancuti') }}">Add Time Off</span>
+                                        <span class="text" href="{{ url('/manager-hr/pengajuanreimbursement') }}">Add Reimbursement</span>
                                     </a>
-                            </div>
-                        
+                                </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th class="text-center">No</th>
                                             <th class="text-center">NIP</th>
                                             <th class="text-center">Nama Pegawai</th>
-                                            <th class="text-center">Departemen</th>
-                                            <th class="text-center">Jabatan</th>
-                                            <th class="text-center">Tanggal Izin</th>
-                                            <th class="text-center">Jenis Pengajuan</th>
-                                            <th class="text-center">Alasan</th>
+                                            <th class="text-center">Department</th>
+                                            <th class="text-center">Posisi</th>
+                                            <th class="text-center">Tanggal Pengajuan</th>
+                                            <th class="text-center">Nominal Pengajuan</th>
+                                            <th class="text-center">Bukti</th>
                                             <th class="text-center">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center">1</td>
+                                            <td>1</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td class="text-center">Cuti</td>
-                                            <td>Acara Keluarga</td>
+                                            <td>Rp.500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
@@ -117,14 +122,20 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center">2</td>
+                                            <td>2</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td class="text-center">Cuti</td>
-                                            <td>Acara Keluarga</td>
+                                            <td>Rp.500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
@@ -143,14 +154,20 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center">3</td>
+                                            <td>3</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td class="text-center">Cuti</td>
-                                            <td>Acara Keluarga</td>
+                                            <td>Rp.500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
@@ -169,14 +186,20 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center">4</td>
+                                            <td>4</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td class="text-center">Cuti</td>
-                                            <td>Acara Keluarga</td>
+                                            <td>Rp.500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
@@ -195,14 +218,20 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center">5</td>
+                                            <td>5</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td class="text-center">Cuti</td>
-                                            <td>Acara Keluarga</td>
+                                            <td>Rp.500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">
@@ -221,14 +250,20 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center">6</td>
+                                            <td>6</td>
                                             <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
                                             <td>2023/12/28</td>
-                                            <td class="text-center">Cuti</td>
-                                            <td>Acara Keluarga</td>
+                                            <td>Rp.500.000</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
+                                                        <span class="text">Lihat</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-success btn-sm btn-icon-split">

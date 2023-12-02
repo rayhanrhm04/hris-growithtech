@@ -44,13 +44,8 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-<<<<<<< HEAD
                     <a class="collapse-item" href="{{ route('timeoff.index') }}">Time Off</a>
-                    <a class="collapse-item" href="{{ url('/manager-hr/pengajuanReimbursement') }}">Reimbursement</a>
-=======
-                    <a class="collapse-item" href="{{ route('requestTimeOff.index') }}">Time Off</a>
-                    <a class="collapse-item" href="#">Reimbursement</a>
->>>>>>> 7996f179ce59bc452ab987a32483e3bf9cbdeabf
+                    <a class="collapse-item" href="{{ route('reimbursement.index') }}">Reimbursement Request</a>
                 </div>
             </div>
         </li>
