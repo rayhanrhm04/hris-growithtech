@@ -51,6 +51,12 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('department', DepartmentController::class);
     Route::resource('employee', EmployeeController::class);
     Route::resource('project', ProjectController::class);
+    Route::resource('timeoff', TimeoffController::class);
+    
+    Route::resource('project', ProjectController::class);  
+
+    //Route::resource('requestTimeOff', ReqTimeOffController::class);  
+    Route::get('/requestTimeOff', [ReqTimeOffController::class, 'index'])->name('requesTimeOff.index');
     Route::resource('timeoff', TimeoffController::class); 
     Route::resource('reimbursement', ReimbursementController::class); 
     

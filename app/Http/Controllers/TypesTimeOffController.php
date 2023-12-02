@@ -3,34 +3,37 @@
 namespace App\Http\Controllers;
 
 
-
 use App\Models\Employee;
 use App\Models\Position;
-use App\Models\ReqTimeOff;
-use App\Models\User;
-use App\Models\Timeoff;
-use App\Models\TypesTimeoff;
+use App\Models\Reimbursement;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use App\Models\TypesTimeOff;
 
-class TimeoffController extends Controller
+class TypesTimeOffController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data['timeoffs'] = Timeoff::all();
+        $data['types_timeoff'] = Timeoff::all();
         return view('mst.timeoff.index', $data);
     }
-
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-       
+        $data['employees'] = Employee::all();
+        $data['positions'] = Position::all();
+
+        return view('mst.reimbursement.create', $data);
+        $data['req_time_offs'] = ReqTimeOff::all();
+        $data['employees'] = Employee::all();
+        $data['positions'] = Position::all();
+
+        return view('mst.requestTimeOff.index', $data);
     }
 
     /**
@@ -38,8 +41,7 @@ class TimeoffController extends Controller
      */
     public function store(Request $request)
     {
-        
-
+        //
     }
 
     /**
@@ -55,7 +57,7 @@ class TimeoffController extends Controller
      */
     public function edit(string $id)
     {
-
+        //
     }
 
     /**
@@ -63,7 +65,7 @@ class TimeoffController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        
+        //
     }
 
     /**
@@ -71,7 +73,6 @@ class TimeoffController extends Controller
      */
     public function destroy(string $id)
     {
-
+        //
     }
 }
-

@@ -71,7 +71,11 @@
                             <div class="table-responsive">
                                 <div class="justify-content-start">
                                     <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+<<<<<<< HEAD
                                         <span class="text" href="{{ url('/manager-hr/pengajuanreimbursement') }}">Add Reimbursement</span>
+=======
+                                        <span class="text" href="{{ url('reimbursement.create') }}">Add Reimbursement</span>
+>>>>>>> 18ff08dc96bd4d185963f2588a531b4ae74a525d
                                     </a>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

@@ -70,7 +70,7 @@
                                             <div class="col-1">
                                                 <h8>Bulan</h8>
                                             </div>
-                                            <div class="col-2">
+                                            <div class="col-3">
                                                 <div class="mb-3">
                                                     <select name="bulan" id="bulan">
                                                         <option selected>-Pilih Bulan-</option>
@@ -101,8 +101,8 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-2">
-                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-6">
+                                            <div class="col-3">
+                                                <a href="#" class="btn btn-primary btn-sm btn-icon-split m-8">
                                                     <span class="icon text-white-50">
                                                         <i class="fas fa-calendar"></i>
                                                     </span>
@@ -122,7 +122,7 @@
                                             <span class="text">Print</span>
                                         </a>
                                     </div>
-                                    <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
                                                 <th class="text-center">No</th>
