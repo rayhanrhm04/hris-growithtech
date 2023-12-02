@@ -96,8 +96,11 @@
                                                     <div class="col-sm-4">
                                                         <select name="type_id" id=""
                                                             class="form-control">
-                                                                <option value="">
+                                                            @foreach($positions as $position)
+                                                                <option value="{{ $position->position_id }}">
+                                                                    {{ $position->name }}
                                                                 </option>
+                                                            @endforeach
                                                         </select>
                                                     </div>
                                                 </div>

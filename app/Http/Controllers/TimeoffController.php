@@ -25,7 +25,7 @@ class TimeoffController extends Controller
      */
     public function create()
     {
-        $data['reqtimeoffs'] = TimeOff::all();
+        $data['reqtimeoffs'] = Timeoff::all();
         $data['types_timeoff'] = TypesTimeOff::all();
         $data['positions'] = Position::all();
 
@@ -37,7 +37,7 @@ class TimeoffController extends Controller
      */
     public function store(Request $request)
     {
-        $model = new TimeOff();
+        $model = new Timeoff();
 
         $model->name = $request->name;
         $model->position_id =  $request->position_id;
@@ -66,13 +66,13 @@ class TimeoffController extends Controller
      */
     public function edit(string $id)
     {
-        $data['reqtimeoffs'] = TimeOff::all();
+        $data['reqtimeoffs'] = Timeoff::all();
         $data['types_timeoff'] = TypesTimeOff::all();
         $data['positions'] = Position::all();
 
-        $data['reqtimeoff'] = TimeOff::find($id);
+        $data['reqtimeoff'] = Timeoff::find($id);
         $data['types_timeoff'] = TypesTimeOff::find($id);
-        $data['position'] = Position::find($id);
+        $data['positions'] = Position::find($id);
 
         return view('mst.timeoff.edit', $data);
     }
@@ -82,7 +82,7 @@ class TimeoffController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $model = TimeOff::find($id);
+        $model = Timeoff::find($id);
 
         $model->name = $request->name;$model->position_id =  $request->position_id;
         $model->types_id = $request->types_id;
@@ -102,7 +102,7 @@ class TimeoffController extends Controller
      */
     public function destroy(string $id)
     {
-        $model = TimeOff::find($id);
+        $model = Timeoff::find($id);
 
         $model->save();
 
