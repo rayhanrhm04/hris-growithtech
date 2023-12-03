@@ -9,6 +9,7 @@ use App\Models\Project;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class ProjectController extends Controller
@@ -21,6 +22,16 @@ class ProjectController extends Controller
         //
         $data['projects'] = Project::all();
         return view('mst.project.index', $data);
+
+        $jumlahProject = Project::count();
+        return view('mst.project.index', compact('jumlahProject'));
+
+        // $jumlah_project = DB::table('projects')->count();
+
+        // // Mengirim jumlah data ke view
+        // return view('mst.project.index', [
+        // 'jumlah_project' => $jumlah_project,
+        //  ]);
     }
 
     /**
