@@ -59,92 +59,192 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Request Time Off</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Permintaan Cuti</h1>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl col-lg">
-                            <div class="card shadow mb-4">
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="row">   
-                                        <div class="col">
-                                            <form>
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Name</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnip">
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Position</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Submission Type</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Date</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="inputnama">
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Reason</label>
-                                                    <div class="col-sm-4" class="col-lg-8">
-                                                      <input class="form-control" id="inputnama">
-                                                    </div>
-                                                </div>
-
-                                                <div class="row mb-3 ">
-                                                    <div class="col-sm-5 text-center">
-                                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- DataTales Example -->
+                        <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Submission Data</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Pengajuan</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
+                                <div class="justify-content-start">
+                                    <a href="#" class="btn btn-primary btn-sm btn-icon-split">
+                                        <span class="text" href="{{ url('/manager-hr/pengajuancuti') }}">Add Time Off</span>
+                                    </a>
+                            </div>
+                        
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th class="text-center">No</th>
-                                            <th class="text-center">Submission Type</th>
-                                            <th class="text-center">Date</th>
-                                            <th class="text-center">Reason</th>
-                                            <th class="text-center">Status</th>
+                                            <th class="text-center">NIP</th>
+                                            <th class="text-center">Nama Pegawai</th>
+                                            <th class="text-center">Departemen</th>
+                                            <th class="text-center">Jabatan</th>
+                                            <th class="text-center">Tanggal Izin</th>
+                                            <th class="text-center">Jenis Pengajuan</th>
+                                            <th class="text-center">Alasan</th>
+                                            <th class="text-center">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td class="text-center">1</td>
-                                            <td class="text-center">Cuti</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
                                             <td>2023/12/28</td>
+                                            <td class="text-center">Cuti</td>
                                             <td>Acara Keluarga</td>
-                                            <td class="text-center">Diterima</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td class="text-center">Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td class="text-center">Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">4</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td class="text-center">Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">5</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td class="text-center">Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">6</td>
+                                            <td>1231</td>
+                                            <td>Dava Attabrani</td>
+                                            <td>Development</td>
+                                            <td>Manajer</td>
+                                            <td>2023/12/28</td>
+                                            <td class="text-center">Cuti</td>
+                                            <td>Acara Keluarga</td>
+                                            <td class="text-center">
+                                                <div class="justify-content-start">
+                                                    <a href="#" class="btn btn-success btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="text">Terima</span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-times"></i>
+                                                        </span>
+                                                        <span class="text">Tolak</span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>

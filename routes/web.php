@@ -58,10 +58,8 @@ Route::middleware(['auth'])->group(function(){
 
     //Route::resource('requestTimeOff', ReqTimeOffController::class);  
     Route::get('/requestTimeOff', [ReqTimeOffController::class, 'index'])->name('requesTimeOff.index');
-
     Route::resource('timeoff', TimeoffController::class); 
     Route::resource('reimbursement', ReimbursementController::class); 
-
     
     Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
     Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
