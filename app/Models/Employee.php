@@ -18,6 +18,11 @@ class Employee extends Model
     use HasFactory;
     use SoftDeletes;
 
+    public function user(): HasOne
+    {
+        return $this->hasOne(User::class, 'id', 'empl_id');
+    }
+
     public function department(): HasMany
     {
         return $this->hasMany(Department::class, 'id', 'department_id');

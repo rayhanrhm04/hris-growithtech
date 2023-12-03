@@ -19,7 +19,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        $data['employees'] = Employee::all();
+        $data['users'] = User::all();
         return view('mst.employee.index', $data);
     }
 
@@ -28,7 +28,7 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        $data['employees'] = Employee::all();
+        $data['users'] = User::all();
         $data['genders'] = Gender::all();
         $data['departments'] = Department::all();
         $data['positions'] = Position::all();
@@ -42,7 +42,7 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        $model = new Employee();
+        $model = new User();
 
         $model->empl_id = $request->empl_id;
         $model->name = $request->name;
@@ -64,9 +64,6 @@ class EmployeeController extends Controller
         //$model2->name = $request->name;
        // $model2->password = Hash::make($request->password);
         //$model2->save();
-
-
-        return view('mst.employee.index', );
         
         return redirect()->route('employee.index');
 
@@ -85,13 +82,13 @@ class EmployeeController extends Controller
      */
     public function edit(string $id)
     {
-        $data['employees'] = Employee::all();
+        $data['users'] = User::all();
         $data['genders'] = Gender::all();
         $data['departments'] = Department::all();
         $data['positions'] = Position::all();
         $data['religions'] = Religion::all();
 
-        $data['employee'] = Employee::find($id);
+        $data['user'] = User::find($id);
         $data['gender'] = Gender::find($id);
         $data['department'] = Department::find($id);
         $data['position'] = Position::find($id);
@@ -105,7 +102,7 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $model = Employee::find($id);
+        $model = User::find($id);
 
         $model->empl_id = $request->empl_id;
         $model->name = $request->name;
@@ -131,7 +128,7 @@ class EmployeeController extends Controller
      */
     public function destroy(string $id)
     {
-        $model = Employee::find($id);
+        $model = User::find($id);
         $model->deleted_by = Auth::user()->id;
 
         $model->save();

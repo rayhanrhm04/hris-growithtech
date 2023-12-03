@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Reimbursement;
 use Illuminate\Http\Request;
+use App\Models\Reimbursement;
 use App\Models\Department;
 use App\Models\Employee;
 use App\Models\Position;
 
-class ReimbursementController extends Controller
+class ReqreimbursementController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class ReimbursementController extends Controller
     public function index()
     {
         $data['reimbursements'] = Reimbursement::all();
-        return view('mst.reimbursement.index', $data);
+        return view('mst.reqreimbursement.index', $data);
     }
 
     /**
@@ -24,7 +24,7 @@ class ReimbursementController extends Controller
      */
     public function create()
     {
-        
+
     }
 
     /**

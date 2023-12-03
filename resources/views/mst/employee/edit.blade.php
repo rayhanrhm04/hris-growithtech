@@ -70,14 +70,14 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col">
-                                                <form action="{{ route('employee.update', $employee->id) }}"
+                                                <form action="{{ route('employee.update', $user->id) }}"
                                                     method="POST">
                                                     @csrf @method('PUT')
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Id</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="empl_id" name="empl_id"
-                                                                value="{{ $employee->empl_id }}">
+                                                                value="{{ $user->empl_id }}">
                                                         </div>
                                                     </div>
 
@@ -85,7 +85,7 @@
                                                         <label class="col-sm-2 col-form-label">Employee Name</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="name" name="name"
-                                                                value="{{ $employee->name }}">
+                                                                value="{{ $user->name }}">
                                                         </div>
                                                     </div>
 
@@ -97,7 +97,7 @@
                                                                 <option value="">-</option>
                                                                 @foreach ($genders as $gen)
                                                                     <option value="{{ $gen->id }}"
-                                                                        {{ $employee->gender_id == $gen->id ? 'selected' : '' }}>
+                                                                        {{ $user->gender_id == $gen->id ? 'selected' : '' }}>
                                                                         {{ $gen->name }}</option>
                                                                 @endforeach
                                                             </select>
@@ -108,7 +108,7 @@
                                                         <label class="col-sm-2 col-form-label">Date Of Birth</label>
                                                         <div class="col-sm-4">
                                                             <input type="date" data-toggle="datatimepicker" class="form-control" id="dob" name="dob"
-                                                                value="{{ $employee->dob }}">
+                                                                value="{{ $user->dob }}">
                                                         </div>
                                                     </div>
 
@@ -116,7 +116,7 @@
                                                         <label class="col-sm-2 col-form-label">Place Of Birth</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="pob" name="pob"
-                                                                value="{{ $employee->pob }}">
+                                                                value="{{ $user->pob }}">
                                                         </div>
                                                     </div>
 
@@ -128,7 +128,7 @@
                                                                 <option value="">-</option>
                                                                 @foreach ($departments as $dept)
                                                                     <option value="{{ $dept->id }}"
-                                                                        {{ $employee->department_id == $dept->id ? 'selected' : '' }}>
+                                                                        {{ $user->department_id == $dept->id ? 'selected' : '' }}>
                                                                         {{ $dept->name }}</option>
                                                                 @endforeach
                                                             </select>
@@ -143,7 +143,7 @@
                                                                 <option value="">-</option>
                                                                 @foreach ($positions as $post)
                                                                     <option value="{{ $post->id }}"
-                                                                        {{ $employee->postion_id == $post->id ? 'selected' : '' }}>
+                                                                        {{ $user->postion_id == $post->id ? 'selected' : '' }}>
                                                                         {{ $post->name }}</option>
                                                                 @endforeach
                                                             </select>
@@ -158,7 +158,7 @@
                                                                 <option value="">-</option>
                                                                 @foreach ($religions as $reg)
                                                                     <option value="{{ $reg->id }}"
-                                                                        {{ $employee->religion_id == $reg->id ? 'selected' : '' }}>
+                                                                        {{ $user->religion_id == $reg->id ? 'selected' : '' }}>
                                                                         {{ $reg->name }}</option>
                                                                 @endforeach
                                                             </select>
@@ -169,7 +169,7 @@
                                                         <label class="col-sm-2 col-form-label">Address</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="address" name="address"
-                                                                value="{{ $employee->address }}">
+                                                                value="{{ $user->address }}">
                                                         </div>
                                                     </div>
 
@@ -177,7 +177,7 @@
                                                         <label class="col-sm-2 col-form-label">Phone</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="phone" name="phone"
-                                                                value="{{ $employee->phone }}">
+                                                                value="{{ $user->phone }}">
                                                         </div>
                                                     </div>
 
@@ -185,7 +185,7 @@
                                                         <label class="col-sm-2 col-form-label">Email</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="email" name="email"
-                                                                value="{{ $employee->email }}">
+                                                                value="{{ $user->email }}">
                                                         </div>
                                                     </div>
 
@@ -193,7 +193,7 @@
                                                         <label class="col-sm-2 col-form-label">Password</label>
                                                         <div class="col-sm-4">
                                                             <input class="form-control" id="password" name="password"
-                                                                value="{{ $employee->password }}">
+                                                                value="{{ $user->password }}">
                                                         </div>
                                                     </div>
 
