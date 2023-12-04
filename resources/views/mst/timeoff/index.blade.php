@@ -76,32 +76,28 @@
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Nama</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="name" name="name">
+                                                        <label class="col-sm-20 col-form-label">{{ Auth::user()->name }}</label>
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Position</label>
                                                     <div class="col-sm-4">
-                                                        <select name="position_id" id=""
-                                                            class="form-control">
-                                                                <option value="#">
-                                                                </option>
-                                                        </select>
+                                                        <label class="col-sm-20 col-form-label">{{ Auth::user()->position[0]['name']}}</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Jenis Pengajuan</label>
                                                     <div class="col-sm-4">
-                                                        <select name="type_id" id=""
-                                                            class="form-control">
-                                                            @foreach($positions as $position)
-                                                                <option value="{{ $position->position_id }}">
-                                                                    {{ $position->name }}
-                                                                </option>
-                                                            @endforeach
-                                                        </select>
+                                                            <select name="position_id" id=""
+                                                                class="form-control">
+                                                                @foreach ($positions as $pos)
+                                                                    <option value="{{ $pos->id }}">
+                                                                        {{ $pos->name }}
+                                                                    </option>
+                                                                @endforeach
+                                                            </select>
                                                     </div>
                                                 </div>
 

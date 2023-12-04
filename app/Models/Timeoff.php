@@ -16,9 +16,19 @@ class Timeoff extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $table = 'reqtimeoffs';
+    protected $table = 'timeoffs';
 
-    public function position(): HasMany{
+    public function position(): HasMany
+    {
         return $this->hasMany(Position::class, 'id', 'position_id');
     }
+
+    public function types_timeoff(): HasMany
+    {
+        return $this->hasMany(TypesTimeOff::class, 'id', 'types_timeoff_id');
+    }
+
+    // public function position(): HasMany{
+    //     return $this->hasMany(Position::class, 'id', 'position_id');
+    // }
 }

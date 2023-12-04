@@ -16,7 +16,7 @@ class TimeoffController extends Controller
      */
     public function index()
     {
-        $data['reqtimeoffs'] = Timeoff::all();
+        $data['timeoffs'] = Timeoff::all();
         return view('mst.timeoff.index', $data);
     }
 
@@ -40,8 +40,8 @@ class TimeoffController extends Controller
         $model = new Timeoff();
 
         $model->name = $request->name;
-        $model->position_id =  $request->position_id;
-        $model->types_id = $request->types_id;
+        $model->position_id = $request->position_id;
+        $model->types_timeoff = $request->types_timeoff_id;
         $model->date = $request->date;
         $model->reason = $request->reason;
         $model->status = $request->status;
@@ -66,15 +66,15 @@ class TimeoffController extends Controller
      */
     public function edit(string $id)
     {
-        $data['reqtimeoffs'] = Timeoff::all();
-        $data['types_timeoff'] = TypesTimeOff::all();
-        $data['positions'] = Position::all();
+        // $data['reqtimeoffs'] = Timeoff::all();
+        // $data['types_timeoff'] = TypesTimeOff::all();
+        // $data['positions'] = Position::all();
 
-        $data['reqtimeoff'] = Timeoff::find($id);
-        $data['types_timeoff'] = TypesTimeOff::find($id);
-        $data['positions'] = Position::find($id);
+        // $data['reqtimeoff'] = Timeoff::find($id);
+        // $data['types_timeoff'] = TypesTimeOff::find($id);
+        // $data['positions'] = Position::find($id);
 
-        return view('mst.timeoff.edit', $data);
+        // return view('mst.timeoff.edit', $data);
     }
 
     /**
@@ -82,18 +82,18 @@ class TimeoffController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $model = Timeoff::find($id);
+        // $model = Timeoff::find($id);
 
-        $model->name = $request->name;$model->position_id =  $request->position_id;
-        $model->types_id = $request->types_id;
-        $model->date = $request->date;
-        $model->reason = $request->reason;
-        $model->status = $request->status;
-        $model->updated_by = Auth::user()->id;
+        // $model->name = $request->name;$model->position_id =  $request->position_id;
+        // $model->types_timeoff = $request->types_id;
+        // $model->date = $request->date;
+        // $model->reason = $request->reason;
+        // $model->status = $request->status;
+        // $model->updated_by = Auth::user()->id;
 
-        $model->save();
+        // $model->save();
 
-        return redirect()->route('mst.timeoff.edit');
+        // return redirect()->route('mst.timeoff.edit');
 
     }
 
@@ -102,13 +102,13 @@ class TimeoffController extends Controller
      */
     public function destroy(string $id)
     {
-        $model = Timeoff::find($id);
+        // $model = Timeoff::find($id);
 
-        $model->save();
+        // $model->save();
 
-        $model->delete();
+        // $model->delete();
 
-        return redirect()->route('timeoff.index');
+        // return redirect()->route('timeoff.index');
     }
 }
 
