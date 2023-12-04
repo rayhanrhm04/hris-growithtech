@@ -30,7 +30,7 @@
                 <span>Employee Data</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/manager-hr/kehadiran') }}">
+            <a class="nav-link" href="{{ url('kehadiran') }}">
                 <i class="fas fa-fw fa-calendar"></i>
                 <span>Attendance</span></a>
         </li>
@@ -85,7 +85,7 @@
                 <span>Employee Data</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/kehadiran-staffhr') }}">
+            <a class="nav-link" href="{{ url('kehadiran') }}">
                 <i class="fas fa-fw fa-calendar"></i>
                 <span>Attendance</span></a>
         </li>
@@ -129,7 +129,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
+            <a class="nav-link" href="{{ url('kehadiran') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
                 <span>Attendance</span></a>
         </li>
@@ -168,7 +168,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/staff-dev/kehadiran') }}">
+            <a class="nav-link" href="{{ url('kehadiran') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
                 <span>Attendance</span></a>
         </li>
