@@ -84,7 +84,7 @@
                                     <tbody>
                                         @foreach ($reimbursements as $reim)
                                         <tr>                             
-                                            <td>{{ $reim->employee->name }}</td>
+                                            <td>{{ $reim->user->name }}</td>
                                             <td>{{ $reim->department[0]['name'] }}</td>
                                             <td>{{ $reim->position[0]['name'] }}</td>
                                             <td>{{ $reim->date }}</td>

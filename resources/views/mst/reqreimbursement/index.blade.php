@@ -58,83 +58,27 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Request Reimbursement</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Reimbursement</h1>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl col-lg">
-                            <div class="card shadow mb-4">
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="row">   
-                                        <div class="col">
-                                            <form>
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Name</label>
-                                                    <div class="col-sm-4">
-                                                        <label class="col-sm-20 col-form-label">{{ Auth::user()->name }}</label>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Department</label>
-                                                    <div class="col-sm-4">
-                                                        <label class="col-sm-20 col-form-label">{{ Auth::user()->department[0]['name']}}</label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Position</label>
-                                                    <div class="col-sm-4">
-                                                        <label class="col-sm-20 col-form-label">{{ Auth::user()->position[0]['name']}}</label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Request Date</label>
-                                                    <div class="col-sm-4">
-                                                        <input type="date" data-toggle="datatimepicker" class="form-control" id="requestdate" name="requestdate">
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Nominal</label>
-                                                    <div class="col-sm-4">
-                                                      <input class="form-control" id="nominal">
-                                                    </div>
-                                                </div>
-
-                                                <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Upload File</label>
-                                                    <div class="col-sm-4" class="col-lg-8">
-                                                      <input class="form-control" id="file">
-                                                    </div>
-                                                </div>
-
-                                                <div class="row mb-3 ">
-                                                    <div class="col-sm-5 text-center">
-                                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                        <!-- DataTales Example -->
+                    <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Submission Data</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
+                                <div class="d-flex justify-content-between">
+                                    <div class="justify-content-start">
+                                        <a href="{{ route('reqreimbursement.create') }}"
+                                            class="btn btn-primary btn-sm btn-icon-split">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                            <span class="text">Add New Reimbursement</span>
+                                        </a>
+                                    </div>
+                                </div>
                                 <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
                                     <thead>
                                         <tr>
@@ -150,7 +94,7 @@
                                     <tbody>
                                         @foreach ($reimbursements as $reim)
                                         <tr>                             
-                                            <td>{{ $reim->employee->name }}</td>
+                                            <td>{{ $reim->user->name }}</td>
                                             <td>{{ $reim->department[0]['name'] }}</td>
                                             <td>{{ $reim->position[0]['name'] }}</td>
                                             <td>{{ $reim->date }}</td>

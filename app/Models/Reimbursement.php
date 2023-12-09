@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\Employee;
 use App\Models\Department;
 use App\Models\Position;
+use App\Models\User;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -17,9 +18,9 @@ class Reimbursement extends Model
     use HasFactory;
     use SoftDeletes;
 
-    public function employee(): HasOne
+    public function user(): HasOne
     {
-        return $this->hasOne(Employee::class, 'empl_id', 'empl_id');
+        return $this->hasOne(User::class, 'id', 'empl_id');
     }
 
     public function department(): HasMany

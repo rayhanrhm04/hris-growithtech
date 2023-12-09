@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Reimbursement;
 use App\Models\Department;
 use App\Models\Employee;
 use App\Models\Position;
+use App\Models\User;
 
 class ReqreimbursementController extends Controller
 {
@@ -24,7 +26,12 @@ class ReqreimbursementController extends Controller
      */
     public function create()
     {
+        $data['reimbursements'] = Reimbursement::all();
+        $data['users'] = User::all();
+        $data['departments'] = Department::all();
+        $data['positions'] = Position::all();
 
+        return view('mst.reqreimbursement.create', $data);
     }
 
     /**
@@ -32,7 +39,20 @@ class ReqreimbursementController extends Controller
      */
     public function store(Request $request)
     {
+        $model = new Reimbursement();
+
+        $model->empl_id = $request->empl_id;
+        $model->department_id = $request->department_id;
+        $model->position_id = $request->position_id;
+        $model->date = $request->date;
+        $model->nominal = $request->nominal;
+        $model->datafile = $request->datafile;
+        $model->status = $request->status;
+        $model->created_by = Auth::user()->id;
         
+        $model->save();
+        
+        return redirect()->route('reqreimbursement.index');
 
     }
 
