@@ -64,7 +64,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Submission Data</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Reimbursement Data</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -79,7 +79,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th class="text-center">Name</th>
@@ -94,6 +94,7 @@
                                     <tbody>
                                         @foreach ($reimbursements as $reim)
                                         <tr>                             
+                                            
                                             <td>{{ $reim->user->name }}</td>
                                             <td>{{ $reim->department[0]['name'] }}</td>
                                             <td>{{ $reim->position[0]['name'] }}</td>
