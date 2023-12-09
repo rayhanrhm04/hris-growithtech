@@ -60,10 +60,10 @@ Route::middleware(['auth'])->group(function(){
     
     Route::resource('project', ProjectController::class);  
     
-    Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
-    Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
-    Route::post('/project/store', [ProjectController::class, 'store'])->name('project.store');
-    Route::put('/project/update', [ProjectController::class, 'update'])->name('project.update');
+    // Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
+    // Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
+    // Route::post('/project/store', [ProjectController::class, 'store'])->name('project.store');
+    // Route::put('/project/update', [ProjectController::class, 'update'])->name('project.update');
 
 });
 

@@ -111,7 +111,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($projects as $project)
+                                        @foreach($pr as $project)
                                         <tr>
                                             <td>{{ $project->id }}</td>
                                             <td>{{ $project->name }}</td>
