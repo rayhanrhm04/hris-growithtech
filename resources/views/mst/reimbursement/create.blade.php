@@ -80,6 +80,13 @@
                                                 </div>
                                                 
                                                 <div class="mb-3 row">
+                                                    <label class="col-sm-2 col-form-label">Department</label>
+                                                    <div class="col-sm-4">
+                                                      <input class="form-control" id="position">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Position</label>
                                                     <div class="col-sm-4">
                                                       <input class="form-control" id="position">
@@ -109,7 +116,7 @@
 
                                                 <div class="row mb-3 ">
                                                     <div class="col-sm-5 text-center">
-                                                        <button type="submit" class="btn btn-primary">Ajukan</button>
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -124,98 +131,31 @@
                         <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Pengajuan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Submission Data</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th class="text-center">No</th>
-                                            <th class="text-center">Tanggal Pengajuan</th>
+                                            <th class="text-center">Date</th>
                                             <th class="text-center">Nominal</th>
-                                            <th class="text-center">Bukti</th>
+                                            <th class="text-center">Picture</th>
                                             <th class="text-center">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
                                             <td>7 Agustus 2023</td>
                                             <td>Rp500.000</td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
+                                                        <span class="text">See</span>
                                                     </a>
                                                 </div>
                                             </td>
-                                            <td class="text-center">Diterima</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>7 Agustus 2023</td>
-                                            <td>Rp500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">Diterima</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>7 Agustus 2023</td>
-                                            <td>Rp500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">Diterima</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>7 Agustus 2023</td>
-                                            <td>Rp500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">Diterima</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>7 Agustus 2023</td>
-                                            <td>Rp500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">Diterima</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>7 Agustus 2023</td>
-                                            <td>Rp500.000</td>
-                                            <td class="text-center">
-                                                <div class="justify-content-start">
-                                                    <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
-                                                        <span class="text">Lihat</span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td class="text-center">Diterima</td>
+                                            <td class="text-center">Accepted</td>
                                         </tr>
                                     </tbody>
                                 </table>
