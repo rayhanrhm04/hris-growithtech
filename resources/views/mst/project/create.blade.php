@@ -74,28 +74,28 @@
                                             <form action="{{ route('project.store') }}" method="POST">
                                                 @csrf
                                                 <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Nama Project</label>
+                                                    <label class="col-sm-2 col-form-label">Project Name</label>
                                                     <div class="col-sm-4">
                                                       <input class="form-control" id="name" name="name">
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Tanggal Mulai</label>
+                                                    <label class="col-sm-2 col-form-label">Start Date</label>
                                                     <div class="col-sm-4">
                                                       <input type="date" data-toggle="datatimepicker" class="form-control" id="start_date" name="start_date">
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Tanggal Selesai</label>
+                                                    <label class="col-sm-2 col-form-label">Finish Date</label>
                                                     <div class="col-sm-4">
                                                         <input type="date" data-toggle="datatimepicker" class="form-control" id="end_date" name="end_date">
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-3 row">
-                                                    <label class="col-sm-2 col-form-label">Keterangan</label>
+                                                    <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-4">
                                                       <input class="form-control" id="description" name="description">
                                                     </div>

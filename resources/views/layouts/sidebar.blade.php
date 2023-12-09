@@ -30,7 +30,7 @@
                 <span>Employee Data</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/manager-hr/kehadiran') }}">
+            <a class="nav-link" href="{{ url('kehadiran') }}">
                 <i class="fas fa-fw fa-calendar"></i>
                 <span>Attendance</span></a>
         </li>
@@ -44,14 +44,10 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-<<<<<<< HEAD
-                    <a class="collapse-item" href="{{ route('timeoff.index') }}">Request Time Off</a>
-                    <a class="collapse-item" href="#">Data Time Off</a>
-                    <a class="collapse-item" href="{{ route('reimbursement.index') }}">Reimbursement Request</a>
-=======
+                    <a class="collapse-item" href="{{ route('timeoff.index') }}">Time Off Request</a>
                     <a class="collapse-item" href="{{ route('timeoff.index') }}">Time Off</a>
-                    <a class="collapse-item" href="{{ route('reimbursement.index') }}">Reimbursement</a>
->>>>>>> b08f0a6c55778828a0aa21d409c4c7541f964169
+                    <a class="collapse-item" href="{{ route('reimbursement.index') }}">Reimbursement Request</a>
+                    <a class="collapse-item" href="{{ route('reqreimbursement.index') }}">Reimbursement</a>
                 </div>
             </div>
         </li>
@@ -89,7 +85,7 @@
                 <span>Employee Data</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/kehadiran-staffhr') }}">
+            <a class="nav-link" href="{{ url('kehadiran') }}">
                 <i class="fas fa-fw fa-calendar"></i>
                 <span>Attendance</span></a>
         </li>
@@ -133,7 +129,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/eksekutif/kehadiran') }}">
+            <a class="nav-link" href="{{ url('kehadiran') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
                 <span>Attendance</span></a>
         </li>
@@ -172,7 +168,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/staff-dev/kehadiran') }}">
+            <a class="nav-link" href="{{ url('kehadiran') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
                 <span>Attendance</span></a>
         </li>

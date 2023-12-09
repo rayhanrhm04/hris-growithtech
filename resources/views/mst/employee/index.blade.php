@@ -110,28 +110,28 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($employees as $employee)
+                                            @foreach ($users as $user)
                                                 <tr>
-                                                    <td>{{ $employee->empl_id }}</td>
-                                                    <td>{{ $employee->name }}</td>
-                                                    <td>{{ $employee->gender->name}}</td>
-                                                    <td>{{ $employee->dob }}</td>
-                                                    <td>{{ $employee->pob }}</td>
-                                                    <td>{{ $employee->department[0]['name'] }}</td>
-                                                    <td>{{ $employee->position[0]['name'] }}</td>
-                                                    <td>{{ $employee->religion->name}}</td>
-                                                    <td>{{ $employee->address }}</td>
-                                                    <td>{{ $employee->phone }}</td>
-                                                    <td>{{ $employee->email }}</td>
-                                                    <td>{{ $employee->password }}</td>
+                                                    <td>{{ $user->empl_id }}</td>
+                                                    <td>{{ $user->name }}</td>
+                                                    <td>{{ $user->gender->name}}</td>
+                                                    <td>{{ $user->dob }}</td>
+                                                    <td>{{ $user->pob }}</td>
+                                                    <td>{{ $user->department[0]['name'] }}</td>
+                                                    <td>{{ $user->position[0]['name'] }}</td>
+                                                    <td>{{ $user->religion->name}}</td>
+                                                    <td>{{ $user->address }}</td>
+                                                    <td>{{ $user->phone }}</td>
+                                                    <td>{{ $user->email }}</td>
+                                                    <td>{{ $user->password }}</td>
                                                     <td class="text-center">
                                                         <div class="justify-content-start">
-                                                            <a href="{{ route('employee.edit', $employee->id) }}"
+                                                            <a href="{{ route('employee.edit', $user->id) }}"
                                                                 class="btn btn-success btn-sm btn-icon-split">
                                                                 <span class="text">Edit</span>
                                                             </a>
                                                             <form method="POST"
-                                                                action="{{ route('employee.destroy', $employee->id) }}">
+                                                                action="{{ route('employee.destroy', $user->id) }}">
                                                                 @method('DELETE')
                                                                 {{ csrf_field() }}
 

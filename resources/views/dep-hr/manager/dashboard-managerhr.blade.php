@@ -178,11 +178,13 @@
                                     <div class="row">
                                         <div class="col">
                                             <span class="text">Employee Id</span>
-                                            <h1 class="h5 mb-2 text-gray-800">E001</h1>
+                                            <h1 class="h5 mb-2 text-gray-800">{{ Auth::user()->empl_id }}</h1>
                                             <span class="text">Name</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Fasya Maharatu</h1>
+                                            <h1 class="h5 mb-2 text-gray-800">{{ Auth::user()->name }}</h1>
+                                            <span class="text">Department</span>
+                                            <h1 class="h5 mb-2 text-gray-800">{{ Auth::user()->department[0]['name']}}</h1>
                                             <span class="text">Position</span>
-                                            <h1 class="h5 mb-2 text-gray-800">Eksekutif</h1>
+                                            <h1 class="h5 mb-2 text-gray-800">{{ Auth::user()->position[0]['name']}}</h1>
                                             <span class="text">Check In Time</span>
                                             <h1 class="h5 mb-2 text-gray-800">08.00 WIB</h1>
                                             <span class="text">Check In Location</span>

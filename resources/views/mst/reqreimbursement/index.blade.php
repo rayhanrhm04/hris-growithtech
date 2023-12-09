@@ -75,21 +75,21 @@
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Name</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="name">
+                                                        <label class="col-sm-20 col-form-label">{{ Auth::user()->name }}</label>
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Department</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="position">
+                                                        <label class="col-sm-20 col-form-label">{{ Auth::user()->department[0]['name']}}</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Position</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="position">
+                                                        <label class="col-sm-20 col-form-label">{{ Auth::user()->position[0]['name']}}</label>
                                                     </div>
                                                 </div>
 
@@ -138,6 +138,9 @@
                                 <table class="table table-bordered" id="dataTable" width="70%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th class="text-center">Name</th>
+                                            <th class="text-center">Department</th>
+                                            <th class="text-center">Position</th>
                                             <th class="text-center">Date</th>
                                             <th class="text-center">Nominal</th>
                                             <th class="text-center">Picture</th>
@@ -145,9 +148,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>7 Agustus 2023</td>
-                                            <td>Rp500.000</td>
+                                        @foreach ($reimbursements as $reim)
+                                        <tr>                             
+                                            <td>{{ $reim->employee->name }}</td>
+                                            <td>{{ $reim->department[0]['name'] }}</td>
+                                            <td>{{ $reim->position[0]['name'] }}</td>
+                                            <td>{{ $reim->date }}</td>
+                                            <td>{{ $reim->nominal }}</td>
                                             <td class="text-center">
                                                 <div class="justify-content-start">
                                                     <a href="#" class="btn btn-outline-secondary btn-sm btn-icon-split">
@@ -155,8 +162,9 @@
                                                     </a>
                                                 </div>
                                             </td>
-                                            <td class="text-center">Accepted</td>
+                                            <td>{{ $reim->status }}</td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
