@@ -52,6 +52,7 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('department', DepartmentController::class);
     Route::resource('employee', EmployeeController::class);
     Route::resource('project', ProjectController::class);
+
     Route::resource('timeoff', TimeoffController::class);
     Route::resource('reimbursement', ReimbursementController::class); 
     Route::resource('reqreimbursement', ReqreimbursementController::class);
