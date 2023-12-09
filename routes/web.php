@@ -12,6 +12,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ReimbursementController;
 use App\Http\Controllers\ReqreimbursementController;
+use App\Http\Controllers\ReqtimeoffController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\TimeoffController;
 use App\Models\Reimbursement;
@@ -54,6 +55,7 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('project', ProjectController::class);
 
     Route::resource('timeoff', TimeoffController::class);
+    Route::resource('reqtimeoff', ReqtimeoffController::class);
     Route::resource('reimbursement', ReimbursementController::class); 
     Route::resource('reqreimbursement', ReqreimbursementController::class);
     Route::view('kehadiran','kehadiran'); 
