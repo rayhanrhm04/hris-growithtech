@@ -18,7 +18,7 @@ class ReqreimbursementController extends Controller
      */
     public function index()
     {
-        $data['reimbursements'] = Reimbursement::all();
+        $data['reimbursements'] = Reimbursement::where('empl_id','=',Auth::user()->id)->get();
         return view('mst.reqreimbursement.index', $data);
     }
 
