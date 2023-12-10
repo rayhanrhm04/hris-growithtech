@@ -76,7 +76,7 @@
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Project Name</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="name" name="name" value="{{ $project->name }}">
+                                                      <input type="text" class="form-control" name="name" value="{{ $project->name }}">
                                                     </div>
                                                 </div>
                                                 
@@ -97,7 +97,7 @@
                                                 <div class="mb-3 row">
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-4">
-                                                      <input class="form-control" id="description" name="description" value="{{ $project->description }}">
+                                                      <input type="text"  class="form-control" id="description" name="description" value="{{ $project->description }}">
                                                     </div>
                                                 </div>  
 

@@ -103,7 +103,7 @@
 
                                                 <div class="row mb-3 ">
                                                     <div class="col-sm-5 text-center">
-                                                        <button type="submit" class="btn btn-primary" id="save">Tambah</button>
+                                                        <button type="submit" class="btn btn-primary" id="save">Create Project</button>
                                                     </div>
                                                 </div>
                                             </form>

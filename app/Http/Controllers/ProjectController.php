@@ -20,18 +20,10 @@ class ProjectController extends Controller
     public function index()
     {
         //
-        $data['projects'] = Project::all();
+        $data['pr'] = Project::all();
         return view('mst.project.index', $data);
 
-        $jumlahProject = Project::count();
-        return view('mst.project.index', compact('jumlahProject'));
-
-        // $jumlah_project = DB::table('projects')->count();
-
-        // // Mengirim jumlah data ke view
-        // return view('mst.project.index', [
-        // 'jumlah_project' => $jumlah_project,
-        //  ]);
+     
     }
 
     /**
@@ -60,7 +52,7 @@ class ProjectController extends Controller
         $model->description = $request->description;
         $model->save();
 
-        return view('mst.project.index');
+        // return view('mst.project.index');
 
         return redirect()->route('project.index');
     }
@@ -104,11 +96,12 @@ class ProjectController extends Controller
         $model->start_date = $request->start_date;
         $model->end_date = $request->end_date;
         $model->description = $request->description;
-        $model->updated_by = Auth::user()->id;
+        // $model->updated_by = Auth::user()->id;
 
         $model->save();
 
         return redirect()->route('project.index');
+        // dd($model);
     }
 
     /**
