@@ -101,14 +101,6 @@ Route::view('/eksekutif/tambahPegawaiProject','eksekutif.tambahPegawaiProject');
 //Manager Development
 Route::view('/manager-dev/dashboard-managerdev','dep-dev.manager.dashboard-managerdev');
 Route::view('/manager-dev/kehadiran','dep-dev.manager.kehadiran');
-Route::view('/manager-dev/project','dep-dev.manager.project');
-Route::view('/manager-dev/tambahProject','dep-dev.manager.tambahProject');
-Route::view('/manager-dev/tambahPegawaiProject','dep-dev.manager.tambahPegawaiProject'); //ini belum ada buttonnya
-Route::view('/manager-dev/permintaanCuti','dep-dev.manager.permintaanCuti');
-Route::view('/manager-dev/pengajuanCuti','dep-dev.manager.pengajuanCuti');
-Route::view('/manager-dev/permintaanReimbursement','dep-dev.manager.permintaanReimbursement');
-Route::view('/manager-dev/pengajuanReimbursement','dep-dev.manager.pengajuanReimbursement');
-Route::view('/manager-dev/tambahpengajuanCuti','dep-dev.manager.tambahpengajuanCuti');
 Route::view('/manager-dev/reporting','dep-dev.manager.reporting');
 Route::view('/manager-dev/profile','dep-dev.manager.profile');
 

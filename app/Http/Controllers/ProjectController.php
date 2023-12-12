@@ -76,7 +76,7 @@ class ProjectController extends Controller
         $data['positions'] = Position::all();
         $data['projects'] = Project::all();
 
-        $data['employee'] = Employee::find($id);
+        $data['employees'] = Employee::find($id);
         $data['department'] = Department::find($id);
         $data['position'] = Position::find($id);
         $data['project'] = Project::find($id);
@@ -96,7 +96,6 @@ class ProjectController extends Controller
         $model->start_date = $request->start_date;
         $model->end_date = $request->end_date;
         $model->description = $request->description;
-        // $model->updated_by = Auth::user()->id;
 
         $model->save();
 
