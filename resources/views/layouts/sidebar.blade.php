@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Growithtech</div>
+        <div class="sidebar-brand-text mx-3">HRIS Growithtech</div>
     </a>
 
     <!--Manager HR-->
@@ -15,7 +15,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="{{ url('/manager-hr/dashboard-managerhr') }}">
+            <a class="nav-link" href="{{ url('/dashboard') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -57,7 +57,7 @@
                 <span>Payroll</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/manager-hr/reporting') }}">
+            <a class="nav-link" href="{{ url('/reporting') }}">
                 <i class="fas fa-fw fa-folder-open"></i>
                 <span>Reporting</span></a>
         </li>
@@ -70,7 +70,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="{{ url('/dashboard-staffhr') }}">
+            <a class="nav-link" href="{{ url('/dashboard') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -119,7 +119,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/manager-dev/dashboard-managerdev') }}">
+            <a class="nav-link" href="{{ url('/dashboard') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -148,8 +148,10 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ url('/manager-dev/pengajuanCuti') }}">Time Off</a>
-                    <a class="collapse-item" href="{{ url('/manager-dev/pengajuanReimbursement') }}">Reimbursement</a>
+                    <a class="collapse-item" href="{{ route('timeoff.index') }}">Time Off Request</a>
+                    <a class="collapse-item" href="{{ route('reqtimeoff.index') }}">Time Off</a>
+                    <a class="collapse-item" href="{{ route('reimbursement.index') }}">Reimbursement Request</a>
+                    <a class="collapse-item" href="{{ route('reqreimbursement.index') }}">Reimbursement</a>
                 </div>
             </div>
         </li>
