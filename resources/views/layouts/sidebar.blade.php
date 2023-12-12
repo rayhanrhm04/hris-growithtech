@@ -154,7 +154,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/manager-dev/reporting') }}">
+            <a class="nav-link" href="{{ url('/reporting') }}">
                 <i class="fas fa-fw fa-folder-open"></i>
                 <span>Reporting</span></a>
         </li>

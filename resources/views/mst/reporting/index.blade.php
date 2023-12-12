@@ -103,7 +103,7 @@
                                                 <span class="icon text-white-50">
                                                     <i class="fas fa-calendar"></i>
                                                 </span>
-                                                <span class="text">Tampilkan Data</span>
+                                                <span class="text">Show Data</span>
                                             </a>
                                         </div>
                                     </div>
@@ -124,13 +124,13 @@
                                         <tr>
                                             <th class="text-center">No</th>
                                             <th class="text-center">NIP</th>
-                                            <th class="text-center">Nama Pegawai</th>
+                                            <th class="text-center">Employee Name</th>
                                             <th class="text-center">Department</th>
-                                            <th class="text-center">Jabatan</th>
-                                            <th class="text-center">Gaji Pokok</th>
-                                            <th class="text-center">Tambahan</th>
-                                            <th class="text-center">Potongan</th>
-                                            <th class="text-center">Total Gaji</th>
+                                            <th class="text-center">Positions</th>
+                                            <th class="text-center">Salary</th>
+                                            <th class="text-center">Additional</th>
+                                            <th class="text-center">Deductions</th>
+                                            <th class="text-center">Total Salary</th>
                                         </tr>
                                     </thead>
                                     <tbody>

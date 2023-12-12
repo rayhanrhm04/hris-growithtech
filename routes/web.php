@@ -11,6 +11,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ReimbursementController;
+use App\Http\Controllers\ReportingController;
 use App\Http\Controllers\ReqreimbursementController;
 use App\Http\Controllers\ReqtimeoffController;
 use App\Http\Controllers\SessionController;
@@ -61,6 +62,7 @@ Route::middleware(['auth'])->group(function(){
     Route::view('kehadiran','kehadiran'); 
     
     Route::resource('project', ProjectController::class);  
+    Route::resource('reporting', ReportingController::class);
     
     // Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
     // Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
