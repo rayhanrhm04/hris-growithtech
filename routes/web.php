@@ -12,6 +12,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PayrollController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ReimbursementController;
+use App\Http\Controllers\ReportingController;
 use App\Http\Controllers\ReqreimbursementController;
 use App\Http\Controllers\ReqtimeoffController;
 use App\Http\Controllers\SessionController;
@@ -64,6 +65,7 @@ Route::middleware(['auth'])->group(function(){
     Route::view('attendance','attendance'); 
     
     Route::resource('project', ProjectController::class);  
+    Route::resource('reporting', ReportingController::class);
     
     // Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
     // Route::get('/project/create', [ProjectController::class, 'create'])->name('project.create');
@@ -104,14 +106,6 @@ Route::view('/eksekutif/tambahPegawaiProject','eksekutif.tambahPegawaiProject');
 //Manager Development
 Route::view('/manager-dev/dashboard-managerdev','dep-dev.manager.dashboard-managerdev');
 Route::view('/manager-dev/kehadiran','dep-dev.manager.kehadiran');
-Route::view('/manager-dev/project','dep-dev.manager.project');
-Route::view('/manager-dev/tambahProject','dep-dev.manager.tambahProject');
-Route::view('/manager-dev/tambahPegawaiProject','dep-dev.manager.tambahPegawaiProject'); //ini belum ada buttonnya
-Route::view('/manager-dev/permintaanCuti','dep-dev.manager.permintaanCuti');
-Route::view('/manager-dev/pengajuanCuti','dep-dev.manager.pengajuanCuti');
-Route::view('/manager-dev/permintaanReimbursement','dep-dev.manager.permintaanReimbursement');
-Route::view('/manager-dev/pengajuanReimbursement','dep-dev.manager.pengajuanReimbursement');
-Route::view('/manager-dev/tambahpengajuanCuti','dep-dev.manager.tambahpengajuanCuti');
 Route::view('/manager-dev/reporting','dep-dev.manager.reporting');
 Route::view('/manager-dev/profile','dep-dev.manager.profile');
 
