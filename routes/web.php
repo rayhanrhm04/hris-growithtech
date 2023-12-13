@@ -9,6 +9,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PayrollController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ReimbursementController;
 use App\Http\Controllers\ReqreimbursementController;
@@ -50,6 +51,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/admin/staffdev', [AdminController::class, 'staffhr'])->middleware('userAkses:managerdev');
 
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard.dashboard');
+    
     Route::resource('department', DepartmentController::class);
     Route::resource('employee', EmployeeController::class);
     Route::resource('project', ProjectController::class);
@@ -58,7 +60,8 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('reqtimeoff', ReqtimeoffController::class);
     Route::resource('reimbursement', ReimbursementController::class); 
     Route::resource('reqreimbursement', ReqreimbursementController::class);
-    Route::view('kehadiran','kehadiran'); 
+    Route::resource('payroll', PayrollController::class);
+    Route::view('attendance','attendance'); 
     
     Route::resource('project', ProjectController::class);  
     

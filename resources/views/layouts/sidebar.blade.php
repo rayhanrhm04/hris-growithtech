@@ -30,7 +30,7 @@
                 <span>Employee Data</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('kehadiran') }}">
+            <a class="nav-link" href="{{ url('attendance') }}">
                 <i class="fas fa-fw fa-calendar"></i>
                 <span>Attendance</span></a>
         </li>
@@ -52,12 +52,12 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/manager-hr/penggajian') }}">
+            <a class="nav-link" href="{{ route('payroll.index') }}">
                 <i class="fas fa-fw fa-calculator"></i>
                 <span>Payroll</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/manager-hr/reporting') }}">
+            <a class="nav-link" href="{{ route('payroll.index') }}">
                 <i class="fas fa-fw fa-folder-open"></i>
                 <span>Reporting</span></a>
         </li>
@@ -85,7 +85,7 @@
                 <span>Employee Data</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('kehadiran') }}">
+            <a class="nav-link" href="{{ url('attendance') }}">
                 <i class="fas fa-fw fa-calendar"></i>
                 <span>Attendance</span></a>
         </li>
@@ -129,7 +129,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('kehadiran') }}">
+            <a class="nav-link" href="{{ url('attendance') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
                 <span>Attendance</span></a>
         </li>
@@ -168,7 +168,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('kehadiran') }}">
+            <a class="nav-link" href="{{ url('attendance') }}">
                 <i class="fas fa-sharp fa-solid fa-fw fa-user"></i>
                 <span>Attendance</span></a>
         </li>
