@@ -27,7 +27,7 @@ class PayrollController extends Controller
     public function create()
     {
         $data['users'] = User::all();
-        $data['departments'] = Department::where('empl_id','=',$users->id)->get();
+        $data['departments'] = Department::all();
         $data['positions'] = Position::all();
 
         return view('mst.payroll.create', $data);
