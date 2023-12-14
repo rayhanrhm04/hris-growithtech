@@ -97,15 +97,16 @@
                                                 <th class="text-center">Id</th>
                                                 <th class="text-center">Name</th>
                                                 <th class="text-center">Gender</th>
-                                                <th class="text-center">Date Of Birth</th>
-                                                <th class="text-center">Place Of Birth</th>
+                                                {{-- <th class="text-center">Date Of Birth</th> --}}
+                                                {{-- <th class="text-center">Place Of Birth</th> --}}
+                                                <th class="text-center">Salary</th>
                                                 <th class="text-center">Department</th>
                                                 <th class="text-center">Position</th>
                                                 <th class="text-center">Religion</th>
                                                 <th class="text-center">Address</th>
                                                 <th class="text-center">Phone</th>
                                                 <th class="text-center">Email</th>
-                                                <th class="text-center">Password</th>
+                                                {{-- <th class="text-center">Password</th> --}}
                                                 <th class="text-center">Action</th>
                                             </tr>
                                         </thead>
@@ -115,15 +116,16 @@
                                                     <td>{{ $user->empl_id }}</td>
                                                     <td>{{ $user->name }}</td>
                                                     <td>{{ $user->gender->name}}</td>
-                                                    <td>{{ $user->dob }}</td>
-                                                    <td>{{ $user->pob }}</td>
+                                                    {{-- <td>{{ $user->dob }}</td> --}}
+                                                    {{-- <td>{{ $user->pob }}</td> --}}
+                                                    <td>{{ $user->salary }}</td>
                                                     <td>{{ $user->department[0]['name'] }}</td>
                                                     <td>{{ $user->position[0]['name'] }}</td>
                                                     <td>{{ $user->religion->name}}</td>
                                                     <td>{{ $user->address }}</td>
-                                                    <td>{{ $user->phone }}</td>
+                                                    <td>{{ $user->phone }}</td>s
                                                     <td>{{ $user->email }}</td>
-                                                    <td>{{ $user->password }}</td>
+                                                    {{-- <td>{{ $user->password }}</td> --}}
                                                     <td class="text-center">
                                                         <div class="justify-content-start">
                                                             <a href="{{ route('employee.edit', $user->id) }}"

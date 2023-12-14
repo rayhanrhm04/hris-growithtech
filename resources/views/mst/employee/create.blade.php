@@ -160,14 +160,21 @@
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Address</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="address">
+                                                            <input class="form-control" id="address" name="address">
                                                         </div>
                                                     </div>
 
                                                     <div class="mb-3 row">
                                                         <label class="col-sm-2 col-form-label">Phone</label>
                                                         <div class="col-sm-4">
-                                                            <input class="form-control" id="phone">
+                                                            <input class="form-control" id="phone" name="phone">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3 row">
+                                                        <label class="col-sm-2 col-form-label">Salary</label>
+                                                        <div class="col-sm-4">
+                                                            <input class="form-control" id="salary" name="salary">
                                                         </div>
                                                     </div>
 

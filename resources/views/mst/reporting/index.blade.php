@@ -139,7 +139,7 @@
                                             <td>{{ $report->user->name }}</td>
                                             <td>{{ $report->department[0]['name'] }}</td>
                                             <td>{{ $report->position[0]['name'] }}</td>
-                                            <td>Rp3.000.000</td>
+                                            <td>{{ $report->salary[0]['name'] }}</td>
                                         </tr>
                                         @endforeach
                                         <tr>

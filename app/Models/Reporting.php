@@ -27,6 +27,11 @@ class Reporting extends Model
     {
         return $this->hasMany(Position::class, 'id', 'position_id');
     }
+
+    public function salary(): HasOne
+    {
+        return $this->hasOne(User::class, 'id', 'salary');
+    }
 }
 
 
