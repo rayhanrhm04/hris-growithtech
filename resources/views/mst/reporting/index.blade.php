@@ -55,7 +55,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Reporting</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Report Data</h1>
                     </div>
 
                         <!-- DataTales Example -->
@@ -123,7 +123,6 @@
                                     <thead>
                                         <tr>
                                             <th class="text-center">No</th>
-                                            <th class="text-center">NIP</th>
                                             <th class="text-center">Employee Name</th>
                                             <th class="text-center">Department</th>
                                             <th class="text-center">Positions</th>
@@ -134,53 +133,17 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($reporting as $report)
                                         <tr>
-                                            <td>1</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
+                                            <td>{{ $report->id }}</td>
+                                            <td>{{ $report->user->name }}</td>
+                                            <td>{{ $report->department[0]['name'] }}</td>
+                                            <td>{{ $report->position[0]['name'] }}</td>
                                             <td>Rp3.000.000</td>
-                                            <td>Rp300.000</td>
-                                            <td>Rp0</td>
-                                            <td>Rp3.300.000</td>
                                         </tr>
+                                        @endforeach
                                         <tr>
                                             <td>2</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>Rp3.000.000</td>
-                                            <td>Rp300.000</td>
-                                            <td>Rp0</td>
-                                            <td>Rp3.300.000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>Rp3.000.000</td>
-                                            <td>Rp300.000</td>
-                                            <td>Rp0</td>
-                                            <td>Rp3.300.000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>1231</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>Rp3.000.000</td>
-                                            <td>Rp300.000</td>
-                                            <td>Rp0</td>
-                                            <td>Rp3.300.000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>1231</td>
                                             <td>Dava Attabrani</td>
                                             <td>Development</td>
                                             <td>Manajer</td>
