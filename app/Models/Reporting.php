@@ -30,7 +30,7 @@ class Reporting extends Model
 
     public function salary(): HasOne
     {
-        return $this->hasOne(User::class, 'id', 'salary');
+        return $this->hasOne(Payroll::class, 'id', 'total_salary');
     }
 }
 

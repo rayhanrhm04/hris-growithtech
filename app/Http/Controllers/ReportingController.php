@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Payroll;
 use App\Models\Reporting;
 use Illuminate\Http\Request;
 
@@ -13,7 +14,7 @@ class ReportingController extends Controller
     public function index()
     {
         //
-        $data['reporting'] = Reporting::all();
+        $data['payrolls'] = Payroll::all();
         return view('mst.reporting.index', $data);
     }
 

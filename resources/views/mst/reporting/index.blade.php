@@ -65,34 +65,34 @@
                                 <div class="container">
                                     <div class="row ">
                                         <div class="col-1">
-                                            <h8>Bulan</h8>
+                                            <h8>Month</h8>
                                         </div>
                                         <div class="col-2">
                                             <div class="mb-3">
                                                 <select name="bulan" id="bulan">
-                                                    <option selected>-Pilih Bulan-</option>
-                                                    <option value="januari">Januari</option>
-                                                    <option value="februari">Februari</option>
-                                                    <option value="maret">Maret</option>
+                                                    <option selected>-Select Month-</option>
+                                                    <option value="januari">January</option>
+                                                    <option value="februari">February</option>
+                                                    <option value="maret">March</option>
                                                     <option value="april">April</option>
-                                                    <option value="mei">Mei</option>
-                                                    <option value="juni">Juni</option>
-                                                    <option value="juli">Juli</option>
-                                                    <option value="agustus">Agustus</option>
+                                                    <option value="mei">May</option>
+                                                    <option value="juni">June</option>
+                                                    <option value="juli">July</option>
+                                                    <option value="agustus">August</option>
                                                     <option value="september">September</option>
-                                                    <option value="oktober">Oktober</option>
+                                                    <option value="oktober">October</option>
                                                     <option value="november">November</option>
                                                     <option value="desember">Desember</option>
                                                 </select>
                                             </div>   
                                         </div>
                                         <div class="col-1">
-                                            <h8>Tahun</h8>
+                                            <h8>Year</h8>
                                         </div>
                                         <div class="col-2">
                                             <div class="mb-3">
                                                 <select name="bulan" id="bulan">
-                                                    <option selected>-Pilih Tahun-</option>
+                                                    <option selected>-Select Year-</option>
                                                     <option value="2022">2022</option>
                                                     <option value="2023">2023</option>
                                                 </select>
@@ -122,36 +122,33 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th class="text-center">No</th>
-                                            <th class="text-center">Employee Name</th>
+                                            <th class="text-center">Id</th>
+                                            <th class="text-center">Name</th>
                                             <th class="text-center">Department</th>
-                                            <th class="text-center">Positions</th>
-                                            <th class="text-center">Salary</th>
-                                            <th class="text-center">Additional</th>
-                                            <th class="text-center">Deductions</th>
+                                            <th class="text-center">Position</th>
+                                            <th class="text-center">Meal Allowance</th>
+                                            <th class="text-center">Project Bonus</th>
+                                            <th class="text-center">Reimbursement</th>
+                                            <th class="text-center">Basic Salary</th>
+                                            <th class="text-center">Salary Cuts</th>
                                             <th class="text-center">Total Salary</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($reporting as $report)
-                                        <tr>
-                                            <td>{{ $report->id }}</td>
-                                            <td>{{ $report->user->name }}</td>
-                                            <td>{{ $report->department[0]['name'] }}</td>
-                                            <td>{{ $report->position[0]['name'] }}</td>
-                                            <td>{{ $report->salary[0]['name'] }}</td>
-                                        </tr>
+                                        @foreach ($payrolls as $payroll)
+                                            <tr>
+                                                <td>{{ $payroll->user->id }}</td>
+                                                <td>{{ $payroll->user->name }}</td>
+                                                <td>{{ $payroll->department[0]['name'] }}</td>
+                                                <td>{{ $payroll->position[0]['name'] }}</td>
+                                                <td>{{ $payroll->meal_allowances}}</td>
+                                                <td>{{ $payroll->project_bonus }}</td>
+                                                <td>{{ $payroll->reimbursement_id }}</td>
+                                                <td>{{ $payroll->basic_salary }}</td>
+                                                <td>{{ $payroll->salary_cuts }}</td>
+                                                <td>{{ $payroll->total_salary }}</td>
+                                            </tr>
                                         @endforeach
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Dava Attabrani</td>
-                                            <td>Development</td>
-                                            <td>Manajer</td>
-                                            <td>Rp3.000.000</td>
-                                            <td>Rp300.000</td>
-                                            <td>Rp0</td>
-                                            <td>Rp3.300.000</td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
