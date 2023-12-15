@@ -57,11 +57,7 @@
                 <span>Payroll</span></a>
         </li>
         <li class="nav-item">
-<<<<<<< HEAD
-            <a class="nav-link" href="{{ route('payroll.index') }}">
-=======
             <a class="nav-link" href="{{ url('/reporting') }}">
->>>>>>> 0ba807204f0b5d99bd849b00d7d647807a5e4a2e
                 <i class="fas fa-fw fa-folder-open"></i>
                 <span>Reporting</span></a>
         </li>
