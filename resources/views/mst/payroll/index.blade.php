@@ -122,7 +122,7 @@
                                                     <td>{{ $payroll->total_salary }}</td>
                                                     <td class="text-center">
                                                         <div class="justify-content-start">
-                                                            <a href="#"
+                                                            <a href="{{ route('payroll.edit', $payroll->id) }}"
                                                                 class="btn btn-success btn-sm btn-icon-split">
                                                                 <span class="text">Edit</span>
                                                             </a>

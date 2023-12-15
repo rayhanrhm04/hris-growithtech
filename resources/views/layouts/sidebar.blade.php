@@ -99,15 +99,13 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ route('timeoff.index') }}">Time Off Request</a>
                     <a class="collapse-item" href="{{ route('reqtimeoff.index') }}">Time Off</a>
-                    <a class="collapse-item" href="{{ route('reimbursement.index') }}">Reimbursement Request</a>
                     <a class="collapse-item" href="{{ route('reqreimbursement.index') }}">Reimbursement</a>
                 </div>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/payroll') }}">
+            <a class="nav-link" href="{{ route('payroll.index') }}">
                 <i class="fas fa-fw fa-calculator"></i>
                 <span>Payroll</span></a>
         </li>
@@ -191,9 +189,7 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="{{ route('timeoff.index') }}">Time Off Request</a>
                     <a class="collapse-item" href="{{ route('reqtimeoff.index') }}">Time Off</a>
-                    <a class="collapse-item" href="{{ route('reimbursement.index') }}">Reimbursement Request</a>
                     <a class="collapse-item" href="{{ route('reqreimbursement.index') }}">Reimbursement</a>
                 </div>
             </div>

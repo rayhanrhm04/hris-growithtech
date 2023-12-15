@@ -69,7 +69,17 @@ class PayrollController extends Controller
      */
     public function edit(string $id)
     {
-       
+        $data['payrolls'] = Payroll::all();
+        $data['users'] = User::all();
+        $data['departments'] = Department::all();
+        $data['positions'] = Position::all();
+
+        $data['payroll'] = Payroll::find($id);
+        $data['user'] = User::find($id);
+        $data['department'] = Department::find($id);
+        $data['position'] = Position::find($id);
+        
+        return view('mst.payroll.edit', $data);
     }
 
     /**
@@ -77,7 +87,22 @@ class PayrollController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        
+        $model = Payroll::find($id);
+
+        $model->empl_id = $request->empl_id;
+        $model->department_id = $request->department_id;
+        $model->position_id = $request->position_id;
+        $model->meal_allowances = $request->meal_allowances;
+        $model->project_bonus = $request->project_bonus;
+        $model->reimbursement_id = $request->reimbursement_id;
+        $model->basic_salary = $request->basic_salary;
+        $model->salary_cuts = $request->salary_cuts;
+        $model->total_salary = $request->total_salary;
+        $model->updated_by = Auth::user()->id;
+
+        $model->save();
+
+        return redirect()->route('payroll.index');
     }
 
     /**
